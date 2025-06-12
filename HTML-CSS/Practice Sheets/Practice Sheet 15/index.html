@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Practice Sheet 15 - CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This site contains the CSS projects of the author while early in his learning career as a frontend developer." />
+    <link rel="icon" href="./images/css-3.svg" type="image/svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta property="og:title" content="Practice Sheet 15 - CSS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://practicesheet15.com/css" />
+    <meta property="og:image" content="./images/css-3.svg" />
+</head>
+
+<body>
+    <header>
+        <h1>CSS Layout I</h1>
+        <p>This practice sheet showcases different CSS layout values:</p>
+        <nav>
+            <ul id="menu">
+                <li><a href="#static">Static</a></li>
+                <li><a href="#relative">Relative</a></li>
+                <li><a href="#fixed">Fixed</a></li>
+                <li><a href="#absolute">Absolute</a></li>
+                <li><a href="#sticky">Sticky</a></li>
+                <li><a href="#z-index">Z-Index</a></li>
+                <li><a href="#overflow">Overflow</a></li>
+                <li><a href="#float">Float</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="static">
+            <h2>Static Position</h2>
+            <p class="container static">This paragraph is in static position.</p>
+        </section>
+        <section id="relative">
+            <h2>Relative Position</h2>
+            <p class="container"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus, quos
+                dolore nesciunt reiciendis vitae iusto eligendi ullam doloribus nisi iure repellat aliquam, voluptatem
+                minima velit accusamus sint incidunt soluta.</p>
+            <p class="container relative">This paragraph is in relative position. Notice that it leaves a space between
+                other paragraphs as if it never left its original position.</p>
+            <p class="container"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus, quos
+                dolore nesciunt reiciendis vitae iusto eligendi ullam doloribus nisi iure repellat aliquam, voluptatem
+                minima velit accusamus sint incidunt soluta.</p>
+            <p class="container"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus, quos
+                dolore nesciunt reiciendis vitae iusto eligendi ullam doloribus nisi iure repellat aliquam, voluptatem
+                minima velit accusamus sint incidunt soluta.</p>
+        </section>
+        <section id="fixed">
+            <h2>Fixed Position</h2>
+            <p class="container">Please look at the image at the bottom right which takes you back to the top. It has
+                fixed position which means it is relative to the viewport of this website.</p>
+            <div id="go-to-top">
+                <a href="#"><img src="./images/go-back-to-top_24x24.svg" alt="Arrow pointing up to the top." width="24"
+                        height="24" title="Go Back to Top"></a>
+            </div>
+        </section>
+        <section id="absolute">
+            <h2>Absolute Position</h2>
+            <div class="container">
+                <p class="container absolute">This paragraph has an absolute position and it is relative to a div
+                    element which acts like a container for this paragraph.</p>
+            </div>
+        </section>
+        <section id="sticky">
+            <h2>Sticky Position</h2>
+            <p class="container">Try scrolling down. It will stick!</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p class="container">More!</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p class="container">More!</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p class="container sticky">This paragraph is sticky!</p>
+        </section>
+        <section id="z-index">
+            <h2>Z-Index Position</h2>
+            <p class="container">The following collection of cat pictures inside a div box have different z-values. The
+                higher the value, the
+                higher it is placed on the website. A value of -1 will make an element appear behind a text.</p>
+            <div class="z-container">
+                <img src="./images/cat1_750x1000.jpg" alt="Disgusted cat." height="320" id="cat1">
+                <img src="./images/cat2_201x251.jpg" alt="Tired cat." height="320" id="cat2">
+                <img src="./images/cat3_320x320.png" alt="UIUAA cat." height="320" id="cat3">
+                <p class="arrange-photo" onclick="rearrangeFunction()">Rearrange Photos</p>
+            </div>
+        </section>
+        <section id="overflow">
+            <h2>Overflow (Scrollbars)</h2>
+            <p class="container">The following paragraphs have the overflow property. This only works on block elements
+                (such as div) with
+                specified height.
+            </p>
+            <div class="scroll-box visible">
+                <p>This has a value of <strong>visible</strong>.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="scroll-box hidden">
+                <p>This has a value of <strong>hidden</strong>.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+            </div>
+            <br>
+            <div class="scroll-box scroll">
+                <p>This has a value of <strong>scroll</strong>.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+            </div>
+            <br>
+            <div class="scroll-box auto">
+                <p>This has a value of <strong>auto</strong>.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos et eos praesentium quisquam
+                    magni mollitia laudantium eius sed vitae asperiores possimus, quibusdam eligendi officia quae
+                    eveniet! Libero blanditiis fugit est.</p>
+            </div>
+        </section>
+        <section id="float">
+            <h2>Float</h2>
+            <p class="container">The following are divs with float value equal to left:</p>
+            <div class="main-float-container">
+                <div class="float-container">
+                    <img src="./images/dog1_201x251.jpg" alt="Let me know ahh dog." width="201" height="251"
+                        class="dog1" title="Let me know...">
+                </div>
+                <div class="float-container">
+                    <img src="./images/dog2_220x184.gif" alt="Suspicious ahh dog." width="220" height="184" class="dog2"
+                        title="Uh huh...">
+                </div>
+                <div class="float-container">
+                    <img src="./images/dog3_225x225.jpg" alt="Suspicious ahh dog." width="225" height="225" class="dog3"
+                        title="That's thicc ass boi!">
+                </div>
+            </div>
+            <p class="container">There are style attributes that cuts off suceeding elements to wrap to the preceding
+                float elements.The following are div elements with an image that floats followed by another div
+                element that does not:</p>
+            <div class="floating-paragraph">
+                <img src="./images/cat4_480x532.jpg" alt="Standing cat." height="250" width="226"
+                    class="floating-cat-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum!
+            </div>
+            <div class="floating-stop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic animi vero
+                distinctio totam ratione vitae error consectetur saepe omnis. Excepturi ad debitis cupiditate non et
+                accusantium iusto aliquid quidem placeat!</div>
+            <p class="container">Add a class and style it with overflow auto to add the image inside the border of the
+                div. </p>
+            <div class="floating-paragraph clearfix">
+                <img src="./images/cat4_480x532.jpg" alt="Standing cat." height="250" width="226"
+                    class="floating-cat-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                eligendi illum dolores iure
+                maiores voluptates eos, quam deserunt libero delectus eaque assumenda cumque. Magni quibusdam recusandae
+                odit suscipit tempore nostrum!
+            </div>
+            <br>
+            <div class="floating-stop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic animi vero
+                distinctio totam ratione vitae error consectetur saepe omnis. Excepturi ad debitis cupiditate non et
+                accusantium iusto aliquid quidem placeat!</div>
+            <p class="container">The following are float examples with grid boxes. By adding a clearfix for the div
+                encasing it, errors will not occur.</p>
+            <div class="grid-clearfix">
+                <div class="box1">Some content inside the box.</div>
+                <div class="box2">Some content inside the box.</div>
+                <div class="box3">Some content inside the box.</div>
+            </div>
+            <p class="container">The following are the same dog images again side by side with a grid layout.</p>
+            <div class="grid-clearfix">
+                <div class="dogbox1"><img src="./images/dog1_201x251.jpg" alt="Let me know ahh dog." width="201"
+                        height="251"></div>
+                <div class="dogbox2"><img src="./images/dog2_220x184.gif" alt="Suspicious ahh dog." width="220"
+                        height="184"></div>
+                <div class="dogbox3"><img src="./images/dog3_225x225.jpg" alt="That's a thicc ahh boi!" width="225"
+                        height="225"></div>
+
+            </div>
+            <p class="container">The following uses CSS flex to make a flex-container and not a grid-clearfix. This
+                allows the change in height of the containing boxes if the browser window changes in size.</p>
+            <div class="flex-container">
+                <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quaerat cumque dicta
+                    harum esse, quae corrupti aut reiciendis, provident eius facilis dolorem praesentium ipsam ullam
+                    maxime consequuntur vero ab earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                    amet consequatur consectetur praesentium a minus fuga incidunt ab aut. Molestiae impedit quis harum
+                    magni. Obcaecati atque a harum debitis magnam. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Rem ducimus, rerum fugit, qui quaerat harum id quibusdam tempora suscipit libero facere
+                    consectetur vel eius ipsam voluptatibus corporis doloremque perspiciatis ipsa? Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Facere unde explicabo tempora quas quia veniam illo, minus natus
+                    soluta tempore officia ipsum sit laudantium aliquam ad ipsa fugit repellendus animi! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Eaque iste, sed atque error repudiandae recusandae
+                    culpa reiciendis voluptatibus ducimus quis. Odit cum eos consectetur deleniti eveniet culpa quam
+                    necessitatibus praesentium?</div>
+                <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique mollitia enim
+                    voluptate eligendi in quibusdam, ipsam earum inventore consectetur, harum consequuntur saepe dolorem
+                    quae perspiciatis facilis eveniet molestias necessitatibus omnis? Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. At nisi a quis dolor, magnam optio accusamus illo facere eveniet
+                    aliquid corrupti animi porro facilis repellendus, culpa magni consequuntur consequatur. Velit. Lorem
+                    ipsum dolor sit amet consectetur, adipisicing elit. Cum nam officia doloribus, id alias illum
+                    ratione suscipit itaque enim architecto corrupti possimus quod. Illum, ab. Ullam suscipit
+                    consequatur possimus est!</div>
+                <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate
+                    voluptatibus, unde eveniet suscipit nemo? Nisi natus voluptatibus id voluptas quia doloribus! Vel
+                    voluptates saepe quam minima veritatis hic sint!</div>
+            </div>
+        </section>
+        <section id="navigation-menu">
+            <h2>Navigation Menu</h2>
+            <p class="container">Here you can use the floats to create a horizontal navigation menu.</p>
+            <ul class="ex-nav-menu">
+                <li class="ex-home"><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <p class="container">You can even build websites layouts entirely of floats.</p>
+        </section>
+    </main>
+    <br><br><br>
+    <hr>
+    <footer>
+        <p>&copy;<strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+    <script>
+        function rearrangeFunction() {
+            var x1 = Math.floor((Math.random() * 3) + 1);
+            var x2 = Math.floor((Math.random() * 3) + 1);
+            var x3 = Math.floor((Math.random() * 3) + 1);
+            document.getElementById("cat1").style.zIndex = x1
+            document.getElementById("cat2").style.zIndex = x2
+            document.getElementById("cat3").style.zIndex = x3
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Forms</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description" content="This website showcases the skill of the author in HTML forms." />
+    <link rel="icon" href="./images/code-solid.svg" type="image/svg" />
+    <meta property="og:title" content="Forms" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/scott-graham-OQMZwNd3ThU-unsplash.jpg" />
+    <meta property="og:description" content="This website showcases the skill of the author in HTML forms.">
+</head>
+
+<body>
+    <header>
+        <h1>HTML5: Forms</h1>
+        <p>The following are different forms created by the author of this webpage using HTML5.</p>
+        <figure>
+            <img src="./images/scott-graham-OQMZwNd3ThU-unsplash.jpg" alt="Man filling out a form." width="320"
+                height="214">
+            <figcaption>Man filling out a form in real life</figcaption>
+        </figure>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <form action="https://httpbin.org/get" method="get" target="_blank">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="email">Please use a Udemy.com Email:</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@udemy.com" pattern=".+@udemy\.com"
+                        required>
+                    <button type="submit">Sign in</button>
+                </fieldset>
+            </form>
+            <form action="https://httpbin.org/get" method="get" target="_blank">
+                <fieldset>
+                    <legend>Adjust your volume</legend>
+                    <label for="vol">Volume</label>
+                    <input type="range" name="vol" id="vol" step="20" min="0" max="100" value="20">
+                    <button type="submit">Confirm</button>
+                </fieldset>
+            </form>
+            <form action="https://httpbin.org/get" method="get" target="_blank">
+                <fieldset>
+                    <legend>Rate your experience</legend>
+                    <h2>How was your time at HappyLand?</h2>
+                    <input type="radio" id="bad" name="rate" value="bad">
+                    <label for="bad">Bad</label>
+                    <input type="radio" id="okay" name="rate" value="okay">
+                    <label for="okay">Okay</label>
+                    <input type="radio" id="good" name="rate" value="good" checked>
+                    <label for="good">Good</label>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+            <form action="https://httpbin.org/get" method="get" target="_blank">
+                <fieldset>
+                    <legend>Snacks</legend>
+                    <label for="snack">Which snack do you want to add (select all that applies):</label>
+                    <select name="snack" id="snack" size="6" required multiple>
+                        <option value="" disabled>--Please choose an option--</option>
+                        <option value="chocolate" selected>Chocolate</option>
+                        <option value="lollipop">Lollipop</option>
+                        <option value="ice-cream">Ice Cream</option>
+                        <option value="crisps">Crisps</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy;<strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+</body>
+
+</html>

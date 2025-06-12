@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Full Page Tab</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This website showcases the author's skills in creating a full page tab mini-project during the third month of learning frontend web development." />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta property="og:title" content="Full Page Tab" />
+    <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <div class="header__container container">
+                <h1 class="header__title">
+                    Full Page Tab
+                </h1>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <nav class="nav">
+            <div class="nav__container container">
+                <ul class="nav__list" role="tablist">
+                    <li>
+                        <button type="button" class="nav__button nav__button--default" data-tab="home" role="tab"
+                            id="tab__home" aria-controls="tabpanel__home" aria-selected="false">
+                            Home
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" class="nav__button" data-tab="news" role="tab" id="tab__news"
+                            aria-controls="tabpanel__news" aria-selected="false">
+                            News
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" class="nav__button" data-tab="contact" role="tab" id="tab__contact"
+                            aria-controls="tabpanel__contact" aria-selected="false">
+                            Contact
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" class="nav__button" data-tab="about" role="tab" id="tab__about"
+                            aria-controls="tabpanel__about" aria-selected="false">
+                            About
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="page">
+            <div class="page__container container">
+                <section class="page__section hidden" data-tab="home" role="tabpanel" id="tabpanel__home"
+                    aria-labelledby="tab__home" aria-hidden="true">
+                    <h2 class="page__title">
+                        Home
+                    </h2>
+
+                    <p class="page__p">
+                        Home is where the heart is..
+                    </p>
+                </section>
+
+                <section class="page__section hidden" data-tab="news" role="tabpanel" id="tabpanel__news"
+                    aria-labelledby="tab__news" aria-hidden="true">
+                    <h2 class="page__title">
+                        News
+                    </h2>
+
+                    <p class="page__p">
+                        Some news this fine day!
+                    </p>
+                </section>
+
+                <section class="page__section hidden" data-tab="contact" role="tabpanel" id="tabpanel__contact"
+                    aria-labelledby="tab__contact" aria-hidden="true">
+                    <h2 class="page__title">
+                        Contact
+                    </h2>
+
+                    <p class="page__p">
+                        Get in touch, or swing by for a cup of coffee.
+                    </p>
+                </section>
+
+                <section class="page__section hidden" data-tab="about" role="tabpanel" id="tabpanel__about"
+                    aria-labelledby="tab__about" aria-hidden="true">
+                    <h2 class="page__title">
+                        About
+                    </h2>
+
+                    <p class="page__p">
+                        Who we are and what we do.
+                    </p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>CSS Additional Topics - Grid Intro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This is the continuation webpage for CSS advanced topics which showcases the author's skills involving the use of CSS flexbox, CSS grid, and CSS responsive web design." />
+    <link rel="icon" href="../images/css-3_2183x2500.svg" type="image/svg" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <meta property="og:title" content="CSS Additional Advanced Topics" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="practicesheet18.com" />
+    <meta property="og:image" content="../images/css-3.svg-mask-ex1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="title-side-nav">
+            <div class="website-title">
+                <img src="../images/css-3_2183x2500.svg" alt="CSS logo." width="2183" height="2500">
+                <h1>CSS Additional Topics</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="topic-title">CSS Flexbox</li>
+                    <li><a href="../index.html">Flexbox Intro</a></li>
+                    <li><a href="./css-flex-container.html">Flex Container</a></li>
+                    <li><a href="./css-flex-items.html">Flex Items</a></li>
+                    <li><a href="./css-flex-responsive.html">Flex Responsive</a></li>
+                    <li class="topic-title">CSS Grid</li>
+                    <li><a href="#" id="active">Grid Intro</a></li>
+                    <li><a href="./css-grid-columns-rows.html">Grid Columns/Rows</a></li>
+                    <li><a href="./css-grid-container.html">Grid Container</a></li>
+                    <li><a href="./css-grid-item.html">Grid Item</a></li>
+                    <li class="topic-title">CSS Responsive</li>
+                    <li><a href="./css-rwd-intro.html">RWD Intro</a></li>
+                    <li><a href="./css-rwd-viewport.html">RWD Viewport</a></li>
+                    <li><a href="./css-rwd-grid-view.html">RWD Grid View</a></li>
+                    <li><a href="./css-rwd-media-queries.html">RWD Media Queries</a></li>
+                    <li><a href="./css-rwd-images.html">RWD Images</a></li>
+                    <li><a href="./css-rwd-videos.html">RWD Videos</a></li>
+                    <li><a href="./css-rwd-frameworks.html">RWD Frameworks</a></li>
+                    <li><a href="./css-rwd-templates.html">RWD Templates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <section>
+                <h2>CSS Grid Intro</h2>
+                <hr>
+                <p>
+                    The CSS grid offers a <strong>grid layout</strong> system with rows and columns. This is used mostly
+                    for complex layouts. It is also easier to design complex web layouts using CSS grid. Below is a
+                    simple div element using display grid.
+                </p>
+                <p class="example">Example 1:</p>
+                <div class="div-container">
+                    <div class="grid-intro-ex1">
+                        <div class="ex-header">
+                            <h3>My Header</h3>
+                        </div>
+                        <div class="ex-nav">
+                            <a href="#ex-link1">Link 1</a>
+                            <br>
+                            <a href="#ex-link2">Link 2</a>
+                            <br>
+                            <a href="#ex-link3">Link 3</a>
+                        </div>
+                        <div class="ex-main">
+                            <h4>Lorem Ipsum</h4>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ab molestiae, quas
+                                neque id nulla labore officiis sunt delectus mollitia facere reiciendis magnam iste
+                                maiores dolores provident rem debitis iure?
+                            </p>
+                        </div>
+                        <div class="ex-footer">
+                            <h4>Footer</h4>
+                        </div>
+                    </div>
+                </div>
+                <h3>CSS Grid Layout</h3>
+                <p>
+                    Using this layout allows web developers to design responsive layout structures without using float
+                    or positioning. These grid properties are also supported on all modern browsers.
+                </p>
+                <p>
+                    The main difference between grid layout and flexbox layout is that the former allows
+                    <strong>two-dimensional layout</strong> while the latter only allows <strong>one-dimensional
+                        layout</strong>.
+                </p>
+                <h3>CSS Grid Components</h3>
+                <p>
+                    A grid layout always consists of a <strong>grid container</strong> or the parent element and the
+                    <strong>grid item/s</strong> or the elements inside the parent element. All the direct children of
+                    the grid container automatically becomes the grid items.
+                </p>
+                <p class="example">Example 2</p>
+                <div class="div-container">
+                    <p>The div element below acts as the grid container and the hamster images are its grid items.</p>
+                    <div class="grid-intro-ex2">
+                        <img src="../images/scared-hamster_894x894.jpg" alt="A cute scared hamster." width="894"
+                            height="894" title="Ahhhh!">
+                        <img src="../images/scared-hamster_894x894.jpg" alt="A cute scared hamster." width="894"
+                            height="894" title="Ahhhh!">
+                        <img src="../images/scared-hamster_894x894.jpg" alt="A cute scared hamster." width="894"
+                            height="894" title="Ahhhh!">
+                        <img src="../images/scared-hamster_894x894.jpg" alt="A cute scared hamster." width="894"
+                            height="894" title="Ahhhh!">
+                        <img src="../images/scared-hamster_894x894.jpg" alt="A cute scared hamster." width="894"
+                            height="894" title="Ahhhh!">
+                        <img src="../images/scared-hamster_894x894.jpg" alt="A cute scared hamster." width="894"
+                            height="894" title="Ahhhh!">
+                        <img src="../images/scared-hamster_894x894.jpg" alt="A cute scared hamster." width="894"
+                            height="894" title="Ahhhh!">
+                        <img src="../images/scared-hamster_894x894.jpg" alt="A cute scared hamster." width="894"
+                            height="894" title="Ahhhh!">
+                        <img src="../images/scared-hamster_894x894.jpg" alt="A cute scared hamster." width="894"
+                            height="894" title="Ahhhh!">
+                    </div>
+                </div>
+                <h3>Display Grid vs Inline-Grid Property</h3>
+                <p>
+                    The difference between these two is that display grid makes the element a <strong>block
+                        element</strong> while the display inline-grid makes the element an <strong>inline
+                        element</strong>. See the difference below:
+                </p>
+                <div class="div-container">
+                    <p>This div element has its display set to grid.</p>
+                    <div class="grid-intro-ex3">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                    </div>
+                    <p>This div element has its display set to inline-grid.</p>
+                    <div class="grid-intro-ex4">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="./css-flex-responsive.html" target="_self" title="Go to previous lesson"
+                        class="previous-lesson-button">
+                        <img src="../images/arrow-left_50x50.png" alt="Go back to the previous lesson." width="50"
+                            height="50">
+                    </a>
+                    <a href="./css-grid-columns-rows.html" target="_self" title="Go to next lesson"
+                        class="next-lesson-button">
+                        <img src="../images/arrow-right_50x50.png" alt="Go to next lesson." width="50" height="50">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; <strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+    <script>
+        // SCRIPT FOR SCROLLING AUTOMATICALLY TO THE SELECTED/ACTIVE TAB
+        function scrollToTab() {
+            document.getElementById("active").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+
+</html>

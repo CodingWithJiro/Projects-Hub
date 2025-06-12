@@ -1,0 +1,176 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Roboto", sans-serif;
+  --FS: clamp(0.75rem, 1.5vw, 1rem);
+
+  /* COLORS */
+  --BGCOLOR: whitesmoke;
+  --BGCOLOR-HEADER: #333;
+  --BGCOLOR-NAV: #eee;
+  --BGCOLOR-NAV-BUTTON: #eee;
+  --BGCOLOR-NAV-BUTTON-HOVER: #ccc;
+  --BGCOLOR-NAV-BUTTON-ACTIVE: #ccc;
+  --FONT-COLOR: #000;
+  --FONT-COLOR-HEADER-TITLE: #fff;
+  --BORDER-COLOR: #aaa;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.3);
+
+  /* BORDERS */
+  --BORDER: 1px solid var(--BORDER-COLOR);
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0 5px 10px var(--SHADOW-COLOR);
+
+  /* STANDARD PADDING */
+  --PADDING-TEXT: 0.25em 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  background-color: var(--BGCOLOR);
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || HEADER */
+.header {
+  background-color: var(--BGCOLOR-HEADER);
+  color: var(--FONT-COLOR-HEADER-TITLE);
+}
+
+.header__container {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* || MAIN */
+/* HOVER TABS */
+.hoverTab__container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.nav {
+  flex: 30%;
+  min-height: 300px;
+  background-color: var(--BGCOLOR-NAV);
+  overflow: auto;
+  border: var(--BORDER);
+}
+
+.content {
+  flex: 70%;
+  border: var(--BORDER);
+  border-left: none;
+}
+
+.nav__list {
+  list-style-type: none;
+}
+
+.nav__button {
+  width: 100%;
+  text-align: left;
+  padding: 1em 0.75em;
+  font-size: 1.5rem;
+  border: none;
+  background-color: var(--BGCOLOR-NAV-BUTTON);
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.nav__button:hover,
+.nav__button:focus-visible {
+  background-color: var(--BGCOLOR-NAV-BUTTON-HOVER);
+}
+
+.nav__button--active {
+  background-color: var(--BGCOLOR-NAV-BUTTON-ACTIVE);
+}
+
+.content {
+  padding: 1rem 0.75rem;
+}
+
+.content__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75em;
+}
+
+.content__p {
+  font-size: 1.125rem;
+}

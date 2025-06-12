@@ -1,0 +1,192 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Nunito", sans-serif;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BGCOLOR: #b92b27;
+  --BGCOLOR-FADE: #1565c0;
+  --BGCOLOR-CONTAINER: rgba(0, 0, 0, 0.25);
+  --BGCOLOR-BUTTON: #f1f1f1;
+  --BG-IMAGE: linear-gradient(45deg, var(--BGCOLOR), var(--BGCOLOR-FADE));
+  --BORDER-COLOR: #000;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.3);
+  --OUTLINE-FOCUS-COLOR: #1565c0;
+  --OUTLINE-VALID-COLOR: chartreuse;
+  --OUTLINE-INVALID-COLOR: red;
+  --FONT-COLOR: #f1f1f1;
+
+  /* BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+  --BORDER-RADIUS: 1.5rem;
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0px 5px 8px var(--SHADOW-COLOR);
+
+  /* OUTLINES */
+  --OUTLINE-FOCUS: 3px solid var(--OUTLINE-FOCUS-COLOR);
+  --OUTLINE-VALID: 3px solid var(--OUTLINE-VALID-COLOR);
+  --OUTLINE-INVALID: 3px solid var(--OUTLINE-INVALID-COLOR);
+
+  /* STANDARD PADDING */
+  --PADDING-TB-TEXT: 0.75em;
+  --PADDING-SIDE-TEXT: 1em;
+  --PADDING-CONTAINER: 2rem;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(0.5em, 1.5vh, 1em) 0;
+  --MARGIN-CONTAINER: 1.5rem auto;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+  background-image: var(--BG-IMAGE);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || MAIN */
+.form-container {
+  min-width: 300px;
+  width: 60vw;
+  max-width: 800px;
+  min-height: calc(100vh - 3rem);
+  margin: var(--MARGIN-CONTAINER);
+  background-color: var(--BGCOLOR-CONTAINER);
+  border-radius: var(--BORDER-RADIUS);
+  padding: var(--PADDING-CONTAINER);
+  box-shadow: var(--BOX-SHADOW);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: var(--MARGIN-TEXT);
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+  font-size: 1.25em;
+}
+
+input,
+button {
+  border-radius: var(--BORDER-RADIUS);
+}
+
+input,
+textarea {
+  margin-bottom: 1em;
+  width: 100%;
+  padding: var(--PADDING-TB-TEXT) var(--PADDING-SIDE-TEXT);
+}
+
+input:valid,
+textarea:valid {
+  outline: var(--OUTLINE-VALID);
+}
+
+input:invalid,
+textarea:invalid {
+  outline: var(--OUTLINE-INVALID);
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: var(--OUTLINE-FOCUS);
+}
+
+input {
+  height: 2em;
+}
+
+textarea {
+  height: 5em;
+  overflow: auto;
+  resize: vertical;
+  transition: all 0.3s ease-in-out;
+}
+
+textarea:active,
+textarea:focus {
+  height: 10em;
+}
+
+button {
+  font-weight: 700;
+  border: none;
+  background-color: var(--BGCOLOR-BUTTON);
+  padding: var(--PADDING-TB-TEXT) var(--PADDING-SIDE-TEXT);
+  transition: all 0.3s ease;
+  min-width: 200px;
+  width: 50%;
+  max-width: 600px;
+  margin: 2em auto;
+  font-size: 1.5em;
+}
+
+button:hover {
+  box-shadow: var(--BOX-SHADOW);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--FONT-COLOR);
+}
+
+label {
+  color: var(--FONT-COLOR);
+  margin: var(--MARGIN-TEXT);
+}

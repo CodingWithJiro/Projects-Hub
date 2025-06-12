@@ -1,0 +1,28 @@
+body{
+    background-color: lightblue;
+    font-family: "Lato", sans-serif;
+}
+h1{
+    text-align: center;
+}
+.info{
+    padding: 20px;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    background-color: #2196f3;
+}
+#banner{
+    position: relative;
+    font-family: Arial; 
+}
+.text-block{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}

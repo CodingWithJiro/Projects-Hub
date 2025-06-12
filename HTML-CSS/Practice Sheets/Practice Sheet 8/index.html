@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Practice Sheet 8 - CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This site contains the CSS projects of the author while early in his learning career as a frontend developer." />
+    <link rel="icon" href="./images/css-3.svg" type="image/svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta property="og:title" content="Practice Sheet 8 - CSS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://practicesheet8.com/css" />
+    <meta property="og:image" content="./images/css-3.svg" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">CSS Text</h1>
+        <p>CSS has <em>a lot of properties</em> for formatting text.</p>
+        <nav>
+            <button type="button"><a href="#text-align" class="nav-button">Text align</a></button>
+            <button type="button"><a href="#text-decoration" class="nav-button">Text decoration</a></button>
+            <button type="button"><a href="#text-transformation" class="nav-button">Text transformation</a></button>
+            <button type="button"><a href="#text-spacing" class="nav-button">Text spacing</a></button>
+            <button type="button"><a href="#text-shadow" class="nav-button">Text shadow</a></button>
+        </nav>
+        <br>
+    </header>
+    <main>
+        <section id="text-formatting">
+            <h2 class="subtitle1">Text Formatting</h2>
+            <p class="p1">This text is styled with some of the text formatting properties. The heading uses the
+                text-align,
+                text-transform, and color properties. The paragraph is indented, aligned, and the space between
+                characters is specified. The underline is removed from this colored <a class="a1"
+                    href="https://www.youtube.com/watch?v=Bd2mU_BmVrs&list=RDMM2MRdtXWcgIw&index=16" target="_blank">"Go
+                    to a YouTube
+                    link"</a>.</p>
+        </section>
+        <section id="text-align">
+            <h2>Text Alignment</h2>
+            <p class="go-back-to-top"><a href="#">Go Back to Top</a></p>
+            <p class="left">This paragraph is aligned left.</p>
+            <br>
+            <p class="right">This paragraph is aligned right.</p>
+            <br>
+            <p class="center">This paragraph is aligned center.</p>
+            <br>
+            <p class="justify">This paragraph is justified. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Expedita tempore molestias tempora commodi recusandae ratione totam provident officiis
+                odio culpa. Consequatur reprehenderit est dignissimos facere iusto deleniti nulla dolor dolorum! <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur maxime mollitia neque,
+                quisquam accusantium id minus unde dicta amet necessitatibus alias deleniti sint quos iusto sed ratione
+                consequatur fugiat?
+            </p>
+            <br>
+            <p class="last-right">This paragraph's last line is aligned to <strong>right</strong>. Lorem ipsum, dolor
+                sit
+                amet consectetur adipisicing elit. Hic nostrum atque
+                perferendis magni assumenda illo magnam pariatur. Sequi numquam dolor sint, ad animi tempora earum
+                aperiam. Voluptatibus nesciunt omnis dignissimos.
+            </p>
+            <br>
+            <p class="last-center">This paragraph's last line is aligned to <strong>center</strong>. Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Hic nostrum atque
+                perferendis magni assumenda illo magnam pariatur. Sequi numquam dolor sint, ad animi tempora earum
+                aperiam. Voluptatibus nesciunt omnis dignissimos.
+            </p>
+            <br>
+            <p class="last-justify">This paragraph's last line is <strong>justified</strong>. Lorem ipsum, dolor sit
+                amet
+                consectetur adipisicing elit. Hic nostrum atque
+                perferendis magni assumenda illo magnam pariatur. Sequi numquam dolor sint, ad animi tempora earum
+                aperiam. Voluptatibus nesciunt omnis dignissimos.
+            </p>
+            <br>
+            <p class="text-direction-default">This is the default text direction.</p>
+            <br>
+            <p class="text-direction-reverse">This is right-to-left text direction.</p>
+            <br>
+            <p class="img-baseline">An img with a baseline alignment. <img src="./images/tree-solid.svg"
+                    alt="A tree icon." width="10px" class="img-baseline"></p>
+            <br>
+            <p class="img-text-top">An img with a text-top alignment. <img src="./images/tree-solid.svg"
+                    alt="A tree icon." width="10px" class="img-text-top"></p>
+            <br>
+            <p class="img-text-bottom">An img with a text-bottom alignment. <img src="./images/tree-solid.svg"
+                    alt="A tree icon." width="10px" class="img-text-bottom"></p>
+            <br>
+            <p class="img-sub">An img with a sub alignment. <img src="./images/tree-solid.svg" alt="A tree icon."
+                    width="10px" class="img-sub"></p>
+            <br>
+            <p class="img-super">An img with a super alignment. <img src="./images/tree-solid.svg" alt="A tree icon."
+                    width="10px" class="img-super"></p>
+        </section>
+        <section id="text-decoration">
+            <h2>Text Decoration</h2>
+            <p class="go-back-to-top"><a href="#">Go Back to Top</a></p>
+            <p class="overline line">Overline text decoration.</p>
+            <br>
+            <p class="line-through line">Line-through text decoration.</p>
+            <br>
+            <p class="underline line" title="This is not a link!">Underline text decoration.</p>
+            <br>
+            <p class="overline-underline line">Overline and underline text decoration.</p>
+            <br>
+            <p class="style-solid line">This paragraph has a <strong>solid</strong> style underline.</p>
+            <br>
+            <p class="style-double line">This paragraph has a <strong>double</strong> style underline.</p>
+            <br>
+            <p class="style-dotted line">This paragraph has a <strong>dotted</strong> style underline.</p>
+            <br>
+            <p class="style-dashed line">This paragraph has a <strong>dashed</strong> style underline.</p>
+            <br>
+            <p class="style-wavy line">This paragraph has a <strong>wavy</strong> style underline.</p>
+        </section>
+        <section id="text-transformation">
+            <h2>Text Transformation</h2>
+            <p class="go-back-to-top"><a href="#">Go Back to Top</a></p>
+            <p class="transform uppercase">This paragraph is text-transformed to uppercase.</p>
+            <br>
+            <p class="transform lowercase">This paragraph is text-transformed to lowercase.</p>
+            <br>
+            <p class="transform capitalize">This paragraph is text-transformed to capitalize.</p>
+        </section>
+        <section id="text-spacing">
+            <h2>Text Spacing</h2>
+            <p class="go-back-to-top"><a href="#">Go Back to Top</a></p>
+            <p class="spacing text-indent">This paragraph used the <strong>text-indent</strong> property. Lorem, ipsum
+                dolor sit amet
+                consectetur adipisicing
+                elit. Nam modi sunt, repudiandae amet dolorum architecto neque excepturi nihil quibusdam minus
+                repellendus eaque velit assumenda. Impedit adipisci enim pariatur vitae quisquam.</p>
+            <br>
+            <p class="spacing letter-spacing-5px">This paragraph used the <strong>letter-spacing</strong> property with
+                width of <strong>5px</strong>. Lorem,
+                ipsum
+                dolor sit amet
+                consectetur adipisicing
+                elit. Nam modi sunt, repudiandae amet dolorum architecto neque excepturi nihil quibusdam minus
+                repellendus eaque velit assumenda. Impedit adipisci enim pariatur vitae quisquam.</p>
+            <br>
+            <p class="spacing letter-spacing-2px">This paragraph used the <strong>letter-spacing</strong> property with
+                width of <strong>2px</strong>. Lorem,
+                ipsum
+                dolor sit amet
+                consectetur adipisicing
+                elit. Nam modi sunt, repudiandae amet dolorum architecto neque excepturi nihil quibusdam minus
+                repellendus eaque velit assumenda. Impedit adipisci enim pariatur vitae quisquam.</p>
+            <br>
+            <p class="spacing letter-spacing--1px">This paragraph used the <strong>letter-spacing</strong> property with
+                width of <strong>-1px</strong>. Lorem,
+                ipsum
+                dolor sit amet
+                consectetur adipisicing
+                elit. Nam modi sunt, repudiandae amet dolorum architecto neque excepturi nihil quibusdam minus
+                repellendus eaque velit assumenda. Impedit adipisci enim pariatur vitae quisquam.</p>
+            <br>
+            <p class="spacing line-height-small">This paragraph used the <strong>line-height</strong> property with
+                height of <strong>0.8</strong>. Lorem,
+                ipsum
+                dolor sit amet
+                consectetur adipisicing
+                elit. Nam modi sunt, repudiandae amet dolorum architecto neque excepturi nihil quibusdam minus
+                repellendus eaque velit assumenda. Impedit adipisci enim pariatur vitae quisquam.</p>
+            <br>
+            <p class="spacing line-height-big">This paragraph used the <strong>line-height</strong> property with
+                width of <strong>1.8</strong>. Lorem,
+                ipsum
+                dolor sit amet
+                consectetur adipisicing
+                elit. Nam modi sunt, repudiandae amet dolorum architecto neque excepturi nihil quibusdam minus
+                repellendus eaque velit assumenda. Impedit adipisci enim pariatur vitae quisquam.</p>
+            <br>
+            <p class="spacing word-spacing-default"> This paragraph has <strong>default</strong> word-spacing.</p>
+            <br>
+            <p class="spacing word-spacing-10px"> This paragraph has <strong>10px</strong> word-spacing.</p>
+            <br>
+            <p class="spacing word-spacing--2px"> This paragraph has <strong>-2px</strong> word-spacing.</p>
+            <br>
+            <p class="spacing white-space">This paragraph uses the property <strong>white-space</strong> with value of
+                <strong>nowrap</strong>. The text will not wrap in the paragraph element. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. At cum beatae quos eaque natus similique fugit cumque ea, suscipit omnis
+                optio iure! Fugit, molestias. Nam, quas illo. Sint, dolores perspiciatis.
+            </p>
+        </section>
+        <section id="text-shadow">
+            <h2>Text Shadow</h2>
+            <p class="go-back-to-top"><a href="#">Go Back to Top</a></p>
+            <p class="shadow shadow1">This paragraph has <strong>text-shadow property</strong> applied.</p>
+            <br>
+            <p class="shadow shadow2">This paragraph has <strong>text-shadow property</strong> applied with
+                <strong>color</strong>.
+            </p>
+            <br>
+            <p class="shadow shadow3">This paragraph has <strong>text-shadow property</strong> applied with
+                <strong>color and blur</strong>.
+            </p>
+            <br>
+            <p class="shadow shadow4">This paragraph has <strong>text-shadow property</strong> applied with
+                <strong>white text shadow style</strong>.
+            </p>
+            <br>
+            <p class="shadow shadow5">This paragraph has <strong>text-shadow property</strong> applied with
+                <strong>red neon glow</strong>.
+            </p>
+            <br>
+            <p class="shadow shadow6">This paragraph has <strong>text-shadow property</strong> applied with
+                <strong>red and blue neon glow</strong>.
+            </p>
+            <br>
+            <p class="shadow shadow7">This paragraph has <strong>text-shadow property</strong> applied with
+                <strong>black, dark blue and blue neon glow on white text</strong>.
+            </p>
+            <p class="go-back-to-top"><a href="#">Go Back to Top</a></p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy;<strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+</body>
+
+</html>

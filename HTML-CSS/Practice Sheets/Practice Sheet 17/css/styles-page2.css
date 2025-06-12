@@ -1,0 +1,42 @@
+body {
+  font-family: "Lexend Deca", Joan, "Noto Sans";
+  margin: 0px;
+}
+div.hero-image {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/jennie_5120x2880.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+div.hero-image-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.35);
+  width: 100%;
+  padding: 20px;
+}
+div.hero-image-text h1 {
+  font-size: 50px;
+}
+div.hero-image-text p {
+  font-weight: bold;
+}
+div.hero-image-text a {
+  text-decoration: none;
+  color: black;
+  background-color: aqua;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+div.hero-image-text a:hover {
+  background-color: rgb(0, 192, 192);
+  font-weight: bold;
+  color: white;
+}

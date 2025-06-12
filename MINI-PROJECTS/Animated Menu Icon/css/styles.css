@@ -1,0 +1,145 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Roboto", sans-serif;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BGCOLOR: #fff;
+  --FONT-COLOR: #000;
+  --BORDER-COLOR: #000;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.3);
+
+  /* BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0 5px 10px var(--SHADOW-COLOR);
+
+  /* TRANSITIONS */
+  --TRANSITION-HOVER: all 0.15s ease-in-out;
+
+  /* STANDARD PADDING */
+  --PADDING-TEXT: 0.25em 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || HEADER */
+header {
+  padding: 2rem 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  max-width: min-content;
+  margin: 0 auto;
+  padding: 0.5em 0.75em;
+  border: none;
+  background-color: #fff;
+  user-select: none;
+  cursor: pointer;
+}
+
+.menu-icon__bar {
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+}
+
+.menu-icon__bar--top {
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+}
+
+.menu-icon__bar--middle {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.menu-icon__bar--bottom {
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out;
+}
+
+.toggle-top {
+  transform: rotate(-45deg);
+}
+
+.toggle-middle {
+  opacity: 0;
+}
+
+.toggle-bottom {
+  transform: rotate(45deg);
+}

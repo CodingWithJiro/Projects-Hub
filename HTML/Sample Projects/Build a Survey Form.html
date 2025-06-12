@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elmar Chavez">
+    <meta name="description" content="A survey form about social media usage in the current society.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Social Media Usage Survey Form">
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Social Media Usage Survey Form</h1>
+      <p id="description">Social media usage in the current society is increasing more than ever. Help us scope the underlying information more by answering the questions below:</p>
+      <figure>
+        <img src="https://images.pexels.com/photos/20041859/pexels-photo-20041859.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=279.825&fit=crop&h=453.05" alt="People using smartphones to access social media" width="250" height="444">
+        <figcaption>Smartphones and Social Media</figcaption>
+      </figure>
+    </header>
+    <hr>
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+        <br><br>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="johndoe@email.com" required>
+        <br><br>
+        <label for="number" id="number-label">Age (optional):</label>
+        <input type="number" id="number" name="age" min="6" max="75" placeholder="25">
+        </fieldset>
+
+        <fieldset>
+          <legend>What is your role in the society?</legend>
+          <label for="dropdown">Role:</label>
+          <select id="dropdown" name="role">
+            <option value="student">Student</option>
+            <option value="full-time-job">Full time Worker</option>
+            <option value="full-time-learner">Full Time Student</option>
+            <option value="prefer-not-say">Prefer Not Say</option>
+            <option value="others">Others</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>How much time do you spend daily in social media?</legend>
+          <input type="radio" id="less-than-30-minutes" name="time" value="less-than-30-minutes">
+          <label for="less-than-30-minutes">Less than 30 minutes</label>
+          <br>
+          <input type="radio" id="thirty-minutes-to-one-hour" name="time" value="thirty-minutes-to-one-hour" >
+          <label for="thirty-minutes-to-one-hour">30 minutes up to 1 hour</label>
+          <br>
+          <input type="radio" id="one-to-two-hours" name="time" value="one-to-two-hours">
+          <label for="one-to-two-hours">1-2 hours</label>
+          <br>
+          <input type="radio" id="two-to-three-hours" name="time" value="two-to-three-hours">
+          <label for="two-to-three-hours">2-3 hours</label>
+          <br>
+          <input type="radio" id="more-than-three-hours" name="time" value="more-than-three-hours">
+          <label for="more-than-three-hours">More than 3 hours</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Which social media platforms do you use? (check all that applies):</legend>
+          <input type="checkbox" id="facebook" name="facebook" value="Facebook">
+          <label for="facebook">Facebook</label>
+          <br>
+          <input type="checkbox" id="youtube" name="youtube" value="Youtube">
+          <label for="youtube">Youtube</label>
+          <br>
+          <input type="checkbox" id="instagram" name="instagram" value="Instagram">
+          <label for="instagram">Instagram</label>
+          <br>
+          <input type="checkbox" id="tiktok" name="tiktok" value="Tiktok">
+          <label for="tiktok">Tiktok</label>
+          <br>
+          <input type="checkbox" id="messenger" name="messenger" value="Messenger">
+          <label for="messenger">Messenger</label>
+          <br>
+          <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp">
+          <label for="whatsapp">WhatsApp</label>
+          <br>
+          <input type="checkbox" id="telegram" name="telegram" value="Telegram">
+          <label for="telegram">Telegram</label>
+          <br>
+          <input type="checkbox" id="snapchat" name="snapchat" value="Snapchat">
+          <label for="snapchat">Snapchat</label>
+          <br>
+          <input type="checkbox" id="others" name="others" value="Others">
+          <label for="others">Others</label>
+          <br>
+        </fieldset>
+
+        <fieldset>
+          <legend>What is your main purpose in using social media?</legend>
+          <textarea rows="5" cols="50" placeholder="Type your text here."></textarea>
+        </fieldset>
+        <br>
+        <button type="submit" id="submit">Submit Form</button>
+
+        
+      </form>
+    </main>
+    <hr>
+    <footer>
+      <p>&copy; <strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2559 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>CSS Advanced Topics</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This website showcases advanced CSS topics and exercises the author finished while he was still in his first month of studying to be a frontend web developer." />
+    <link rel="icon" href="./images/css-3.svg" type="image/svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta property="og:title" content="CSS Advanced Topics" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="practicesheet17.com/css-advanced" />
+    <meta property="og:image" content="./images/css-3.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="title-and-logo">
+            <img src="./images/css-3.svg" alt="CSS Logo" class="logo" width="80" height="auto">
+            <h1>CSS Advanced Topics</h1>
+            <div id="link-icons">
+                <a href="https://facebook.com" target="_blank"><img src="./images/facebook-icon_980x980.webp"
+                        alt="Go to Facebook." width="25" height="25" title="Facebook.com" class="link-icons"></a>
+                <a href="https://google.com" target="_blank"><img src="./images/google-icon_512x512.webp"
+                        alt="Go to Google." width="25" height="25" title="Google.com" class="link-icons"></a>
+                <a href="https://youtube.com" target="_blank"><img src="./images/youtube-icon_512x512.png"
+                        alt="Go to YouTube." width="25" height="25" title="YouTube.com" class="link-icons"></a>
+            </div>
+        </div>
+        <nav>
+            <div id="main-nav">
+                <ul>
+                    <li><a href="#rounded-corners">Rounded Corners</a></li>
+                    <li><a href="#border-images">Border Images</a></li>
+                    <li><a href="#multiple-backgrounds">Multiple Backgrounds</a></li>
+                    <li><a href="#color-keywords">Color Keywords</a></li>
+                    <li><a href="#gradients">Gradients</a></li>
+                    <li><a href="#shadow-effects">Shadow Effects</a></li>
+                    <li><a href="#text-effects">Text Effects</a></li>
+                    <li><a href="#css-2d-transforms">2D Transforms</a></li>
+                    <li><a href="#css-3d-transforms">3D Transforms</a></li>
+                    <li><a href="#transitions">Transitions</a></li>
+                    <li><a href="#animations">Animations</a></li>
+                    <li><a href="#tooltip">Tooltip</a></li>
+                    <li><a href="#image-styling">Image Styling</a></li>
+                    <li><a href="#image-centering-and-filters">Image Centering and Filters</a></li>
+                    <li><a href="#image-shapes">Image Shapes</a></li>
+                    <li><a href="#object-fit-and-position">Object Fit &amp; Position</a></li>
+                    <li><a href="#masking">Masking</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#pagination">Pagination</a></li>
+                    <li><a href="#multiple-columns">Multiple Columns</a></li>
+                    <li><a href="#user-interface">User Interface</a></li>
+                    <li><a href="#variables">Variables</a></li>
+                    <li><a href="#property-rule">Property Rule</a></li>
+                    <li><a href="#media-queries">Media Queries</a></li>
+                </ul>
+            </div>
+            <div id="header-margin"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="rounded-corners" class="section-container">
+            <h2>CSS Rounded Corners</h2>
+            <p class="p-container">
+                A web developer can give any element rounded borders using border-radius CSS property. The following are
+                some div elements styled with rounded corners:
+            </p>
+            <div class="div-container">
+                <div class="rounded-corners-ex1"></div>
+                <div class="rounded-corners-ex2"></div>
+                <div class="rounded-corners-ex3"></div>
+            </div>
+            <p class="p-container">
+                You can also specify each corner of an element with different border radius such as the following:
+            </p>
+            <div class="div-container">
+                <div class="rounded-corners-ex4">
+                    <p>This div has different border radius values for each corner. The sequence is top-left, top-right,
+                        bottom-right, and bottom-left.</p>
+                </div>
+                <div class="rounded-corners-ex5">
+                    <p>This div has three border radius values. The first is for top-left corner, second is for
+                        top-right and bottom-left corners, and last is for bottom-right corner.</p>
+                </div>
+                <div class="rounded-corners-ex6">
+                    <p>This div has two border radius values. The first is for top-left and bottom-right corners and the
+                        second is for top-right and bottom-left corners.</p>
+                </div>
+                <div class="rounded-corners-ex7">
+                    <p>This div has one border radius values and it applies to all of its corners.</p>
+                </div>
+            </div>
+            <p class="p-container">
+                The last example is creating elliptical borders. You need the syntax of "border-radius = a / b" where a
+                and b are lengths which are divided. You can just also add a percentage. See the following examples.
+            </p>
+            <div class="div-container">
+                <div class="elliptical-corners-ex1">
+                    This div has a border radius of 15px / 50px.
+                </div>
+                <div class="elliptical-corners-ex2">
+                    This div has a border radius of 50px / 15px.
+                </div>
+                <div class="elliptical-corners-ex3">
+                    This div has a border radius of 50%.
+                </div>
+            </div>
+        </section>
+        <section id="border-images" class="section-container">
+            <h2>CSS Border Images</h2>
+            <p class="p-container">
+                Web developers can also use images as borders for an element thru the use of the border-image CSS
+                property.
+            </p>
+            <div class="div-container">
+                <div class="border-images-ex1"></div>
+                <p>Here is the original image:</p>
+                <img src="./images/border_81x81.png" alt="Border image." width="81" height="81">
+            </div>
+            <p class="p-container">In this next example, the middle section of our image is stretched instead of it
+                being repeated.</p>
+            <div class="div-container">
+                <div class="border-images-ex2"></div>
+            </div>
+        </section>
+        <section id="multiple-backgrounds" class="section-container">
+            <h2>CSS Multiple Backgrounds</h2>
+            <p class="p-container">
+                We can also have multiple backgrounds just by adding commas inside the background-image property value.
+                In our example below, we have added two images which is a paper background and a flower background.
+            </p>
+            <div class="div-container">
+                <div class="multiple-backgrounds-ex1"></div>
+            </div>
+            <p class="p-container">
+                You can also style the size of the background image using the background-size CSS property. In the
+                example below, the flower background is reduced to only 100px by 80px.
+            </p>
+            <div class="div-container">
+                <div class="multiple-backgrounds-ex2"></div>
+            </div>
+            <p class="p-container">
+                There also two possible background size value available: contain and cover. The main difference between
+                the two is that contain makes sure the background image is as large as possible but still keeping the
+                width and height inside the element. The cover value, on the other hand, makes the background image
+                cover all of the element even if its width and height is outside of the elements borders.
+            </p>
+            <div class="div-container">
+                <div class="background-size-ex1">
+                    <p>This div has a background image with "contain" as its background size.</p>
+                </div>
+                <br>
+                <div class="background-size-ex2">
+                    <p>This div has a background image with "cover" as its background size.</p>
+                </div>
+                <br>
+                <div class="background-size-ex3">
+                    <p>This div has a background image with no background size set.</p>
+                </div>
+                <br>
+                <div class="background-size-ex4">
+                    <p>This div contains the original size of the background image.</p>
+                    <img src="./images/flower_224x162.gif" alt="Flowers" width="224" height="162">
+                </div>
+            </div>
+            <p class="p-container">For the next example, we will try to attached a fixed and centered background image
+                to the entire browser window. For this, we will utilized the iframe element to show a webpage with full
+                image as its background.</p>
+            <div class="div-container">
+                <iframe src="./pages/full-background-image-website-page1.html" frameborder="1"
+                    class="iframe-container"></iframe>
+            </div>
+            <p class="p-container">You can also create a hero image (background image and text) with this technique.
+                Using a div, insert it with a background image that covers all of its area and a text like so. This can
+                be useful for creating portfolio websites for aspiring frontend developers. See an example webpage
+                below:</p>
+            <div class="div-container">
+                <iframe src="./pages/hero-image-website-page2.html" frameborder="1" class="iframe-container"></iframe>
+            </div>
+            <p class="p-container">By default, the background image border has background origin of padding-box.
+                Meaning,
+                the background image covers up until the edge of the padding. However, you can change this by increasing
+                its reach up to border-box or decreasing its reach to just up to content-box.</p>
+            <div class="div-container">
+                <div class="background-origin-default">
+                    <p>This div has a background origin of default (padding-box) for background image.</p>
+                </div>
+                <div class="background-origin-border-box">
+                    <p>This div has a background origin of border-box for background image.</p>
+                </div>
+                <div class="background-origin-content-box">
+                    <p>This div has a background origin of content-box for background image.</p>
+                </div>
+            </div>
+            <p class="p-container">
+                The next CSS property is the background-clip. This clips or cuts off any excess background image or
+                overflow. By default it is set to border-box, but this can also be set to padding-box or content-box.
+            </p>
+            <div class="div-container">
+                <div class="background-clip-border-box">
+                    <p>The background clip here in this div is set to default (border-box).</p>
+                </div>
+                <div class="background-clip-padding-box">
+                    <p>The background clip here in this div is set to padding-box.</p>
+                </div>
+                <div class="background-clip-content-box">
+                    <p>The background clip here in this div is set to content-box.</p>
+                </div>
+            </div>
+        </section>
+        <section id="color-keywords" class="section-container">
+            <h2>CSS Color Keywords</h2>
+            <p class="p-container">There are other ways to add color to an element such as using color keywords. There
+                are three which are transparent, currentcolor, and inherit. The first one, transparent, is showed below:
+            </p>
+            <div class="div-container">
+                <div class="color-keywords-ex1">
+                    <div class="text">
+                        <p class="with-background">This p element has a semi-transparent color background.</p>
+                        <p class="with-background-transparent">This p element has a fully transparent background.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="p-container">
+                The next one is currentcolor value. Read the examples below:
+            <div class="div-container">
+                <div class="currentcolor-ex1">
+                    <p>This div border color will be the same as the text color in this p element since it is nested
+                        inside it and uses the currentcolor value.</p>
+                </div>
+                <p>Parent div text color...</p>
+                <div class="currentcolor-ex2">
+                    <p>This div background color will be the same as the text color of the parent element's text color
+                        which is orange.</p>
+                </div>
+                <div class="currentcolor-ex3">
+                    <p>In this last div, its border color and shadow color is set to the current color value of its
+                        parent element which is orange.</p>
+                </div>
+            </div>
+            <p class="p-container">
+                The last color keyword is inherit which implicitly inherits its value from the parent element. This
+                can be used to any other html element other than color.
+            </p>
+            <div class="div-container">
+                <p class="inherit-ex1">
+                    In this sentence, the word <span>"different"</span> is inside a span element and will be
+                    designed with the same border values as its p parent element.
+                </p>
+                <p class="inherit-ex2">
+                    In this sentence, the word <span>"different"</span> is inside a span element and will be
+                    designed with the same border values as its p parent element.
+                </p>
+            </div>
+        </section>
+        <section id="gradients" class="section-container">
+            <h2>CSS Gradients</h2>
+            <p class="p-container">
+                There are three types of CSS gradients: <strong>linear, radial, and conic</strong>. The first one is
+                linear which needs at
+                least two colors and a direction. The default top to bottom direction will be implemented if no
+                direction is stated.
+            </p>
+            <div class="div-container">
+                <p class="linear-gradient-ex1">
+                    This p element has a background image of linear gradient going from top to bottom (default).
+                </p>
+                <p class="linear-gradient-ex2">
+                    This p element has a background image of linear gradient going from bottom to top.
+                </p>
+                <p class="linear-gradient-ex3">
+                    This p element has a background image of linear gradient going from left to right.
+                </p>
+                <p class="linear-gradient-ex4">
+                    This p element has a background image of linear gradient going from right to left.
+                </p>
+            </div>
+            <p class="p-container">You can also direct the gradient diagonally like so.</p>
+            <div class="div-container">
+                <p class="linear-gradient-ex5">
+                    This p element has a background image of linear gradient going diagonal from top-left to
+                    bottom-right.
+                </p>
+                <p class="linear-gradient-ex6">
+                    This p element has a background image of linear gradient going diagonal from bottom-right to
+                    top-left.
+                </p>
+            </div>
+            <p class="p-container">You can also specify the angle of direction the color is going. For instance: 0 deg =
+                to top; 90 deg = to right; 180 deg = to bottom, etc. </p>
+            <div class="div-container">
+                <p class="linear-gradient-ex7"> This p element has a angle of 69 deg (near to top-right) for its linear
+                    gradient direction.</p>
+            </div>
+            <p class="p-container">Using multiple color stops for a linear gradient can also be utilized. Below is an
+                example p element that has all the colors of the rainbow.</p>
+            <div class="div-container">
+                <p class="linear-gradient-ex8">A p element with a rainbow background.</p>
+            </div>
+            <p class="p-container">You can also make the gradient color stops transparent creating a fade effect.</p>
+            <div class="div-container">
+                <p class="linear-gradient-ex9">A p element with a rainbow background and fade effect.</p>
+            </div>
+            <p class="p-container">You can also repeat gradient colors by using the repeating-linear-gradient() value.
+            </p>
+            <div class="div-container">
+                <p class="linear-gradient-ex10"></p>
+                <p class="linear-gradient-ex11"></p>
+                <p class="linear-gradient-ex12"></p>
+            </div>
+            <p class="p-container">Radiant gradients are defined by its center that radiates color outwards. This
+                gradient must at least have two colors. By default, the shape is an ellipse, the size is
+                farthest-corner, and the position is center.</p>
+            <div class="div-container">
+                <p>Default radial gradient</p>
+                <div class="radial-gradient-ex1"></div>
+                <p>Radial gradient with differently spaced color stops for red, yellow, and green.</p>
+                <div class="radial-gradient-ex2"></div>
+            </div>
+            <p class="p-container">You can also change the shape to circle instead of the default ellipse.</p>
+            <div class="div-container">
+                <div class="radial-gradient-ex3"></div>
+            </div>
+            <p class="p-container">We can also specify the size of our gradient relative to its element size. By default
+                it is set to farthest-corner meaning the radial gradient will stretch to up to the farthest corner of
+                the element. To see this more clearly, we will set the position of our radial gradient to be off center.
+            </p>
+            <div class="div-container">
+                <p>This is the farthest-corner size (default).</p>
+                <div class="radial-gradient-ex4"></div>
+                <p>This is the closest-corner size.</p>
+                <div class="radial-gradient-ex5"></div>
+                <p>This is the farthest-side size.</p>
+                <div class="radial-gradient-ex6"></div>
+                <p>This is the closest-side size.</p>
+                <div class="radial-gradient-ex7"></div>
+            </div>
+            <p class="p-container">Just like linear gradients, you can also repeat radial gradients.</p>
+            <div class="div-container">
+                <div class="radial-gradient-ex8"></div>
+            </div>
+            <p class="p-container">The last type of gradient is the conic gradient. Conic gradients requires at least
+                two colors. Its default starting angle is 0deg (top) rotating clockwise, and default position is center.
+                Below is an example of a default conic gradient with red, yellow, and green as color stops.
+            </p>
+            <div class="div-container">
+                <p>Default conic gradient:</p>
+                <div class="conic-gradient-ex1"></div>
+                <p>Conic gradient with different color stop spacing specified by degrees:</p>
+                <div class="conic-gradient-ex2"></div>
+                <p>A pie chart look for our conic gradient:</p>
+                <div class="conic-gradient-ex3"></div>
+                <p>A pie chart look with specified degrees for each color stop:</p>
+                <div class="conic-gradient-ex4"></div>
+            </div>
+            <p class="p-container">You can also change the start angle of the conic gradient and the position of the
+                center of the conic.</p>
+            <div class="div-container">
+                <p>This conic gradient has an angle start of 90deg:</p>
+                <div class="conic-gradient-ex5"></div>
+                <p>This conic gradient has its center position moved:</p>
+                <div class="conic-gradient-ex6"></div>
+            </div>
+            <p class="p-container">Just like linear and radial gradient, you can also repeat conic gradients like so.
+            </p>
+            <div class="div-container">
+                <p>Default repeating conic gradients:</p>
+                <div class="conic-gradient-ex7"></div>
+                <p>Repeating conic gradients with defined color stops:</p>
+                <div class="conic-gradient-ex8"></div>
+            </div>
+        </section>
+        <section id="shadow-effects" class="section-container">
+            <h2>CSS Shadow Effects</h2>
+            <p class="p-container">In this section, we will learn how to use text-shadow for text and box-shadow for
+                other elements. First, let's learn the basics of text-shadow:</p>
+            <div class="div-container">
+                <p class="text-shadow-ex1">
+                    This text has the basic text shadow style with 2px of horizontal shadow and 2px vertical shadow.
+                </p>
+                <p class="text-shadow-ex2">
+                    This text has its text shadow color styled to black!
+                </p>
+                <p class="text-shadow-ex3">
+                    This text has its text shadow color styled to black and blurred!
+                </p>
+                <p class="text-shadow-ex4">
+                    This text has a white color with a blurred black shadow.
+                </p>
+                <p class="text-shadow-ex5">
+                    This text has the red neon glow shadow effect.
+                </p>
+            </div>
+            <p class="p-container naruto">
+                <img src="./images/naruto-shadow-clone_220x146.gif" alt="Naruto summoning shadow clones." width="220"
+                    height="146" title="Shadow Clone Jutsu!" class="naruto">You can also add multiple shadows not just
+                one just like Naruto! <img src="./images/naruto-shadow-clone_220x146.gif"
+                    alt="Naruto summoning shadow clones." width="220" height="146" title="Shadow Clone Jutsu!"
+                    class="naruto">
+            </p>
+            <div class="div-container">
+                <p class="text-shadow-ex6">
+                    This text has multiple shadow effects.
+                </p>
+                <p class="text-shadow-ex7">
+                    This text has white text color with black, blue, and darkblue shadow effects.
+                </p>
+                <p class="text-shadow-ex8">
+                    This text utilizes text-shadow by making it look like it has a border around its text.
+                </p>
+            </div>
+            <p class="p-container">Box-shadows, on the other hand, are used to apply shadows on elements. It has a
+                requirement of at least a vertical and horizontal shadow. Its default shadow color is the current
+                text-color inside the element.</p>
+            <div class="div-container">
+                <div class="box-shadow-ex1">
+                    <p>This div element has a default box shadow with 10px horizontal and 10px vertical.</p>
+                </div>
+                <div class="box-shadow-ex2">
+                    <p>This div element has a box shadow with a specified color of orange.</p>
+                </div>
+                <div class="box-shadow-ex3">
+                    <p>This div element has a box shadow with a blur effect (the higher the value, the greater the
+                        blur).</p>
+                </div>
+                <div class="box-shadow-ex4">
+                    <p>This div element has a box shadow with a spread effect (positive value increases the size of the
+                        shadow, negative value decreases the size of the shadow).</p>
+                </div>
+                <div class="box-shadow-ex5">
+                    <p>This div element has the inset value enabled which makes this div has an inner shadow and not an
+                        outer shadow.</p>
+                </div>
+            </div>
+            <p class="p-container">Just like text-shadow, you can also add multiple box-shadows just like the example
+                div elements below:</p>
+            <div class="div-container">
+                <div class="box-shadow-ex6">
+                    <p>This div element has multiple box shadows.</p>
+                </div>
+                <div class="box-shadow-ex7">
+                    <p>This div element has multiple box shadows and are blurred.</p>
+                </div>
+            </div>
+            <p class="p-container">You can also apply box-shadows to make cards in webpages such as a text card or an
+                image card. Hover over the images to see the box shadows.</p>
+            <div class="div-container">
+                <div class="text-card">
+                    <p class="top-part">16</p>
+                    <p class="bottom-part">April 16, 2025</p>
+                </div>
+                <div class="image-card">
+                    <div class="top-part"></div>
+                    <p class="bottom-part">Boracay Island, Philippines</p>
+                </div>
+            </div>
+        </section>
+        <section id="text-effects" class="section-container">
+            <h2>CSS Text Effects</h2>
+            <p class="p-container">These are the CSS text overflow, CSS word wrap, CSS line breaking rules, and CSS
+                writing modes. First, we will discuss the basics of text overflow. Text overflow has two values which is
+                clip and ellipsis. Try to hover over the two p elements to see the overflow content.</p>
+            <div class="div-container">
+                <p class="text-overflow-ex1">The text overflow here is <strong>clipped</strong>. Lorem ipsum dolor sit
+                    amet
+                    consectetur adipisicing elit. Fugit aut totam saepe molestias minima fuga harum nihil
+                    exercitationem. Consequuntur iure soluta cupiditate cumque aliquam eveniet esse quas vero impedit
+                    ab.</p>
+                <p class="text-overflow-ex2">The text overflow here is rendered as <strong>ellipsis (...)</strong>.
+                    Lorem ipsum dolor sit
+                    amet
+                    consectetur adipisicing elit. Fugit aut totam saepe molestias minima fuga harum nihil
+                    exercitationem. Consequuntur iure soluta cupiditate cumque aliquam eveniet esse quas vero impedit
+                    ab.</p>
+            </div>
+            <p class="p-container">Some words may be too long for the normal wrapping of text to not work properly which
+                results to the overflow of that word. Using CSS word break, we can force these certain long words to
+                break and wrap into the next line.</p>
+            <div class="div-container">
+                <p class="word-break-ex1">This word pneumonoultramicroscopicsilicovolcanoconiosis is super long! We need
+                    to use CSS word break and the value break-word for this to work. <strong>Hover over this p element
+                        to break the word!</strong>
+                </p>
+            </div>
+            <p class="p-container">There are also other values for the CSS word break such as the keep-all and
+                break-all.</p>
+            <div class="div-container">
+                <p class="word-break-ex2">This paragraph uses the <strong>keep-all</strong> value for word break. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi sint
+                    doloremque odit aut voluptates eius accusamus atque, error quasi quisquam? Voluptates accusamus
+                    maxime illum, est blanditiis eius molestiae consequatur!</p>
+                <p class="word-break-ex3">This paragraph uses the <strong>break-all</strong> value for word break. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi sint
+                    doloremque odit aut voluptates eius accusamus atque, error quasi quisquam? Voluptates accusamus
+                    maxime illum, est blanditiis eius molestiae consequatur!</p>
+            </div>
+            <p class="p-container">The last CSS text effect is the CSS writing mode. This specifies whether lines of
+                text are laid out horizontally (horizontal-tb) or vertically (vertical-rl). </p>
+            <div class="div-container">
+                <p class="writing-mode-ex1">This sentence is in the default writing mode (horizontal-tb).</p>
+                <p class="writing-mode-ex2">This sentence is in the vertical (vertical-rl) writing mode.</p>
+            </div>
+        </section>
+        <section id="css-2d-transforms" class="section-container">
+            <h2>CSS 2D Transforms</h2>
+            <p class="p-container">This section we will learn about the CSS transform property which have a plethora of
+                values such as translate, rotate, etc.</p>
+            <div class="div-container">
+                <p>For the first one, we will use the translate() value which moves the following div from its original
+                    posiiton.</p>
+                <div class="translate-ex1">
+                    <p>Hover over me to move 100px to the right and 20px down.</p>
+                </div>
+                <p>We can also use the transform: translate() property to center a child div element inside a parent div
+                    element. All children of the child div element will also be centered.</p>
+                <div class="parent-div translate-ex2">
+                    <p><strong>I am the parent div!</strong></p>
+                    <div class="child-div">
+                        <p>What a beautiful day this is!</p>
+                        <p>Hello my name is Ronald. What's yours?</p>
+                        <p>Nice meeting you!</p>
+                        <p><strong>I am the child div!</strong></p>
+                    </div>
+                </div>
+            </div>
+            <p class="p-container">The next transform value is rotate() which rotates an element clockwise or
+                counterclockwise depending on the given degree.</p>
+            <div class="div-container">
+                <p>Hover over the div below to rotate it by 360 degrees clockwise!</p>
+                <div class="rotate-ex1"></div>
+                <p>Using negative deg values, hover the div below to rotate it by 360 degrees counterclockwise!</p>
+                <div class="rotate-ex2"></div>
+            </div>
+            <p class="p-container">The scale() function for our next transform value changes the size of an element. It
+                can change their width and/or height by adding a comma inside the function. Take note that the scaled
+                element does not take any space if hovered.</p>
+            <div class="div-container">
+                <p>Hover over the surprised cat to increase its size and more!</p>
+                <div class="scale-ex1" onmouseover="playAudio()" onmouseout="pauseAudio()"></div>
+                <audio src="./audio/Tamar Braxton - Let Me Know (Official Video) ft. Future.mp3"
+                    id="let-me-know"></audio>
+                <p>Next, hover over the image below to learn a great self-defense move while it scales down:</p>
+                <div class="scale-ex2" onmouseover="playAudio1()" onmouseout="pauseAudio1()"></div>
+                <audio src="./audio/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3"
+                    id="rick-roll"></audio>
+                <p>Sometimes when we scale the element out of proportion. Example is when we only scale the width of the
+                    element by using the scaleX() function just like the examples below. Hover it to stretch its width.
+                    Hover the second div to make it look thinner!
+                </p>
+                <div class="scale-ex3">
+                    <p>I'm a paragraph inside this div element! Hover to stretch me!</p>
+                </div>
+                <div class="scale-ex4">
+                    <p>I'm a paragraph inside this div element! Hover to make me thin!</p>
+                </div>
+                <p>This also applies to the y-axis. Make Kevin Hart and Yao Ming taller and shorter respectively by
+                    hovering over them.</p>
+                <div class="scale-ex5">
+                    <p>I want to be tall!</p>
+                </div>
+                <div class="scale-ex6">
+                    <p>I want to be short!</p>
+                </div>
+            </div>
+            <p class="p-container">The next transform function is skew(). Similar to the scale() function, you can also
+                do skewX() and skewY(). This function skews an element along the x-axis or the y-axis at a given angle
+                just like the examples below. Hover over them to see the results.</p>
+            <div class="div-container">
+                <div class="skew-ex1">
+                    <p>This div has a skew along the x-axis with a value of 20 degrees.</p>
+                </div>
+                <div class="skew-ex2">
+                    <p>This div has a skew along the y-axis with a value of 20 degrees.</p>
+                </div>
+                <div class="skew-ex3">
+                    <p>This div has a skew along the x-axis and y-axis with a value of 20 degrees.</p>
+                </div>
+            </div>
+            <p class="p-container">The last transform function is the matrix() function. This just uses all the other
+                transform functions into one. The syntax is
+                matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+            </p>
+        </section>
+        <section id="css-3d-transforms" class="section-container">
+            <h2>CSS 3D Transforms</h2>
+            <p class="p-container">This CSS property is much like the 2D transform but instead you can transform
+                elements in 3D space.</p>
+            <div class="div-container">
+                <p>The first one is the rotateX() function. Try to hover over the cat picture to rotate it
+                    <strong>around</strong> its x-axis.
+                </p>
+                <div class="rotateX"></div>
+                <p>The second one is the rotateY() function. Try to hover over the next cat picture to rotate it
+                    <strong>around</strong> its y-axis.
+                </p>
+                <div class="rotateY"></div>
+                <p>The last one is the rotateZ() function. Try to hover over the last cat picture to rotate it
+                    <strong>around</strong> its z-axis
+                </p>
+                <div class="rotateZ" onmouseover="playAudio2()" onmouseout="pauseAudio2()"></div>
+                <audio src="./audio/gwenchana-ding-ding-ding-128-ytshorts-made-with-Voicemod.mp3" id="gwenchana"
+                    loop></audio>
+            </div>
+        </section>
+        <section id="transitions" class="section-container">
+            <h2>CSS Transitions</h2>
+            <p class="p-container">CSS transitions allows the web developer to have smooth transitions of changing
+                elements.</p>
+            <div class="div-container">
+                <p>Let's start with a simple transition which is changing of widths. Hover over the image below to
+                    lengthen its width smoothly.</p>
+                <div class="transition-ex1">
+                    <img src="./images/the-shining_1920x1200.jpg" alt="The Shining Movie Poster" width="1920"
+                        height="1200" title="The Shining Poster">
+                </div>
+                <p>You can also add transitions to multiple CSS properties. Like for example, the same picture but we
+                    will change both the width and height of the movie poster below:</p>
+                <div class="transition-ex2">
+                    <img src="./images/the-shining_1920x1200.jpg" alt="The Shining Movie Poster" width="1920"
+                        height="1200" title="The Shining Poster">
+                </div>
+            </div>
+            <p class="p-container">The next property for this section is the transition-timing-function. This is
+                comprised of linear, ease (default), ease-in, ease-out, and ease-in-out. These are showcased below.</p>
+            <div class="div-container">
+                <p>Hover over each of the rock images below to see the different transition-timing-function values.</p>
+                <p>Linear
+                    transition timing specifies the same speed for the whole transition.</p>
+                <div class="transition-timing-ex1" onmouseover="playAudio3()" onmouseout="pauseAudio3()">
+                    <p>Linear Transition</p>
+                </div>
+                <p>Ease transition timing is the default which has a slow start, then fast, then end slowly.</p>
+                <div class="transition-timing-ex2" onmouseover="playAudio3()" onmouseout="pauseAudio3()">
+                    <p>Ease Transition (Default)</p>
+                </div>
+                <p>Ease-in transition only has a slow start.</p>
+                <div class="transition-timing-ex3" onmouseover="playAudio3()" onmouseout="pauseAudio3()">
+                    <p>Ease-In Transition</p>
+                </div>
+                <p>Ease-out transition only has a slow end.</p>
+                <div class="transition-timing-ex4" onmouseover="playAudio3()" onmouseout="pauseAudio3()">
+                    <p>Ease-Out Transition</p>
+                </div>
+                <p>Ease-in-out specifies a slow start and slow end.</p>
+                <div class="transition-timing-ex5" onmouseover="playAudio3()" onmouseout="pauseAudio3()">
+                    <p>Ease-In-Out Transition</p>
+                </div>
+                <audio src="./audio/vine-boom.mp3" id="vine-boom"></audio>
+            </div>
+            <p class="p-container">We can also delay the transition effect by using the transition-delay property.</p>
+            <div class="div-container">
+                <p>Hover over the image of Nikocado Avocado below and see him change after a one second delay since he
+                    is always
+                    <strong>two steps ahead</strong>.
+                </p>
+                <div class="transition-delay-ex1"></div>
+            </div>
+        </section>
+        <section id="animations" class="section-container">
+            <h2>CSS Animations</h2>
+            <p class="p-container">CSS animations allows the web developer to apply animations to elements without the
+                use of JavaScript. The requirement here is to specify keyframes for the animation to work. Animation
+                also goes off without a trigger such as a hover over an element trigger. After the animation finishes,
+                it goes back to its original state.</p>
+            <div class="div-container">
+                <div class="animations-ex1">
+                    <p>This div element has its background color change from blue to red in five seconds!</p>
+                </div>
+            </div>
+            <p class="p-container">The "from" and "to" statements in the @keywords property is actually 0% and 100%
+                progress of the overall animation duration. We can use this to add in extra colors when the animation
+                progression/duration reaches 25% and 50%.</p>
+            <div class="div-container">
+                <div class="animations-ex2">
+                    <p>This div element has its background color change from blue to green to yellow then to red in four
+                        seconds!</p>
+                </div>
+            </div>
+            <p class="p-container">You can also add other CSS properties in the animation. Below is a div box that goes
+                from top-left to top-right to bottom-right and lastly back to top-left while changing its colors in the
+                process!</p>
+            <div class="div-container">
+                <div class="animations-box">
+                    <div class="animations-ex3"></div>
+                </div>
+            </div>
+            <p class="p-container">You can also add the animation-delay property to delay the start of the animation.
+                You can also put a negative value for animation-delay which advances the animation start. Lastly you can
+                add the animation-iteration-count which can be added up to infinity. The previous animations above have
+                infinite values for their iteration for showcasing purposes.</p>
+            <p class="p-container">For the next property, we will use animation-direction which we can change to normal
+                (default), reverse, alternate, alternate-reverse. These values indicate how the animation will be done.
+                See below how these animation-direction are different from each other.</p>
+            <div class="div-container">
+                <div class="animations-box">
+                    <div class="animations-ex4">
+                        <p>Normal</p>
+                    </div>
+                </div>
+                <div class="animations-box">
+                    <div class="animations-ex5">
+                        <p>Reverse</p>
+                    </div>
+                </div>
+                <div class="animations-box">
+                    <div class="animations-ex6">
+                        <p>Alternate</p>
+                    </div>
+                </div>
+                <div class="animations-box">
+                    <div class="animations-ex7">
+                        <p>Alternate-Reverse</p>
+                    </div>
+                </div>
+            </div>
+            <p class="p-container">Just like the transition-timing-function, we also have the animation-timing-function
+                and works just like the values in previous timing function.</p>
+            <p class="p-container">The last property for animations is the animation-fill-mode. This property specifies
+                the style of an element when the animation is not playing e.g. the style before it start, after it
+                starts, or both. There are four values for animation-fill-mode which are none (default), forwards,
+                backwards, and both. The following div boxes will turn red, then green, blue, and lastly yellow while
+                moving from left to right. <strong>Refresh the page to start the animations</strong>.</p>
+            <div class="div-container">
+                <p><strong>None</strong> is the default value which does not apply any styles to the element before or
+                    after it is
+                    executing:</p>
+                <div class="animation-fill-mode-box">
+                    <div class="animation-fill-mode-ex1"></div>
+                </div>
+                <p><strong>Forwards</strong> applies and retains the last style of an animation to the element
+                    after it is executed:</p>
+                <div class="animation-fill-mode-box">
+                    <div class="animation-fill-mode-ex2"></div>
+                </div>
+                <p><strong>Backwards</strong> applies and retains the first style of an animation to the element
+                    before it is executed (during the animation delay period). Even though the div box is styled as
+                    having a red background color, the backwards value tells the div box to have a purple background
+                    color instead for the delay period of two seconds:</p>
+                <div class="animation-fill-mode-box">
+                    <div class="animation-fill-mode-ex3"></div>
+                </div>
+                <p><strong>Both</strong> applies and retains the first style of an animation to the element
+                    before it is executed (during the animation delay period) and the last style of an animation to the
+                    element after it is executed:</p>
+                <div class="animation-fill-mode-box">
+                    <div class="animation-fill-mode-ex4"></div>
+                </div>
+            </div>
+        </section>
+        <section id="tooltip" class="section-container">
+            <h2>CSS Tooltip</h2>
+            <p class="p-container">Tooltips are often used to convey extra information to the user when they hover their
+                mouse over an element. Below is a simply created tooltip:</p>
+            <div class="div-container">
+                <div class="tooltip-ex1">
+                    <a href="https://youtu.be/Qh32txLKhjU" target="_blank">Go To a YouTube Video!</a>
+                    <p class="tooltip-text-ex1">Someone's Always Saying Goodbye - Toni Gonzaga</p>
+                </div>
+            </div>
+            <p class="p-container">In positioning tooltips, we can utilize the element span, inline-block display and
+                the position absolute to
+                our advantage. See examples below:</p>
+            <div class="div-container tooltip-container">
+                <div class="tooltip-ex2">
+                    Hover over me!
+                    <span class="tooltip-text-ex2">Right Tooltip</span>
+                </div>
+                <br>
+                <br>
+                <div class="tooltip-ex3">
+                    Hover over me!
+                    <span class="tooltip-text-ex3">Left Tooltip</span>
+                </div>
+            </div>
+            <p class="p-container">For positioning tooltips top and below the element, see the techniques used below:
+            </p>
+            <div class="div-container tooltip-container">
+                <div class="tooltip-ex4">
+                    Hover over me!
+                    <span class="tooltip-text-ex4">Top Tooltip</span>
+                </div>
+                <br>
+                <br>
+                <div class="tooltip-ex5">
+                    Hover over me!
+                    <span class="tooltip-text-ex5">Bottom Tooltip</span>
+                </div>
+            </div>
+            <p class="p-container">There are ways to improve our tooltip by adding tooltip arrows. We can add a blank
+                content after our tooltip text and finally style it in a form of an arrow. See example below:</p>
+            <div class="div-container tooltip-container">
+                <div class="tooltip-ex6">
+                    Hover over me!
+                    <span class="tooltip-text-ex6">Tooltip With Arrow</span>
+                </div>
+                <br>
+                <br>
+                <div class="tooltip-ex7">
+                    Hover over me!
+                    <span class="tooltip-text-ex7">Tooltip With Arrow</span>
+                </div>
+                <br>
+                <br>
+                <div class="tooltip-ex8">
+                    Hover over me!
+                    <span class="tooltip-text-ex8">Tooltip With Arrow</span>
+                </div>
+                <br>
+                <br>
+                <div class="tooltip-ex9">
+                    Hover over me!
+                    <span class="tooltip-text-ex9">Tooltip With Arrow</span>
+                </div>
+            </div>
+        </section>
+        <section id="image-styling" class="section-container">
+            <h2>CSS Image Styling</h2>
+            <p class="p-container">Images can also use border radius properties to create rounded images just like the
+                following:</p>
+            <div class="div-container image-styling-container">
+                <img src="./images/nayeon_3840x2160.jpg" alt="Nayeon from Twice." width="3840" height="2160"
+                    title="Nayeon!" class="rounded-images-ex1">
+                <img src="./images/yeji_3840x2160.webp" alt="Yeji from Itzy." width="3840" height="2160" title="Yeji!"
+                    class="rounded-images-ex2">
+            </div>
+            <p class="p-container">You can also add actual borders to the image to make a thumbnail effect. For this
+                example, we will use an image as a link with the thumbnail effect.</p>
+            <div class="div-container">
+                <a href="./images/dahyun_3840x2160.jpg" target="_blank" class="dahyun"><img
+                        src="./images/dahyun_3840x2160.jpg" alt="Dahyun from Twice" width="3840" height="2160"
+                        title="Dahyun!" class="thumbnail-images-ex1"></a>
+            </div>
+            <p class="p-container">Responsive images are images that adjusts its size depending on the browser window
+                size. Also, you can limit the maximum width size of an image to its original size so it will not be too
+                stretched out too far.</p>
+            <div class="div-container">
+                <p>Resize the window and see how the image reacts.</p>
+                <img src="./images/iu_1920x1080.jpg" alt="IU." title="IU!" width="1920" height="1080"
+                    class="responsive-images-ex1">
+            </div>
+            <p class="p-container">We can also make responsive polaroid images or cards like so:</p>
+            <div class="div-container">
+                <div class="polaroid-container">
+                    <img src="./images/twice_3840x2160.jpg" alt="TWICE K-Pop girl group." width="3840" height="2160"
+                        title="TWICE!" class="responsive-images-ex2">
+                    <p>TWICE Members</p>
+                </div>
+            </div>
+            <p class="p-container">We can also add text in images and position them wherever we like.</p>
+            <div class="div-container">
+                <div class="text-in-image-container">
+                    <img src="./images/your-name_1230x1623.webp"
+                        alt="The famous Japanese stairs location from the anime movie 'Your Name'." title="Your Name"
+                        width="1230" height="1623" class="text-in-image-ex1">
+                    <div class="top-left">Top Left</div>
+                    <div class="top-right">Top Right</div>
+                    <div class="center">Center</div>
+                    <div class="bottom-left">Bottom Left</div>
+                    <div class="bottom-right">Bottom Right</div>
+                </div>
+            </div>
+            <p class="p-container">There are other cool things you can do with image styling such as the image hover
+                overlay. Hover over each of the following images to see their effects:</p>
+            <div class="div-container image-hover-overlay-container">
+                <div class="image-hover-overlay-ex1">
+                    <p class="description">Fade In Text:</p>
+                    <img src="./images/aran_1000x1437.jpeg" alt="Aran from 'FIFTY FIFTY' K-Pop girl group."
+                        title="Aran!" width="1000" height="1437">
+                    <p class="title">FIFTY FIFTY - Aran</p>
+                </div>
+                <div class="image-hover-overlay-ex2">
+                    <p class="description">Fade In A Box:</p>
+                    <img src="./images/aran_1000x1437.jpeg" alt="Aran from 'FIFTY FIFTY' K-Pop girl group."
+                        title="Aran!" width="1000" height="1437">
+                    <p class="title">FIFTY FIFTY - Aran</p>
+                </div>
+            </div>
+            <p class="p-container">The following photocards has a slider effect when hovered.</p>
+            <div class="div-container image-hover-overlay-container">
+                <div class="slider-container">
+                    <p class="description">Slide From Top</p>
+                    <div class="slider-box">
+                        <img src="./images/aran_1000x1437.jpeg" alt="Aran from 'FIFTY FIFTY' K-Pop girl group."
+                            title="Aran!" width="1000" height="1437">
+                        <div class="image-hover-overlay-ex3">
+                            <p class="title">FIFTY FIFTY - Aran</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <p class="description">Slide From Bottom</p>
+                    <div class="slider-box">
+                        <img src="./images/aran_1000x1437.jpeg" alt="Aran from 'FIFTY FIFTY' K-Pop girl group."
+                            title="Aran!" width="1000" height="1437">
+                        <div class="image-hover-overlay-ex4">
+                            <p class="title">FIFTY FIFTY - Aran</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <p class="description">Slide From Left</p>
+                    <div class="slider-box">
+                        <img src="./images/aran_1000x1437.jpeg" alt="Aran from 'FIFTY FIFTY' K-Pop girl group."
+                            title="Aran!" width="1000" height="1437">
+                        <div class="image-hover-overlay-ex5">
+                            <p class="title">FIFTY FIFTY - Aran</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <p class="description">Slide From Right</p>
+                    <div class="slider-box">
+                        <img src="./images/aran_1000x1437.jpeg" alt="Aran from 'FIFTY FIFTY' K-Pop girl group."
+                            title="Aran!" width="1000" height="1437">
+                        <div class="image-hover-overlay-ex6">
+                            <p class="title">FIFTY FIFTY - Aran</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="p-container">You can also flip images with image styling using the scaleX() function in transform
+                property and using a value of negative one:</p>
+            <div class="div-container">
+                <img src="./images/capybara-on-crock_600x600.jpg" alt="Capybara riding on a crocodile." height="600"
+                    width="600" title="Badass capybara!" class="image-flip">
+            </div>
+            <p class="p-container">For the next one, we will create a responsive group of photocards which changes
+                layout depending on browser window size. <strong>Try to resize the your browser window</strong>.</p>
+            <div class="div-container">
+                <div class="photocards-container">
+                    <div class="photocard momo">
+                        <img src="./images/momo-yaoyorozu_1920x1080.png" alt="Momo Yaoyorozu from My Hero Academia."
+                            title="Momo!" width="1920" height="1080">
+                        <p>Hero Name: Creati</p>
+                    </div>
+                    <div class="photocard tsuyu">
+                        <img src="./images/tsuyu-asui_1920x1080.png" alt="Tsuyu Asui from My Hero Academia."
+                            title="Tsuyu!" width="1920" height="1080">
+                        <p>Hero Name: Froppy</p>
+                    </div>
+                    <div class="photocard ochako">
+                        <img src="./images/ochako-uraraka_1920x1080.png" alt="Ochako Uraraka from My Hero Academia."
+                            title="Ochako!" width="1920" height="1080">
+                        <p>Hero Name: Uravity</p>
+                    </div>
+                    <div class="photocard minoru">
+                        <img src="./images/minoru-mineta_1920x1080.png" alt="Minoru Mineta from My Hero Academia."
+                            title="Minoru!" width="1920" height="1080">
+                        <p>Hero Name: Grape Juice</p>
+                    </div>
+                </div>
+            </div>
+            <p class="p-container">For the last one, we will try to do an advanced topic which is the image modal
+                (dialog box). We will use a little bit of JavaScript to work this modal out.</p>
+            <div class="div-container">
+                <img src="./images/lucy-heartfilia_728x410.jpg" alt="Lucy Heartfilia from Fairy Tail!" width="728"
+                    height="410" title="Lucy!" id="lucy">
+                <div id="lucyModal" class="modal">
+                    <span class="close-button">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </section>
+        <section id="image-centering-and-filters" class="section-container">
+            <h2>CSS Image Centering and Filters</h2>
+            <p class="p-container">There are multiple ways in centering images horizontally. The following are the ways
+                of centering
+                an image horizontally:</p>
+            <div class="div-container">
+                <p>We can use the CSS property "margin" and then set it to auto. For this to work, we need to make the
+                    display of the image to block since this images have inline display as default. Then lastly we need
+                    to specify a width smaller than its parent elements width size like so.</p>
+                <img src="./images/shrek_856x1268.webp" alt="Shrek looking at you while smiling." width="856"
+                    height="1268" title="I know what type of man you are!" class="image-centering-ex1">
+                <p>The second way is to set the display of the element container of the image to flex then set the
+                    justify-content to center.
+                    Same with the first one, we should set the width of the image to be smaller than its parent
+                    element's width.</p>
+                <div class="flex-container1">
+                    <img src="./images/shrek_856x1268.webp" alt="Shrek looking at you while smiling." width="856"
+                        height="1268" title="I know what type of man you are!" class="image-centering-ex2">
+                </div>
+            </div>
+            <p class="p-container">The following are ways to center an image vertically:</p>
+            <div class="div-container">
+                <p>We can use flex again to center an image vertically by adding the align-items property and setting it
+                    to center. also make sure to define the height of the image to be smaller than the height of its
+                    parent element.</p>
+                <div class="flex-container2">
+                    <img src="./images/shrek_856x1268.webp" alt="Shrek looking at you while smiling." width="856"
+                        height="1268" title="I know what type of man you are!" class="image-centering-ex2">
+                </div>
+            </div>
+            <p class="p-container">There are many CSS image filter properties we can use to design our webpages. The
+                following are the list of the said properties:
+            <ul class="image-filter-list">
+                <li>blur()</li>
+                <li>brightness()</li>
+                <li>contrast()</li>
+                <li>drop-shadow()</li>
+                <li>grayscale()</li>
+                <li>hue-rotate()</li>
+                <li>invert()</li>
+                <li>opacity()</li>
+                <li>saturate()</li>
+                <li>sepia()</li>
+            </ul>
+            </p>
+            <div class="div-container">
+                <p>The first image filter property is blur(). This property blurs out the image. Larger values equates
+                    to greater blurs.</p>
+                <div class="image-blur-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-blur-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-blur-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-blur-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-blur-ex4">
+                </div>
+                <p>The next image filter property is brightness(). The values over 100% makes the image brigher while
+                    values lower than 100% makes the images dimmer. 100% is the default value and 0% makes the image
+                    completely black.</p>
+                <div class="image-brightness-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-brightness-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-brightness-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-brightness-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-brightness-ex4">
+                </div>
+                <div class="image-brightness-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-brightness-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-brightness-ex5">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-brightness-ex6">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-brightness-ex7">
+                </div>
+                <p>The next one is contrast(). The default value is 100%. Greater than 100% results to higher contrast
+                    while lower than 100% results to lower contrast. 0% value makes the image grey!</p>
+                <div class="image-contrast-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-contrast-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-contrast-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-contrast-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-contrast-ex4">
+                </div>
+                <div class="image-contrast-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-contrast-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-contrast-ex5">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-contrast-ex6">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-contrast-ex7">
+                </div>
+                <p>The next one is drop-shadow(). Similar to box-shadow, we can use the filter property value of
+                    drop-shadow() for the images to cast a shadow behind like the following images.
+                </p>
+                <div class="image-drop-shadow-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-drop-shadow-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-drop-shadow-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-drop-shadow-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-drop-shadow-ex4">
+                </div>
+                <p>Next is grayscale(). The value of 100% makes the image completely grey and a value of 0% has an
+                    effect of none.</p>
+                <div class="image-grayscale-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-grayscale-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-grayscale-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-grayscale-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-grayscale-ex4">
+                </div>
+                <p>The next one is hue-rotate(). This applies a color rotation to an image with the set degree value. A
+                    positive degree value increases the hue value, while a negative degree value decreases the hue
+                    value. Zero degrees represent the original image.</p>
+                <div class="image-hue-rotate-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-hue-rotate-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-hue-rotate-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-hue-rotate-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-hue-rotate-ex4">
+                </div>
+                <div class="image-hue-rotate-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-hue-rotate-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-hue-rotate-ex5">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-hue-rotate-ex6">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-hue-rotate-ex7">
+                </div>
+                <p>The next one is invert(). This inverts the color of an image. A value of 100% makes the image color
+                    completely inverted while a value of 0% will have no effect.</p>
+                <div class="image-invert-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-invert-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-invert-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-invert-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-invert-ex4">
+                </div>
+                <p>The next one we are more familiar with which is opacity(). The value of 100% will have no effect on
+                    the image while 0% makes it transparent.</p>
+                <div class="image-opacity-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-opacity-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-opacity-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-opacity-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-opacity-ex4">
+                </div>
+                <p>The next one is saturate(). Saturation of an image refers to the color intensity of the image. The
+                    value of 100% is the original image while the value of 0% makes the image in the color grey. A value
+                    of more than 100% makes the color more intense.</p>
+                <div class="image-saturate-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-saturate-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-saturate-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-saturate-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-saturate-ex4">
+                </div>
+                <div class="image-saturate-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-saturate-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-saturate-ex5">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-saturate-ex6">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177"
+                        class="image-saturate-ex7">
+                </div>
+                <p>The last image filter property is sepia(). This property makes the image warmer with a yellow brown
+                    tone to it. A value of 100% make the image completely sepia while 0% has no effect.</p>
+                <div class="image-sepia-container">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-sepia-ex1">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-sepia-ex2">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-sepia-ex3">
+                    <img src="./images/anthony-mackie-smile_220x177.gif" alt="Anthony Mackie smiling."
+                        title="I know something about you ahh smile." width="220" height="177" class="image-sepia-ex4">
+                </div>
+            </div>
+        </section>
+        <section id="image-shapes" class="section-container">
+            <h2>CSS Image Shapes</h2>
+            <p class="p-container">The CSS clip-path property clips or shapes the image element. The first clip-path
+                property function is circle(). See the example images below:</p>
+            <div class="div-container">
+                <p>The image below uses the clip-path property with a circle(50%) as value making it a circle:</p>
+                <img src="./images/iu2_2560x1340.jpg" alt="IU soloist KPOP and Korean actress." width="2560"
+                    height="1340" title="IU!" class="image-circle-ex1">
+                <p>Since the original image (see below) is not perfectly a square for the circle(50%) to work and render
+                    the
+                    image to be a perfect circle, we will use a certain technique.</p>
+                <img src="./images/iu2_2560x1340.jpg" alt="IU soloist KPOP and Korean actress." width="2560"
+                    height="1340" title="IU!" class="image-circle-ex2">
+                <p>We will first wrapped the image in a div, style it to a perfect square box and set the overflow to
+                    hidden. Then set the border-radius of the div element to 50%. Add a margin if the image is not
+                    aligned in center.</p>
+                <div class="image-circle-container">
+                    <img src="./images/iu2_2560x1340.jpg" alt="IU soloist KPOP and Korean actress." width="2560"
+                        height="1340" title="IU!" class="image-circle-ex3">
+                </div>
+                <p>For convenience purposes and to be able to use the clip-path property and circle(50%) value, we will
+                    use a square image:</p>
+                <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                    width="728" height="728" class="image-circle-ex4">
+                <p>Applying the clip-path property and circle(50%) value, we will get:</p>
+                <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                    width="728" height="728" class="image-circle-ex5">
+                <p>Other than this, we can also specify the position of the center of the circle with a length or
+                    percentage value or just left, right, top, bottom words. The following images have different center
+                    positions for the circle:</p>
+                <div class="image-circle-position-container">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-circle-ex6">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-circle-ex7">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-circle-ex8">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-circle-ex9">
+                </div>
+                <p>The next one is the shape-outside property which lets you define the line wrapping shape around the
+                    clipped image.</p>
+                <div class="image-circle-shape-outside-container">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-circle-ex10">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quod! Fuga a voluptate autem.
+                        Molestiae ipsa quis saepe, dolores recusandae doloremque ad velit sint totam temporibus natus
+                        tempora nulla praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                        animi ipsa soluta reprehenderit praesentium in! Explicabo dicta maiores, fuga obcaecati sequi
+                        quia consectetur at iste possimus, odit, modi tempore numquam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero repudiandae laboriosam
+                        dolores officiis et. Nostrum impedit quia natus vitae, ipsam temporibus molestiae, corrupti
+                        eveniet laudantium sequi voluptas. Culpa, debitis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veniam consequatur quisquam
+                        in. Nihil, distinctio provident hic rerum ipsa dicta, praesentium cupiditate tempore mollitia
+                        maiores ad fuga cumque, totam velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Sed sit molestiae ducimus. Nemo, impedit dolores reprehenderit illo cum voluptas sapiente,
+                        officiis dolorem ipsa sunt voluptate. Vitae, impedit sunt! Ipsa, est! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Tempore consequuntur deserunt doloribus! Commodi accusamus,
+                        consequatur tempora odio, vero porro id dolores non suscipit quam sit. Autem cupiditate repellat
+                        sint esse!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellat dicta incidunt
+                        blanditiis quos. Delectus, libero dignissimos. Alias amet autem pariatur quidem, veniam velit
+                        quis fuga voluptatem maxime cumque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatum unde, magni maxime facere animi placeat perspiciatis molestiae excepturi.
+                        Molestias possimus, recusandae in nisi illo assumenda animi esse quaerat obcaecati repellendus.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum perspiciatis iure
+                        voluptates sapiente. In non possimus placeat temporibus pariatur laudantium rem sint voluptatem
+                        officia ea impedit, maxime enim odit.</p>
+                </div>
+            </div>
+            <p class="p-container">The next value for the CSS clip-path property is ellipse(). This lets you add a
+                radius for both the x and y axis:</p>
+            <div class="div-container">
+                <p>The following image has an ellipse(50% 40%) value for its clip-path property:</p>
+                <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                    width="728" height="728" class="image-ellipse-ex1">
+                <p>Just like with circle() value, we can also specify the center position of our ellipse in our image:
+                </p>
+                <div class="image-ellipse-container">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-ellipse-ex2">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-ellipse-ex3">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-ellipse-ex4">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-ellipse-ex5">
+                </div>
+                <p>Lastly, we can also wrap the text around ellipse shaped image thru shape-outside property with
+                    ellipse() as its value</p>
+                <div class="image-ellipse-shape-outside-container">
+                    <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                        width="728" height="728" class="image-ellipse-ex6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quod! Fuga a voluptate autem.
+                        Molestiae ipsa quis saepe, dolores recusandae doloremque ad velit sint totam temporibus natus
+                        tempora nulla praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                        animi ipsa soluta reprehenderit praesentium in! Explicabo dicta maiores, fuga obcaecati sequi
+                        quia consectetur at iste possimus, odit, modi tempore numquam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero repudiandae laboriosam
+                        dolores officiis et. Nostrum impedit quia natus vitae, ipsam temporibus molestiae, corrupti
+                        eveniet laudantium sequi voluptas. Culpa, debitis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veniam consequatur quisquam
+                        in. Nihil, distinctio provident hic rerum ipsa dicta, praesentium cupiditate tempore mollitia
+                        maiores ad fuga cumque, totam velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Sed sit molestiae ducimus. Nemo, impedit dolores reprehenderit illo cum voluptas sapiente,
+                        officiis dolorem ipsa sunt voluptate. Vitae, impedit sunt! Ipsa, est! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Tempore consequuntur deserunt doloribus! Commodi accusamus,
+                        consequatur tempora odio, vero porro id dolores non suscipit quam sit. Autem cupiditate repellat
+                        sint esse!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellat dicta incidunt
+                        blanditiis quos. Delectus, libero dignissimos. Alias amet autem pariatur quidem, veniam velit
+                        quis fuga voluptatem maxime cumque nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatum unde, magni maxime facere animi placeat perspiciatis molestiae excepturi.
+                        Molestias possimus, recusandae in nisi illo assumenda animi esse quaerat obcaecati repellendus.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum perspiciatis iure
+                        voluptates sapiente. In non possimus placeat temporibus pariatur laudantium rem sint voluptatem
+                        officia ea impedit, maxime enim odit.</p>
+                </div>
+            </div>
+            <p class="p-container">The last value for the clip-path property is polygon(). This clips the image into
+                polygons by entering the x and y coordinates. The top-left corner of the image represents (0%, 0%) while
+                the bottom-right corner of the image represents (100%, 100%).</p>
+            <div class="div-container">
+                <p>The images below are shaped into polygons:</p>
+                <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                    width="728" height="728" class="image-polygon-ex1">
+                <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                    width="728" height="728" class="image-polygon-ex2">
+                <img src="./images/iu3-square_728x728.jpg" alt="IU soloist KPOP and Korean actress." title="IU!"
+                    width="728" height="728" class="image-polygon-ex3">
+            </div>
+        </section>
+        <section id="object-fit-and-position" class="section-container">
+            <h2>CSS Object Fit and Position</h2>
+            <p class="p-container">Sometimes the images that is inside the container loses its aspect ratio if and are
+                stretched. A solution is using the CSS property: object-fit. Take note, this property is directly
+                applied to the image itself and we do not need a separate element container. See below the pictures with
+                their different
+                object-fit values: </p>
+            <div class="div-container">
+                <p>This following image has original dimensions of 1920px by 1080px. However to fit this div container,
+                    we set it up to only 100% of the width size of its parent element and its height in auto:</p>
+                <img src="./images/dahyun2_1920x1080.webp" alt="Dahyun from TWICE K-Pop girl group." width="1920"
+                    height="1080" title="Dahyun!" class="object-fit-ex1">
+                <p>For the first one, we will use fill which is the default value. The image is resized
+                    to fill the given width and height values no matter if it is squished or stretched.</p>
+                <img src="./images/dahyun2_1920x1080.webp" alt="Dahyun from TWICE K-Pop girl group." width="1920"
+                    height="1080" title="Dahyun!" class="object-fit-ex2">
+                <p>The next one is cover. It fills the given dimension but it keeps its aspect ratio.</p>
+                <img src="./images/dahyun2_1920x1080.webp" alt="Dahyun from TWICE K-Pop girl group." width="1920"
+                    height="1080" title="Dahyun!" class="object-fit-ex3">
+                <p>Third is contain. This object-fit value keeps the aspect ratio of the image but is resized to fit the
+                    given dimension:</p>
+                <img src="./images/dahyun2_1920x1080.webp" alt="Dahyun from TWICE K-Pop girl group." width="1920"
+                    height="1080" title="Dahyun!" class="object-fit-ex4">
+                <p>Next is none. If we use none, the image will not be resized and will just be center presented inside
+                    the
+                    dimensions set.</p>
+                <img src="./images/dahyun2_1920x1080.webp" alt="Dahyun from TWICE K-Pop girl group." width="1920"
+                    height="1080" title="Dahyun!" class="object-fit-ex5">
+                <p>Last is scale-down. The image will be scaled down to the lowest version of none or contain.</p>
+                <img src="./images/dahyun2_1920x1080.webp" alt="Dahyun from TWICE K-Pop girl group." width="1920"
+                    height="1080" title="Dahyun!" class="object-fit-ex6">
+            </div>
+            <p class="p-container">Sometimes when we use object-fit property values such as cover, the image is not set
+                to what we want our users to see. A part of the image will be clipped for example. That's where we will
+                use the object-position property by specifying the x and y coordinates we want the users to see.</p>
+            <div class="div-container">
+                <p>This will be the original image we will be using for our example:</p>
+                <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                    width="1200" height="673" class="object-position-ex1">
+                <p>The image below is a set of images sliced and put together. These images have a cover value for their
+                    object-fit property. However each have different points of
+                    focus using different object-position values.</p>
+                <p></p>
+                <div class="object-position-container">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex2">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex3">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex4">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex5">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex6">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex7">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex8">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex9">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex10">
+                    <img src="./images/room_1200x673.jpg" alt="Room filled with various objects." title="Messy room!"
+                        width="1200" height="673" class="object-position-ex11">
+                </div>
+            </div>
+        </section>
+        <section id="masking" class="section-container">
+            <h2>CSS Masking</h2>
+            <p class="p-container">CSS masking lets you partially mask over an image rendering some parts not to be seen
+                by the user by using the mask-image property. This property specifies a mask layer image. This mask
+                layer can be a PNG image, SVG image, a CSS gradient, or an SVG mask element.</p>
+            <div class="div-container">
+                <p>Below is the original image we will be using to put a mask on.</p>
+                <img src="./images/paris_2000x1500.jpg" alt="The Eiffel Tower in Paris, France." width="2000"
+                    height="1500" title="In the City of Love!" class="paris">
+                <p>The first one that we will apply the mask-image property is a PNG image. This PNG image must have a
+                    fully transparent or semi-transparent area and a black area (where the image will be shown) to
+                    qualify as a mask layer.</p>
+                <img src="./images/mask-image-png_400x400.png" alt="Mask PNG image." width="400" height="400"
+                    class="mask-image-png">
+                <p>Below is the image of Paris masked by the PNG image above.</p>
+                <div class="mask-container-png">
+                    <img src="./images/paris_2000x1500.jpg" alt="The Eiffel Tower in Paris, France." width="2000"
+                        height="1500" title="In the City of Love!" class="paris">
+                </div>
+                <p>The next mask-layer is using CSS gradients both linear and radial. We can apply the mask-image
+                    property for our images. We must add black as one of the color stops and a transparent color for the
+                    masking to work. Below is the linear gradient we will use:</p>
+                <div class="linear-gradient-mask"></div>
+                <p>Below is the image of Paris masked by the linear gradient above.</p>
+                <div class="mask-container-linear-gradient">
+                    <img src="./images/paris_2000x1500.jpg" alt="The Eiffel Tower in Paris, France." width="2000"
+                        height="1500" title="In the City of Love!" class="paris">
+                </div>
+                <p>We can also use radial gradients like the example mask layer below. But this time we will not use a
+                    fully transparent color but a semi-transparent color to let the users see the rest of the image but
+                    with little focus.</p>
+                <div class="radial-gradient-mask"></div>
+                <p>Below is the image of Paris masked by a radial gradient.</p>
+                <div class="mask-container-radial-gradient">
+                    <img src="./images/paris_2000x1500.jpg" alt="The Eiffel Tower in Paris, France." width="2000"
+                        height="1500" title="In the City of Love!" class="paris">
+                </div>
+                <p>The next one that we can use as a mask layer is SVG. Utilizing the SVG mask element, we can create
+                    different mask layers for our images. Below we created an SVG polygon in a shaped of a triangle with
+                    a white color fill.</p>
+                <svg class="svg-ex1">
+                    <polygon fill="#ffffff" points="266 0, 533 400, 0 400"></polygon>
+                </svg>
+                <p>Now, we will try to mask this over our Paris image using the svg mask element combination.</p>
+                <svg class="svg-ex1">
+                    <mask id="svg-mask-ex1">
+                        <polygon fill="#ffffff" points="266 0, 533 400, 0 400"></polygon>
+                    </mask>
+                    <image xlink:href="./images/paris_2000x1500.jpg" mask="url(#svg-mask-ex1)"></image>
+                </svg>
+            </div>
+        </section>
+        <section id="buttons" class="section-container">
+            <h2>CSS Buttons</h2>
+            <p class="p-container">Buttons are commonly used in websites today. Below we will see how buttons can be
+                styled using CSS.</p>
+            <div class="div-container">
+                <p>We can change the background color of buttons like so:</p>
+                <div class="button-color-container">
+                    <button class="button1">Red</button>
+                    <button class="button2">Green</button>
+                    <button class="button3">Blue</button>
+                </div>
+                <p>Using the font-size property, we can change the size of our buttons like so:</p>
+                <div class="button-font-size-container">
+                    <button class="button1">24px</button>
+                    <button class="button2">28px</button>
+                    <button class="button3">32px</button>
+                </div>
+                <p>We can also change the padding of our buttons to different sizes:</p>
+                <div class="button-padding-container">
+                    <button class="button1">10px</button>
+                    <button class="button2">10px 20px</button>
+                    <button class="button3">20px 10px</button>
+                </div>
+                <p>We can also use rounded corners for their borders:</p>
+                <div class="button-border-radius-container">
+                    <button class="button1">20px</button>
+                    <button class="button2">40px</button>
+                    <button class="button3">50%</button>
+                </div>
+                <p>Colored borders:</p>
+                <div class="button-border-color-container">
+                    <button class="button1">Red</button>
+                    <button class="button2">Green</button>
+                    <button class="button3">Blue</button>
+                </div>
+                <p>Hoverable borders:</p>
+                <div class="button-hover-container">
+                    <button class="button1">Red</button>
+                    <button class="button2">Green</button>
+                    <button class="button3">Blue</button>
+                </div>
+                <p>Hoverable borders with shadow:</p>
+                <div class="button-hover-shadow-container">
+                    <button class="button1">Hover</button>
+                    <button class="button2">For</button>
+                    <button class="button3">Shadow</button>
+                </div>
+                <p>Styling disabled buttons:</p>
+                <div class="button-disabled-container">
+                    <button class="button1">Enabled</button>
+                    <button class="button2">Disabled</button>
+                </div>
+                <p>Button width:</p>
+                <div class="button-width-container">
+                    <button class="button1">25%</button>
+                    <button class="button2">50%</button>
+                    <button class="button3">100%</button>
+                </div>
+            </div>
+            <p class="p-container">The CSS styles above are simple but we can also design buttons as groups for the
+                advanced class.</p>
+            <div class="div-container">
+                <p>We removed the margins first for the buttons and lay them side by side by floating them left to
+                    create a button group.</p>
+                <div class="button-group-container">
+                    <button class="button1">Button</button>
+                    <button class="button2">Button</button>
+                    <button class="button3">Button</button>
+                </div>
+                <p>Bordered button group:</p>
+                <div class="button-group-bordered-container">
+                    <button class="button1">Button</button>
+                    <button class="button2">Button</button>
+                    <button class="button3">Button</button>
+                </div>
+                <p>Vertical button group:</p>
+                <div class="button-group-vertical-container">
+                    <button class="button1">Button</button>
+                    <button class="button2">Button</button>
+                    <button class="button3">Button</button>
+                </div>
+                <p>Button in an image:</p>
+                <div class="button-in-image-container">
+                    <img src="./images/jennie_5120x2880.jpg" alt="Jennie from BLACKPINK K-Pop girl group."
+                        title="Jennie!" width="5120" height="2880">
+                    <button>Click Me!</button>
+                </div>
+            </div>
+            <p class="p-container">We can also add animations to buttons.</p>
+            <div class="div-container">
+                <p>Button with animated arrow when hovered:</p>
+                <button class="animated-button-arrow"><span>Hover </span></button>
+                <p>Button with a pressed effect when clicked:</p>
+                <button class="animated-button-press" onclick="playAudio4()">DON'T PUSH!</button>
+                <audio src="./audio/button-click.mp3" id="button-click"></audio>
+                <br>
+                <br>
+                <p>A simple fade in button:</p>
+                <button class="animated-button-fade">Hover Over Me</button>
+                <p>Button with ripple effect:</p>
+                <button class="animated-button-ripple">Click Me!</button>
+            </div>
+        </section>
+        <section id="pagination" class="section-container">
+            <h2>CSS Pagination</h2>
+            <p class="p-container">If your website will be having multiple pages a simple pagination would be a good
+                addition for easy navigation.</p>
+            <div class="div-container">
+                <p>The following is a simple pagination made from anchor links:</p>
+                <div class="pagination-ex1">
+                    <a href="#ex-arrow-left">&laquo;</a>
+                    <a href="#ex1">1</a>
+                    <a href="#ex2">2</a>
+                    <a href="#ex3">3</a>
+                    <a href="#ex4">4</a>
+                    <a href="#ex5">5</a>
+                    <a href="#ex6">6</a>
+                    <a href="#ex7">7</a>
+                    <a href="#ex-arrow-right">&raquo;</a>
+                </div>
+                <p>We can upgrade this pagination by adding an active color on the current page and a hover background
+                    color change:</p>
+                <div class="pagination-ex2">
+                    <a href="#ex-arrow-left">&laquo;</a>
+                    <a href="#ex1" class="active-page">1</a>
+                    <a href="#ex2">2</a>
+                    <a href="#ex3">3</a>
+                    <a href="#ex4">4</a>
+                    <a href="#ex5">5</a>
+                    <a href="#ex6">6</a>
+                    <a href="#ex7">7</a>
+                    <a href="#ex-arrow-right">&raquo;</a>
+                </div>
+                <p>Now we can add rounded borders on our pagination:</p>
+                <div class="pagination-ex3">
+                    <a href="#ex-arrow-left">&laquo;</a>
+                    <a href="#ex1" class="active-page">1</a>
+                    <a href="#ex2">2</a>
+                    <a href="#ex3">3</a>
+                    <a href="#ex4">4</a>
+                    <a href="#ex5">5</a>
+                    <a href="#ex6">6</a>
+                    <a href="#ex7">7</a>
+                    <a href="#ex-arrow-right">&raquo;</a>
+                </div>
+                <p>We can also add borders for our pagination:</p>
+                <div class="pagination-ex4">
+                    <a href="#ex-arrow-left">&laquo;</a>
+                    <a href="#ex1" class="active-page">1</a>
+                    <a href="#ex2">2</a>
+                    <a href="#ex3">3</a>
+                    <a href="#ex4">4</a>
+                    <a href="#ex5">5</a>
+                    <a href="#ex6">6</a>
+                    <a href="#ex7">7</a>
+                    <a href="#ex-arrow-right">&raquo;</a>
+                </div>
+                <p>Adding margins between links to create space:</p>
+                <div class="pagination-ex5">
+                    <a href="#ex-arrow-left">&laquo;</a>
+                    <a href="#ex1" class="active-page">1</a>
+                    <a href="#ex2">2</a>
+                    <a href="#ex3">3</a>
+                    <a href="#ex4">4</a>
+                    <a href="#ex5">5</a>
+                    <a href="#ex6">6</a>
+                    <a href="#ex7">7</a>
+                    <a href="#ex-arrow-right">&raquo;</a>
+                </div>
+                <p>Lastly we can change the size of by increasing our font-size for each anchor link and centering it by
+                    using display flex:</p>
+                <div class="pagination-ex6">
+                    <a href="#ex-arrow-left">&laquo;</a>
+                    <a href="#ex1" class="active-page">1</a>
+                    <a href="#ex2">2</a>
+                    <a href="#ex3">3</a>
+                    <a href="#ex4">4</a>
+                    <a href="#ex5">5</a>
+                    <a href="#ex6">6</a>
+                    <a href="#ex7">7</a>
+                    <a href="#ex-arrow-right">&raquo;</a>
+                </div>
+            </div>
+            <p class="p-container">The next are some applications of pagination:</p>
+            <div class="div-container">
+                <p>The following is a simple next and previous button pagination:</p>
+                <div class="pagination-ex7">
+                    <a href="#ex-previous">&larr;</a>
+                    <a href="#ex-next">&rarr;</a>
+                </div>
+                <p>The next one is a simple navigation pagination:</p>
+                <div class="pagination-ex8">
+                    <a href="#ex-home" class="active-page">Home</a>
+                    <a href="#ex-link1">Link 1</a>
+                    <a href="#ex-link2">Link 2</a>
+                    <a href="#ex-link3">Link 3</a>
+                    <a href="#ex-link4">Link 4</a>
+                    <a href="#ex-link5">Link 5</a>
+                </div>
+                <p>The last one is what's called a breadcrumb pagination:</p>
+                <div class="pagination-ex9">
+                    <ul>
+                        <li><a href="#ex-home">Home</a></li>
+                        <li><a href="#ex-pictures">Pictures</a></li>
+                        <li><a href="#ex-summer-15">Summer 15</a></li>
+                        <li><a href="#ex-italy" class="active-page">Italy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="multiple-columns" class="section-container">
+            <h2>CSS Multiple Columns</h2>
+            <p class="p-container">The CSS multiple columns allows the web developer to easily format the webpage like a
+                newspaper. Now we will discuss each property for this CSS.</p>
+            <div class="div-container">
+                <p>The first one is about making columns for an element by defining the number of columns the web
+                    developer wants to achieve:</p>
+                <div class="multiple-columns-ex1">
+                    <h3>Subheader</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                    <h3>Subheader</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                </div>
+                <p>We can also specify the gap between these columns. See below how wide the gap is compared to the
+                    first one.</p>
+                <div class="multiple-columns-ex2">
+                    <h3>Subheader</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                    <h3>Subheader</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                </div>
+                <p>Next, we can add the column-rule-style which in this case is solid:</p>
+                <div class="multiple-columns-ex3">
+                    <h3>Subheader</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                    <h3>Subheader</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                </div>
+                <p>Column rules acts like a border and can be used shorthand. We can start by the dimensions of its
+                    width, the style, and then its designated color. For the element below, we will use 1px, solid, and
+                    red.</p>
+                <div class="multiple-columns-ex4">
+                    <h3>Subheader</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                    <h3>Subheader</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                </div>
+                <p>If there is a head title for your element, we can use the column-span property for that specific
+                    element (usually the headers) to cover all the columns above.</p>
+                <div class="multiple-columns-ex5">
+                    <h3>The Daily Bugle</h3>
+                    <h4>Subheader</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                    <h4>Subheader</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                </div>
+                <p>We can also specify the column width and not specify column number. For this example, we will use the
+                    column width of 500px:</p>
+                <div class="multiple-columns-ex6">
+                    <h3>The Daily Bugle</h3>
+                    <h4>Subheader</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                    <h4>Subheader</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aperiam sit possimus totam
+                        eum aspernatur cum tempore quos iure ut veritatis beatae libero quibusdam, perspiciatis
+                        voluptates suscipit incidunt perferendis placeat? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ducimus maxime dicta atque recusandae earum expedita fugit labore cumque
+                        molestias quae necessitatibus modi praesentium vel harum, vitae sequi repellendus aliquam
+                        similique?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem incidunt ea in, illum
+                        aspernatur, sunt culpa quos, corrupti aliquam enim cum labore laborum molestiae sequi sapiente
+                        animi molestias ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat fuga rem dolorum eius,
+                        veritatis esse eligendi temporibus eos quisquam omnis ut deserunt quasi molestias dolorem atque
+                        blanditiis nostrum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+                        laboriosam rem consectetur sed maiores excepturi tenetur dolore nam voluptatem quibusdam quod,
+                        odit fuga placeat corporis. At quas magnam dolore cum! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas, nisi nostrum modi fugiat animi error obcaecati esse saepe. Non veritatis
+                        qui sapiente totam repudiandae autem suscipit similique aperiam. Iure, eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit ab hic! Sed, voluptate
+                        temporibus, quibusdam optio dolorem possimus ea iste sapiente illo tempore dolorum odio.
+                        Voluptatem quibusdam quod excepturi!</p>
+                </div>
+            </div>
+        </section>
+        <section id="user-interface" class="section-container">
+            <h2>CSS User Interface</h2>
+            <p class="p-container">There are user interface properties in CSS such as resize and outline-offset.</p>
+            <div class="div-container">
+                <p>In this first example we will use the resize property which allows users to resize elements in our
+                    webpage. Users can resize both its horizontal and vertical dimensions. Make sure to add overflow
+                    with value auto for the resize to function.</p>
+                <div class="user-interface-ex1">
+                    <p>Resize me!</p>
+                </div>
+                <p>A div element which is restricted to only resize horizontally.</p>
+                <div class="user-interface-ex2">
+                    <p>Resize me!</p>
+                </div>
+                <p>A div element which is restricted to only resize vertically.</p>
+                <div class="user-interface-ex3">
+                    <p>Resize me!</p>
+                </div>
+            </div>
+            <p class="p-container">The last one is outline-offset which creates a space between the element border and
+                its outline.</p>
+            <div class="div-container">
+                <div class="user-interface-ex4">
+                    <p>This div has a 5px outline offset.</p>
+                </div>
+                <div class="user-interface-ex5">
+                    <p>This div has a 10px outline offset.</p>
+                </div>
+                <div class="user-interface-ex6">
+                    <p>This div has a 15px outline offset.</p>
+                </div>
+            </div>
+        </section>
+        <section id="variables" class="section-container">
+            <h2>CSS Variables</h2>
+            <p class="p-container">The var() function is used to insert values of CSS variables. A great example of
+                using the var() function is by using it for the colors of our webpage instead of copy pasting the colors
+                over and over again.</p>
+            <div class="div-container">
+                <p>First we need to know the syntax of using the var() function: var (--name, value). The --name part is
+                    required and will be the variable name and the value is will act as the fallback value if the
+                    variable is not found. There are two types of var() function which are the global and the local
+                    scope. The global scope variables can be accessed thru the entire document by using the CSS selector
+                    ":root {}" while the local scope variable can only be used under the local selector where it was
+                    declared e.g. "h2 {}". </p>
+                <p><strong>The first one we will use is the global scope variable:</strong></p>
+                <div class="variables-ex1">
+                    <h3>Global Variables</h3>
+                    <p><strong>In this div element, we used the --myBlack, --myBlue, and --myGrey to as our var()
+                            values. This
+                            was first declared in our :root selector and assigned color values for the said
+                            names</strong>. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Ab atque dignissimos ea officia
+                        inventore odio, explicabo possimus similique non? Nulla sint mollitia vitae earum labore
+                        explicabo cum? Accusantium, eligendi nesciunt?</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sequi, consequatur similique, ut
+                        voluptates repellat iste facilis earum molestiae rerum quam. Labore sunt perspiciatis reiciendis
+                        eaque numquam ipsum tempora tempore!</p>
+                    <hr>
+                    <p class="footer">Created by: <strong>Elmar Chavez</strong></p>
+                </div>
+                <p>Usually the local scope variable is used to override the global variable by inserting the var()
+                    function to a specific element selector. <strong>For the second one we will use is the local scope
+                        variable:</strong></p>
+                <div class="variables-ex2">
+                    <h3>Local Variables</h3>
+                    <p><strong>In this div element, we used the --myBlack, --myBlue, and --myGrey to as our var()
+                            values from our global scope. Now we will change the color of the second paragraph with red
+                            thru the use of local scope while still using the name --myGrey.</strong>. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Ab atque dignissimos ea officia
+                        inventore odio, explicabo possimus similique non? Nulla sint mollitia vitae earum labore
+                        explicabo cum? Accusantium, eligendi nesciunt?</p>
+
+                    <p class="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sequi, consequatur
+                        similique, ut
+                        voluptates repellat iste facilis earum molestiae rerum quam. Labore sunt perspiciatis reiciendis
+                        eaque numquam ipsum tempora tempore!</p>
+                    <hr>
+                    <p class="footer">Created by: <strong>Elmar Chavez</strong></p>
+                </div>
+            </div>
+            <p class="p-container">We can also manipulate our variables thru the use of JavaScript.</p>
+            <div class="div-container">
+                <div class="variables-ex3">
+                    <h3>Getting, Changing, and Resetting Global Variables</h3>
+                    <p><strong>In this div element, we will try to change the value of our global variable value
+                            (--myGrey) in our
+                            paragraph to color red thru the use of JavaScript.</strong>. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Ab atque dignissimos ea officia
+                        inventore odio, explicabo possimus similique non? Nulla sint mollitia vitae earum labore
+                        explicabo cum? Accusantium, eligendi nesciunt?</p>
+
+                    <p class="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sequi, consequatur
+                        similique, ut
+                        voluptates repellat iste facilis earum molestiae rerum quam. Labore sunt perspiciatis reiciendis
+                        eaque numquam ipsum tempora tempore!</p>
+                    <button type="button" onclick="myFunction_get()">Get CSS Variable with JavaScript</button>
+                    <button type="button" onclick="myFunction_set()">Change CSS Variable with JavaScript</button>
+                    <button type="button" onclick="myFunction_reset()">Reset CSS Variable</button>
+                    <hr>
+                    <p class="footer">Created by: <strong>Elmar Chavez</strong></p>
+                </div>
+            </div>
+            <p class="p-container">We can also integrate variables with media queries. Say for the local variable of the
+                div element below, we will change its value if the browser window size is less than 600px thru media
+                query.</p>
+            <div class="div-container">
+                <div class="variables-ex4">
+                    <h3>Variables with Queries</h3>
+                    <p>The font size of all the elements here in this div is set by the local variable "--fontsize:
+                        20px". This will be down to "--fontsize: 10px" if the browser window size is below 600px thru
+                        media query.</p>
+                </div>
+            </div>
+        </section>
+        <section id="property-rule" class="section-container">
+            <h2>CSS &commat;Property Rule</h2>
+            <p class="p-container">The @property will set your variables' default values, what property type is your
+                variable (e.g. color, font-size, etc.), and if this property can inherit values or not.</p>
+            <div class="div-container">
+                <p>For our first example, lets set our local variable (--myBackgroundColor) for our div element below to
+                    the color of darkblue. Then we will set the @property of our variable by setting its data type to
+                    color, its fallback or default color to blue, and make this property inheritable.</p>
+                <div class="property-ex1">
+                    <p>I am the parent div.</p>
+                    <div> I am the child div. I inherited my parent's background color.</div>
+                </div>
+                <p>Next we will deliberately not set any value to our variable. This will force our created variable to
+                    fallback to its initial or default value we have set in our @property. Then we will override this
+                    default value for the rest of the paragraphs in the div element below:</p>
+                <div class="property-ex2">
+                    <h3>Override Default Property Values</h3>
+                    <p class="p1"><strong>This paragraph has the "var(--textColor)" but is only using the default or
+                            fallback value of black from its @property setting.</strong> Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Natus eum quam sequi, possimus quod repellat temporibus corrupti consequatur
+                        totam in, ipsam, dignissimos incidunt quisquam modi. Autem dolorum ducimus commodi tenetur.</p>
+                    <p class="p2"><strong>This second paragraph has overridden the default value by assigning a local
+                            variable specifically into this paragraph and setting the color to red.</strong> Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Totam aperiam illo ipsa ab corrupti architecto
+                        porro, fugiat earum assumenda, inventore similique reiciendis id consequuntur quae modi libero
+                        deserunt explicabo voluptatem?</p>
+                    <p class="p3"><strong>This third paragraph also overrides the default value by assigning a local
+                            variable specifically into this paragraph and setting the color to blue. </strong>Lorem
+                        ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptas officiis error aliquam labore
+                        explicabo repellendus veritatis quae incidunt corporis tempore tempora quos, eveniet ullam
+                        itaque obcaecati sequi pariatur inventore.</p>
+                </div>
+            </div>
+            <p class="p-container">We can also utilized the @property value to set our colors with animation and
+                keyframes. See the example div element below:</p>
+            <div class="div-container">
+                <div class="property-ex3"></div>
+            </div>
+        </section>
+        <section id="media-queries" class="section-container">
+            <h2>CSS Media Queries</h2>
+            <p class="p-container">Media queries are used by web developers for webpage adaptability. Media queries help
+                make the webpage look cleaner and varied depending on the device of the user e.g. laptop, phone, etc. It
+                acts like a checker for the current width and height of the viewport, the orientation of the device, and
+                the resolution.</p>
+            <div class="div-container">
+                <p>The following are useful tables for using media queries:</p>
+                <div class="media-queries-table">
+                    <table>
+                        <caption>CSS Media Types</caption>
+                        <thead>
+                            <tr class="heading">
+                                <th scope="col">Value</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>all</td>
+                                <td>Used for all media type devices</td>
+                            </tr>
+                            <tr>
+                                <td>print</td>
+                                <td>Used for print preview mode</td>
+                            </tr>
+                            <tr>
+                                <td>screen</td>
+                                <td>Used for computer screens, tablets, smart-phones etc.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <caption>CSS Common Media Features</caption>
+                        <thead>
+                            <tr class="heading">
+                                <th scope="col">Value</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>orientation</td>
+                                <td>Orientation of the viewport. Landscape or portrait</td>
+                            </tr>
+                            <tr>
+                                <td>max-height</td>
+                                <td>Maximum height of the viewport</td>
+                            </tr>
+                            <tr>
+                                <td>min-height</td>
+                                <td>Minimum height of the viewport</td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>Height of the viewport (including scrollbar)</td>
+                            </tr>
+                            <tr>
+                                <td>max-width</td>
+                                <td>Maximum width of the viewport</td>
+                            </tr>
+                            <tr>
+                                <td>min-width</td>
+                                <td>Minimum width of the viewport</td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>Width of the viewport (including scrollbar)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>With this, we need to learn the syntax of media queries:</p>
+                <p class="media-queries-syntax">@media not|only <em>media type</em> and (<em>media feature</em>)
+                    and (<em>media feature</em>) {}
+                </p>
+            </div>
+            <p class="p-container">Now we can start with a simple media query with the div below:</p>
+            <div class="div-container">
+                <p>For the first one, will change the background color of the div below if the width of the viewport
+                    window or device is less than 600px:</p>
+                <div class="media-queries-ex1">
+                    <p>Resize your browser window!</p>
+                </div>
+                <p>The next one is a bit advanced where we float a navigation menu to the left if the viewport width is
+                    greater than 1200px. Less than 1200px, the menu will not float but will stack on top of each other:
+                </p>
+                <div class="media-queries-ex2">
+                    <div class="left-sidebar">
+                        <ul>
+                            <li><a href="#ex-menu-item1">Menu Item 1</a></li>
+                            <li><a href="#ex-menu-item2">Menu Item 2</a></li>
+                            <li><a href="#ex-menu-item3">Menu Item 3</a></li>
+                            <li><a href="#ex-menu-item4">Menu Item 4</a></li>
+                            <li><a href="#ex-menu-item5">Menu Item 5</a></li>
+                            <li><a href="#ex-menu-item6">Menu Item 6</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-section">
+                        <h3>Please Resize the Browser Window</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab delectus voluptate ut
+                            libero a expedita tempora et, necessitatibus ipsam, quis corporis quasi placeat omnis
+                            aliquid similique? Libero, adipisci repellendus! Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Sit deserunt qui nam architecto non nisi consequuntur, magnam corrupti
+                            esse accusamus iusto, debitis provident ea praesentium exercitationem nobis, vitae incidunt
+                            nesciunt.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, assumenda aut iure quos
+                            recusandae voluptatem consequatur quas quibusdam blanditiis delectus alias officiis
+                            necessitatibus atque sed nesciunt eligendi saepe ducimus ab!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente asperiores architecto
+                            dolorum quia deleniti dicta adipisci porro maxime impedit inventore consequuntur suscipit
+                            eius, possimus eligendi necessitatibus, aut at consequatur quas. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Architecto, provident repellat sapiente ad nobis accusamus
+                            quod quae alias quam reiciendis, consequuntur sequi minima rem eos cupiditate similique
+                            numquam autem cum.</p>
+                    </div>
+                </div>
+                <p>The next one changes background color two times depending on the browser size.</p>
+                <div class="media-queries-ex3">
+                    <p>Resize your browser window!</p>
+                </div>
+                <p>We can also create responsive horizontal navigation menus which changes when the device is width is
+                    less than 600px which makes them stack on top of each other.</p>
+                <div class="media-queries-ex4">
+                    <h3>Resize your browser window!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, iste eos dignissimos cupiditate
+                        numquam qui mollitia ut nulla consectetur modi ex nisi et natus enim accusamus provident
+                        obcaecati harum repellat. lorem</p>
+                    <ul>
+                        <li><a href="#ex-link1">Link 1</a></li>
+                        <li><a href="#ex-link2">Link 2</a></li>
+                        <li><a href="#ex-link3">Link 3</a></li>
+                        <li><a href="#ex-link4">Link 4</a></li>
+                        <li><a href="#ex-link5">Link 5</a></li>
+                    </ul>
+                </div>
+                <p>Next, we will create responsive column design which changes if the width is less than 992px and
+                    600px.</p>
+                <div class="media-queries-ex5">
+                    <div class="column1">
+                        <h3>Resize</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam facilis doloremque
+                            error, ad sit dolore. Nemo aut, reiciendis in vero veniam excepturi, ad nihil nobis
+                            laudantium architecto odit cum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus dolor
+                            laudantium, eos explicabo iure omnis voluptas totam est quo expedita error nostrum ad
+                            officia obcaecati earum deserunt quod maxime! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Temporibus nulla eos unde laudantium nostrum molestiae autem veniam
+                            aliquid eaque exercitationem illum asperiores non quo, dicta minus eius id doloremque
+                            dignissimos?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta consectetur autem
+                            sunt culpa, doloremque porro facere. Natus non unde neque sed! Eveniet incidunt aut minus,
+                            iste nobis voluptatem nisi.</p>
+                    </div>
+                    <div class="column2">
+                        <h3>Your</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam facilis doloremque
+                            error, ad sit dolore. Nemo aut, reiciendis in vero veniam excepturi, ad nihil nobis
+                            laudantium architecto odit cum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus dolor
+                            laudantium, eos explicabo iure omnis voluptas totam est quo expedita error nostrum ad
+                            officia obcaecati earum deserunt quod maxime! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Temporibus nulla eos unde laudantium nostrum molestiae autem veniam
+                            aliquid eaque exercitationem illum asperiores non quo, dicta minus eius id doloremque
+                            dignissimos?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta consectetur autem
+                            sunt culpa, doloremque porro facere. Natus non unde neque sed! Eveniet incidunt aut minus,
+                            iste nobis voluptatem nisi.</p>
+                    </div>
+                    <div class="column3">
+                        <h3>Browser</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam facilis doloremque
+                            error, ad sit dolore. Nemo aut, reiciendis in vero veniam excepturi, ad nihil nobis
+                            laudantium architecto odit cum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus dolor
+                            laudantium, eos explicabo iure omnis voluptas totam est quo expedita error nostrum ad
+                            officia obcaecati earum deserunt quod maxime! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Temporibus nulla eos unde laudantium nostrum molestiae autem veniam
+                            aliquid eaque exercitationem illum asperiores non quo, dicta minus eius id doloremque
+                            dignissimos?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta consectetur autem
+                            sunt culpa, doloremque porro facere. Natus non unde neque sed! Eveniet incidunt aut minus,
+                            iste nobis voluptatem nisi.</p>
+                    </div>
+                    <div class="column4">
+                        <h3>Window</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam facilis doloremque
+                            error, ad sit dolore. Nemo aut, reiciendis in vero veniam excepturi, ad nihil nobis
+                            laudantium architecto odit cum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus dolor
+                            laudantium, eos explicabo iure omnis voluptas totam est quo expedita error nostrum ad
+                            officia obcaecati earum deserunt quod maxime! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Temporibus nulla eos unde laudantium nostrum molestiae autem veniam
+                            aliquid eaque exercitationem illum asperiores non quo, dicta minus eius id doloremque
+                            dignissimos?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta consectetur autem
+                            sunt culpa, doloremque porro facere. Natus non unde neque sed! Eveniet incidunt aut minus,
+                            iste nobis voluptatem nisi.</p>
+                    </div>
+                </div>
+                <p>We can also use display flex to get the same results as the one above. Below is the same div but we
+                    have applied the responsive design using display:flex.</p>
+                <div class="media-queries-ex6">
+                    <div class="column1">
+                        <h3>Resize</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam facilis doloremque
+                            error, ad sit dolore. Nemo aut, reiciendis in vero veniam excepturi, ad nihil nobis
+                            laudantium architecto odit cum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus dolor
+                            laudantium, eos explicabo iure omnis voluptas totam est quo expedita error nostrum ad
+                            officia obcaecati earum deserunt quod maxime! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Temporibus nulla eos unde laudantium nostrum molestiae autem veniam
+                            aliquid eaque exercitationem illum asperiores non quo, dicta minus eius id doloremque
+                            dignissimos?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta consectetur autem
+                            sunt culpa, doloremque porro facere. Natus non unde neque sed! Eveniet incidunt aut minus,
+                            iste nobis voluptatem nisi.</p>
+                    </div>
+                    <div class="column2">
+                        <h3>Your</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam facilis doloremque
+                            error, ad sit dolore. Nemo aut, reiciendis in vero veniam excepturi, ad nihil nobis
+                            laudantium architecto odit cum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus dolor
+                            laudantium, eos explicabo iure omnis voluptas totam est quo expedita error nostrum ad
+                            officia obcaecati earum deserunt quod maxime! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Temporibus nulla eos unde laudantium nostrum molestiae autem veniam
+                            aliquid eaque exercitationem illum asperiores non quo, dicta minus eius id doloremque
+                            dignissimos?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta consectetur autem
+                            sunt culpa, doloremque porro facere. Natus non unde neque sed! Eveniet incidunt aut minus,
+                            iste nobis voluptatem nisi.</p>
+                    </div>
+                    <div class="column3">
+                        <h3>Browser</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam facilis doloremque
+                            error, ad sit dolore. Nemo aut, reiciendis in vero veniam excepturi, ad nihil nobis
+                            laudantium architecto odit cum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus dolor
+                            laudantium, eos explicabo iure omnis voluptas totam est quo expedita error nostrum ad
+                            officia obcaecati earum deserunt quod maxime! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Temporibus nulla eos unde laudantium nostrum molestiae autem veniam
+                            aliquid eaque exercitationem illum asperiores non quo, dicta minus eius id doloremque
+                            dignissimos?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta consectetur autem
+                            sunt culpa, doloremque porro facere. Natus non unde neque sed! Eveniet incidunt aut minus,
+                            iste nobis voluptatem nisi.</p>
+                    </div>
+                    <div class="column4">
+                        <h3>Window</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam facilis doloremque
+                            error, ad sit dolore. Nemo aut, reiciendis in vero veniam excepturi, ad nihil nobis
+                            laudantium architecto odit cum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus dolor
+                            laudantium, eos explicabo iure omnis voluptas totam est quo expedita error nostrum ad
+                            officia obcaecati earum deserunt quod maxime! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Temporibus nulla eos unde laudantium nostrum molestiae autem veniam
+                            aliquid eaque exercitationem illum asperiores non quo, dicta minus eius id doloremque
+                            dignissimos?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta consectetur autem
+                            sunt culpa, doloremque porro facere. Natus non unde neque sed! Eveniet incidunt aut minus,
+                            iste nobis voluptatem nisi.</p>
+                    </div>
+                </div>
+                <p>We can also hide elements using media queries. The spooky ghost below will be hidden when the screen
+                    width is equal to or less than 600px.</p>
+                <div class="media-queries-ex7">
+                    <p>I will become hidden!</p>
+                    <img src="./images/ghost-image_900x776.png" alt="Spooky ghost." width="900" height="776"
+                        title="Boo!">
+                </div>
+                <p>Also we can change the font-size of our elements base on the screen change using media queries.</p>
+                <div class="media-queries-ex8">
+                    <p class="big-font">I have a font size of 60px!</p>
+                    <p class="small-font">I have a font size of 30px!</p>
+                </div>
+                <p>A fun use of media queries is to use it for a responsive media gallery. See the photos below and
+                    resize the browser window to see its effects.</p>
+                <div class="media-queries-ex9">
+                    <div class="column1">
+                        <img src="./images/dahyun_3840x2160.jpg" alt="Dahyun from TWICE." width="3840" height="2160"
+                            title="Dahyun!">
+                        <img src="./images/jennie_5120x2880.jpg" alt="Jennie from BLACKPINK." width="5120" height="2880"
+                            title="Jennie!">
+                        <img src="./images/iu_1920x1080.jpg" alt="IU K-Pop Idol." width="1920" height="1080"
+                            title="IU!">
+                        <img src="./images/aran_1000x1437.jpeg" alt="Aran from FIFTY FIFTY" width="1000" height="1437"
+                            title="Aran!">
+                        <img src="./images/nayeon_3840x2160.jpg" alt="Nayeon from TWICE" width="3840" height="2160">
+                    </div>
+                    <div class="column2">
+                        <img src="./images/dahyun2_1920x1080.webp" alt="Dahyun from TWICE." width="1920" height="1080"
+                            title="Dahyun!">
+                        <img src="./images/jennie2_3840x2160.jpg" alt="Jennie from BLACKPINK." width="3840"
+                            height="2160" title="Jennie!">
+                        <img src="./images/iu2_2560x1340.jpg" alt="IU K-Pop Idol." width="2560" height="1340"
+                            title="IU!">
+                        <img src="./images/aran2_735x1307.jpg" alt="Aran from FIFTY FIFTY" width="735" height="1307"
+                            title="Aran!">
+                        <img src="./images/nayeon2_919x517.jpg" alt="Nayeon from TWICE" width="3840" height="2160">
+                    </div>
+                    <div class="column3">
+                        <img src="./images/dahyun_3840x2160.jpg" alt="Dahyun from TWICE." width="3840" height="2160"
+                            title="Dahyun!">
+                        <img src="./images/jennie_5120x2880.jpg" alt="Jennie from BLACKPINK." width="5120" height="2880"
+                            title="Jennie!">
+                        <img src="./images/iu_1920x1080.jpg" alt="IU K-Pop Idol." width="1920" height="1080"
+                            title="IU!">
+                        <img src="./images/aran_1000x1437.jpeg" alt="Aran from FIFTY FIFTY" width="1000" height="1437"
+                            title="Aran!">
+                        <img src="./images/nayeon_3840x2160.jpg" alt="Nayeon from TWICE" width="3840" height="2160">
+                    </div>
+                    <div class="column4">
+                        <img src="./images/dahyun2_1920x1080.webp" alt="Dahyun from TWICE." width="1920" height="1080"
+                            title="Dahyun!">
+                        <img src="./images/jennie2_3840x2160.jpg" alt="Jennie from BLACKPINK." width="3840"
+                            height="2160" title="Jennie!">
+                        <img src="./images/iu2_2560x1340.jpg" alt="IU K-Pop Idol." width="2560" height="1340"
+                            title="IU!">
+                        <img src="./images/aran2_735x1307.jpg" alt="Aran from FIFTY FIFTY" width="735" height="1307"
+                            title="Aran!">
+                        <img src="./images/nayeon2_919x517.jpg" alt="Nayeon from TWICE" width="3840" height="2160">
+                    </div>
+                </div>
+                <p>Now we will recreate a <a
+                        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_website"
+                        target="_blank">website
+                        layout</a> with flex. Here we used the iframe element to showcase the responsive flex webpage.
+                    Try to drag the bottom part of the iframe below to resize it or visit the <a
+                        href="./pages/responsive-flex-web-layout-website-page3.html" target="_blank">recreated
+                        website</a> in a new window.
+                </p>
+                <iframe src="./pages/responsive-flex-web-layout-website-page3.html" frameborder="1"
+                    class="iframe-container"></iframe>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer>
+        <p><strong>&copy;Copyright</strong>: Elmar Chavez</p>
+        <a href="#" id="go-back-to-top"><img src="./images/top-arrow_24x24.svg" alt="Go to top." width="48" height="48"
+                title="Go Back to Top"></a>
+    </footer>
+    <script>
+        // script for playing audio let me know....
+        function playAudio() {
+            var audio = document.getElementById("let-me-know");
+            audio.play();
+        }
+        function pauseAudio() {
+            var audio = document.getElementById("let-me-know");
+            audio.pause();
+            audio.currentTime = 0;
+        }
+        //script for playing audio never gonna give you up...
+        function playAudio1() {
+            var audio = document.getElementById("rick-roll");
+            audio.play();
+        }
+        function pauseAudio1() {
+            var audio = document.getElementById("rick-roll");
+            audio.pause();
+            audio.currentTime = 0;
+        }
+        //script for playing audio gwenchana ding ding ding ding ding....
+        function playAudio2() {
+            var audio = document.getElementById("gwenchana");
+            audio.play();
+        }
+        function pauseAudio2() {
+            var audio = document.getElementById("gwenchana");
+            audio.pause();
+            audio.currentTime = 0;
+        }
+        //script for playing audio vine boom...
+        function playAudio3() {
+            var audio = document.getElementById("vine-boom");
+            audio.play();
+        }
+        function pauseAudio3() {
+            var audio = document.getElementById("vine-boom");
+            audio.pause();
+            audio.currentTime = 0;
+        }
+        //script for playing audio button click...
+        function playAudio4() {
+            var audio = document.getElementById("button-click");
+            audio.play();
+            audio.currentTime = 0;
+        }
+
+        //script for image modal dialog box prompt to be studied!!!!
+        //get the modal
+        var modal = document.getElementById("lucyModal");
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("lucy");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-button")[0];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        //script for getting and setting the variable value
+        //to be studied!!!!
+        //get the root element
+        var r = document.querySelector(":root");
+        //create a function for getting a variable value
+        function myFunction_get() {
+            //get the styles (properties and values) for the root
+            var rs = getComputedStyle(r);
+            //alert the value of the --myGrey variable
+            alert("The value of --myGrey is: " + rs.getPropertyValue('--myGrey'));
+        }
+        //create a function for setting a variable value
+        function myFunction_set() {
+            r.style.setProperty('--myGrey', 'red')
+        }
+        //create a function for resetting the above variable value
+        function myFunction_reset() {
+            r.style.setProperty('--myGrey', '#555')
+        }
+    </script>
+</body>
+
+</html>

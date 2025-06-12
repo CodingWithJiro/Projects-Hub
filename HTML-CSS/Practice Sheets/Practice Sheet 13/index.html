@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Practice Sheet 13 - CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This site contains the CSS projects of the author while early in his learning career as a frontend developer." />
+    <link rel="icon" href="./images/css-3.svg" type="image/svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta property="og:title" content="Practice Sheet 13 - CSS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://practicesheet13.com/css" />
+    <meta property="og:image" content="./images/css-3.svg" />
+</head>
+
+<body>
+    <header>
+        <h1>CSS Display</h1>
+        <p>We can the display element which overrides other elements' default display values</p>
+    </header>
+    <main>
+        <section id="horizontal-list">
+            <h2>Horizontal List</h2>
+            <p>Make a list of links that is horizontally aligned.</p>
+            <br>
+            <ul id="list-horizontal">
+                <li><a href="https://google.com" target="_blank">Google.com</a></li>
+                <li><a href="https://youtube.com" target="_blank">YouTube.com</a></li>
+                <li><a href="https://theuselessweb.com" target="_blank">TheUselessWeb.com</a></li>
+            </ul>
+            <br>
+        </section>
+        <section id="hide-remove">
+            <h2>Hide or Remove Elements</h2>
+            <p>Try to create a function which hides an element and remove an element. Also add a reset function to do it
+                all over again.</p>
+            <div id="hide-element" class="container">
+                <p>Disgusted Cat Face</p>
+                <img src="./images/cat1_750x1000.jpg" alt="Cat with disgusted face." width="240" height="320" id="cat1">
+                <br>
+                <button id="button-hide" onclick="hideElement()">Hide</button>
+            </div>
+            <div id="remove-element" class="container">
+                <p>Tired Face Cat</p>
+                <img src="./images/cat2_201x251.jpg" alt="Tired cat." width="256" height="320" id="cat2">
+                <br>
+                <button id="button-remove" onclick="removeElement()">Remove</button>
+            </div>
+            <div id="reset-element" class="container">
+                <p>Cutest Cat</p>
+                <img src="./images/cat3_320x320.png" alt="Cat UIUAAA meme." width="320" height="320" id="cat3">
+                <br>
+                <button id="button-reset" onclick="resetElement()">Reset</button>
+            </div>
+            <p id="show-hidden" onclick="showHidden()">Show Hidden Paragraph</p>
+            <br>
+            <div id="hidden-paragraph" class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quia corrupti, quo quibusdam cum
+                    accusantium laudantium impedit vitae ratione magnam dolorem atque? Modi quaerat ea numquam nihil
+                    iste praesentium error.</p>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer>
+        <p>&copy;<strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+    <script>
+        function hideElement() {
+            document.getElementById("hide-element").style.visibility = "hidden";
+        }
+        function removeElement() {
+            document.getElementById("remove-element").style.display = "none";
+        }
+        function resetElement() {
+            document.getElementById("hide-element").style.visibility = "visible";
+            document.getElementById("remove-element").style.display = "inline-block";
+        }
+        function showHidden() {
+            if (document.getElementById("hidden-paragraph").style.visibility === "hidden") {
+                document.getElementById("hidden-paragraph").style.visibility = "visible";
+                document.getElementById("show-hidden").innerHTML = "Hide Paragraph"
+            }
+            else {
+                document.getElementById("hidden-paragraph").style.visibility = "hidden";
+                document.getElementById("show-hidden").innerHTML = "Show Hidden Paragraph"
+            }
+        }
+    </script>
+
+</body>
+
+</html>

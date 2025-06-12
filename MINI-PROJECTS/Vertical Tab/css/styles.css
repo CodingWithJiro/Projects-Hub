@@ -1,0 +1,236 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Roboto", sans-serif;
+  --FS: 1rem;
+
+  /* COLORS */
+  --BGCOLOR: whitesmoke;
+  --BGCOLOR-HEADER: #333;
+  --BGCOLOR-VTAB-PANEL: #eee;
+  --BGCOLOR-VTAB-BUTTON: #eee;
+  --BGCOLOR-VTAB-BUTTON-HOVER: #777;
+  --BGCOLOR-VTAB-BUTTON-CURRENT: #555;
+  --FONT-COLOR: #000;
+  --FONT-COLOR-HEADER-TITLE: #fff;
+  --FONT-COLOR-VTAB: #333;
+  --FONT-COLOR-VTAB-BUTTON-HOVER: whitesmoke;
+  --FONT-COLOR-VTAB-BUTTON-CURRENT: whitesmoke;
+  --BORDER-COLOR: #aaa;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.3);
+
+  /* BORDERS */
+  --BORDER-VTAB-PANEL: 1px solid var(--BORDER-COLOR);
+  --BORDER-VTAB-CONTENT: 1px solid var(--BORDER-COLOR);
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0 5px 10px var(--SHADOW-COLOR);
+
+  /* STANDARD PADDING */
+  --PADDING-TEXT: 0.25em 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  background-color: var(--BGCOLOR);
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || HEADER */
+.header {
+  background-color: var(--BGCOLOR-HEADER);
+  color: var(--FONT-COLOR-HEADER-TITLE);
+}
+
+.header__container {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* || MAIN */
+/* VERTICAL TAB */
+.vtab {
+  color: var(--FONT-COLOR-VTAB);
+}
+
+.vtab__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.vtab__panel {
+  flex: 25%;
+  border: var(--BORDER-VTAB-PANEL);
+  background-color: var(--BGCOLOR-VTAB-PANEL);
+  overflow: auto;
+}
+
+.vtab__content {
+  flex: 75%;
+  border: var(--BORDER-VTAB-CONTENT);
+  border-left: none;
+  padding: 1rem;
+  height: min(800px, 50vh);
+  overflow: auto;
+}
+
+.vtab__list {
+  list-style-type: none;
+}
+
+.vtab__button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: var(--BGCOLOR-VTAB-BUTTON);
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.vtab__button--current {
+  background-color: var(--BGCOLOR-VTAB-BUTTON-CURRENT);
+  color: var(--FONT-COLOR-VTAB-BUTTON-CURRENT);
+}
+
+.vtab__button:hover,
+.vtab__button:focus-visible {
+  background-color: var(--BGCOLOR-VTAB-BUTTON-HOVER);
+  color: var(--FONT-COLOR-VTAB-BUTTON-HOVER);
+}
+
+.vtab__article {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.vtab__title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 2.5px;
+}
+
+.vtab__p {
+  font-size: 1.125rem;
+}
+
+/* || MEDIA QUERIES */
+@media screen and (max-width: 640px) {
+  /* || GENERAL STYLES */
+  html {
+    font-size: 0.9rem;
+  }
+
+  /* || MAIN */
+  /* VERTICAL TAB */
+  .vtab__container {
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .vtab__panel {
+    flex: 100%;
+  }
+
+  .vtab__content {
+    flex: 100%;
+    border: var(--BORDER-VTAB-CONTENT);
+    border-top: none;
+    height: min(800px, 70vh);
+  }
+
+  .vtab__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .vtab__button {
+    width: auto;
+  }
+}

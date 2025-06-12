@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>CSS Additional Topics - Grid Columns/Rows</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This is the continuation webpage for CSS advanced topics which showcases the author's skills involving the use of CSS flexbox, CSS grid, and CSS responsive web design." />
+    <link rel="icon" href="../images/css-3_2183x2500.svg" type="image/svg" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <meta property="og:title" content="CSS Additional Advanced Topics" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="practicesheet18.com" />
+    <meta property="og:image" content="../images/css-3.svg-mask-ex1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="title-side-nav">
+            <div class="website-title">
+                <img src="../images/css-3_2183x2500.svg" alt="CSS logo." width="2183" height="2500">
+                <h1>CSS Additional Topics</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="topic-title">CSS Flexbox</li>
+                    <li><a href="../index.html">Flexbox Intro</a></li>
+                    <li><a href="css-flex-container.html">Flex Container</a></li>
+                    <li><a href="./css-flex-items.html">Flex Items</a></li>
+                    <li><a href="./css-flex-responsive.html">Flex Responsive</a></li>
+                    <li class="topic-title">CSS Grid</li>
+                    <li><a href="./css-grid-intro.html">Grid Intro</a></li>
+                    <li><a href="#" id="active">Grid Columns/Rows</a></li>
+                    <li><a href="./css-grid-container.html">Grid Container</a></li>
+                    <li><a href="./css-grid-item.html">Grid Item</a></li>
+                    <li class="topic-title">CSS Responsive</li>
+                    <li><a href="./css-rwd-intro.html">RWD Intro</a></li>
+                    <li><a href="./css-rwd-viewport.html">RWD Viewport</a></li>
+                    <li><a href="./css-rwd-grid-view.html">RWD Grid View</a></li>
+                    <li><a href="./css-rwd-media-queries.html">RWD Media Queries</a></li>
+                    <li><a href="./css-rwd-images.html">RWD Images</a></li>
+                    <li><a href="./css-rwd-videos.html">RWD Videos</a></li>
+                    <li><a href="./css-rwd-frameworks.html">RWD Frameworks</a></li>
+                    <li><a href="./css-rwd-templates.html">RWD Templates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <section>
+                <h2>CSS Grid Columns/Rows</h2>
+                <hr>
+                <p>
+                    The vertical lines containing the grid items are the <strong>grid columns</strong>.
+                </p>
+                <img src="../images/columns_467x461.png" alt="Grid columns." width="467" height="461" title="Columns"
+                    style="display: block; margin: auto;">
+                <p>
+                    The horizontal lines containing the grid items are the <strong>grid rows</strong>.
+                </p>
+                <img src="../images/rows_531x399.png" alt="Grid rows." width="531" height="399" title="Rows"
+                    style="display: block; margin: auto;">
+                <p>
+                    Last, the spaces between the columns/rows are called <strong>gaps</strong>.
+                </p>
+                <img src="../images/grid-gaps_565x461.png" alt="Grid gaps." width="565" height="461" title="Gaps"
+                    style="display: block; margin: auto;">
+                <p>
+                    We can adjust the <strong>gap size</strong> of our grid by using the following properties:
+                </p>
+                <ul>
+                    <li>column-gap</li>
+                    <li>row-gap</li>
+                    <li>gap</li>
+                </ul>
+                <h3>The Column-Gap Property</h3>
+                <p>
+                    This specifies the gap between columns in our grid.
+                </p>
+                <p class="example">Example 1:</p>
+                <div class="div-container">
+                    <p>The grid below has a column-gap of 50px.</p>
+                    <div class="grid-columns-rows-ex1">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                    </div>
+                </div>
+                <h3>The Row-Gap Property</h3>
+                <p>
+                    This specifies the gap between rows in our grid.
+                </p>
+                <p class="example">Example 2:</p>
+                <div class="div-container">
+                    <p>The grid below has a row-gap of 50px.</p>
+                    <div class="grid-columns-rows-ex2">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                    </div>
+                </div>
+                <h3>The Gap Property</h3>
+                <p>
+                    This property is the shorthand property for row-gap and column-gap.
+                </p>
+                <p class="example">Example 3:</p>
+                <div class="div-container">
+                    <p>The grid below has a gap of 50px.</p>
+                    <div class="grid-columns-rows-ex3">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                    </div>
+                </div>
+                <h3>Grid Lines</h3>
+                <p>
+                    The lines between columns are called column lines while the lines in between rows are called row
+                    lines.
+                </p>
+                <img src="../images/grid-lines_595x505.png" alt="Grid lines." width="595" height="505"
+                    title="grid-lines_595x505" style="display: block; margin: auto;">
+                <p>
+                    We can use this to specify where our grid items would <strong>start</strong> and
+                    <strong>end</strong> using the following properties:
+                </p>
+                <ul>
+                    <li>grid-column-start</li>
+                    <li>grid-column-end</li>
+                    <li>grid-row-start</li>
+                    <li>grid-row-end</li>
+                    <li>grid-column</li>
+                    <li>grid-row</li>
+                </ul>
+                <h3>The Grid-Column-Start &amp; Grid-Column-End Property</h3>
+                <p>
+                    The grid-column-start property specifies where to <strong>start</strong> a grid item. The
+                    grid-column-end property specifies where to <strong>end</strong> a grid item.
+                </p>
+                <p class="example">Example 4:</p>
+                <div class="div-container">
+                    <p>
+                        We will let the first doge picture start at column line 1 and end on column line 3 (Refer again
+                        to the
+                        picture above).
+                    </p>
+                    <div class="grid-columns-rows-ex4">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                    </div>
+                </div>
+                <h3>The Grid-Column Property</h3>
+                <p>
+                    This is the <strong>shorthand property</strong> for the grid-column-start and grid-column-end. We
+                    can define it by using this syntax:
+                </p>
+                <code style="font-size: 15px;">
+                    <strong>grid-column: 1 / span 2;</strong>
+                </code>
+                <p>
+                    where 1 specifies where we will start the grid item and span 2 specifies how much this grid item
+                    will
+                    span the columns.
+                </p>
+                <p class="example">Example 5:</p>
+                <div class="div-container">
+                    <p>
+                        We will let the first doge picture start at column line 1 and span it for 2 columns using the
+                        shorthand grid-column property.
+                    </p>
+                    <div class="grid-columns-rows-ex5">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                        <img src="../images/doge_350x263.jpg" alt="Doge meme." width="350" height="263" title="Doge!">
+                    </div>
+                </div>
+                <h3>The Grid-Row-Start &amp; Grid-Row-End Property</h3>
+                <p>
+                    The grid-row-start property specifies where to <strong>start</strong> the grid item while the
+                    grid-row-end property specifies where to <strong>end</strong> the grid item.
+                </p>
+                <p class="example">Example 6:</p>
+                <div class="div-container">
+                    <p>
+                        Now we will use a different image. The first cat image will start from row line 1 and end in row
+                        line 3 (Refer to the grid lines image again).
+                    </p>
+                    <div class="grid-columns-rows-ex6">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                    </div>
+                </div>
+                <h3>The Grid-Row Property</h3>
+                <p>
+                    This is the <strong>shorthand</strong> property for both the grid-row-start and grid-row-end. This
+                    has the same syntax with grid-column property.
+                </p>
+                <p class="example">Example 7:</p>
+                <div class="div-container">
+                    <p>
+                        We will be doing the same with the example above but this time we will use the grid-column
+                        property.
+                    </p>
+                    <div class="grid-columns-rows-ex7">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                        <img src="../images/happy-cat_360x360.gif" alt="Happy cat." width="360" height="360"
+                            title="Happy happy happy!">
+                    </div>
+                </div>
+            </section>
+            <div class="button-container">
+                <a href="./css-grid-intro.html" target="_self" title="Go to previous lesson"
+                    class="previous-lesson-button">
+                    <img src="../images/arrow-left_50x50.png" alt="Go back to the previous lesson." width="50"
+                        height="50">
+                </a>
+                <a href="./css-grid-container.html" target="_self" title="Go to next lesson" class="next-lesson-button">
+                    <img src="../images/arrow-right_50x50.png" alt="Go to next lesson." width="50" height="50">
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; <strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+    <script>
+        // SCRIPT FOR SCROLLING AUTOMATICALLY TO THE SELECTED/ACTIVE TAB
+        function scrollToTab() {
+            document.getElementById("active").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+
+</html>

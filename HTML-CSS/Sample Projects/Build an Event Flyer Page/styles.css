@@ -1,0 +1,199 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Nunito", sans-serif;
+  --FS: clamp(1.25rem, 2.2vh, 1.75rem);
+
+  /* COLORS */
+  --BGCOLOR: #ffc6b2;
+  --BGCOLOR-FADE1: #ffd3c1;
+  --BGCOLOR-FADE2: #fff1de;
+  --BGCOLOR-FADE3: #fff5e4;
+  --BG-IMAGE: linear-gradient(
+    45deg,
+    var(--BGCOLOR),
+    var(--BGCOLOR-FADE1),
+    var(--BGCOLOR-FADE2),
+    var(--BGCOLOR-FADE3)
+  );
+  --BGCOLOR-SECTION: #faf2e4;
+  --BORDER-COLOR: #582d41;
+  --FONT-COLOR: #582d41;
+  --FONT-COLOR-ALT: #000;
+
+  /* BORDERS */
+  --BORDERS: 2px solid var(--BORDER-COLOR);
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0px 3px 5px rgba(0, 0, 0, 0.3);
+
+  /* PADDINGS */
+  --PADDING-TB-TEXT: 0.25em;
+  --PADDING-SIDE-TEXT: 2.5%;
+  --PADDING-TB-BODY: 50px;
+
+  /* MARGINS */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+  --MARGIN-HEADER: 0.25em;
+  --MARGIN-BODY: 0 auto;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+  background-image: var(--BG-IMAGE);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  color: var(--FONT-COLOR);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: calc(100vh - 100px);
+  width: 80vw;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || HEADER */
+.header {
+  text-align: center;
+}
+
+.header__img {
+  margin: auto;
+  width: 50vw;
+  min-width: 300px;
+  border-radius: 100px;
+  opacity: 0.8;
+  transition: all 0.6s ease-in-out;
+}
+
+.header__img:hover {
+  opacity: 1;
+  box-shadow: var(--BOX-SHADOW);
+}
+
+.header__h1,
+.header__h2 {
+  text-transform: uppercase;
+  margin: var(--MARGIN-HEADER);
+  text-align: center;
+}
+
+.header__h1 {
+  font-weight: 800;
+}
+
+.header__h2 {
+  color: var(--FONT-COLOR-ALT);
+  margin-top: 0.5rem;
+}
+
+/* || FOOTER */
+.footer {
+  text-align: center;
+}
+.footer__p {
+  color: var(--FONT-COLOR-ALT);
+  margin: var(--MARGIN-TEXT);
+  padding: var(--PADDING-TB-TEXT) var(--PADDING-SIDE-TEXT);
+  font-weight: bold;
+}
+
+/* || MAIN */
+.main {
+  width: 100%;
+}
+
+.main__h2 {
+  text-align: center;
+  margin: var(--MARGIN-TEXT);
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.75em;
+}
+
+.main__img {
+  width: 40%;
+  min-width: 225px;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: var(--BORDERS);
+}
+
+.main__p {
+  color: var(--FONT-COLOR-ALT);
+  padding: var(--PADDING-TB-TEXT) var(--PADDING-SIDE-TEXT);
+  margin: var(--MARGIN-TEXT);
+  background-color: var(--BGCOLOR-FADE2);
+  box-shadow: var(--BOX-SHADOW);
+  width: 75%;
+  min-width: 225px;
+  margin: auto;
+}
+
+hr {
+  width: 75%;
+  margin: auto;
+  background-color: var(--BORDER-COLOR);
+  border-color: var(--BORDER-COLOR);
+  border-radius: 10px;
+}
+
+section {
+  width: 90%;
+  background-color: var(--BGCOLOR-SECTION);
+  box-shadow: var(--BOX-SHADOW);
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+}

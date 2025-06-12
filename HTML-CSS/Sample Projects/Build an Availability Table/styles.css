@@ -1,0 +1,187 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Fugaz+One&family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Open Sans", sans-serif;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BGCOLOR: #b2ffb2;
+  --BORDER-COLOR: #000;
+  --FONT-COLOR: #111;
+  --color0: #fff;
+  --color1: #b2d8b2;
+  --color2: #66b266;
+  --color3: #198c19;
+  --color4: #005900;
+  --color5: #004000;
+
+  /* BORDERS */
+  --solid-border: 1px solid var(--BORDER-COLOR);
+  --dashed-border: 1px dashed var(--BORDER-COLOR);
+
+  /* STANDARD PADDING */
+  --PADDING-TEXT: 0.25em 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+  padding: 1em;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || MAIN */
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 150px;
+}
+
+.time {
+  font-style: italic;
+  font-weight: 500;
+}
+
+tr:nth-child(2) td {
+  border-top: 3px solid black;
+}
+
+tr:last-child td {
+  border-bottom: 3px solid black;
+}
+
+tr td:first-of-type {
+  border-left: 3px solid black;
+}
+
+tr td:last-of-type {
+  border-right: 3px solid black;
+}
+
+#legend {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#legend span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+#legend-label-left,
+#legend-label-right {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+#legend-gradient {
+  width: 400px;
+  height: 20px;
+  border: 2px solid black;
+  background-image: linear-gradient(
+    90deg,
+    var(--color0) 0% 16%,
+    var(--color1) 16% 33%,
+    var(--color2) 33% 50%,
+    var(--color3) 50% 66%,
+    var(--color4) 66% 83%,
+    var(--color5) 83% 100%
+  );
+}

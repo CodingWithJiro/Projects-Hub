@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Icon Bar</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This website showcases the author's skills in creating icon bar mini-project during the third month of learning frontend web development." />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta property="og:title" content="Icon Bar" />
+    <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <main>
+        <h1>Responsive Icon Bar</h1>
+
+        <button class="menu-button" id="menu-button" onclick="dropdown()">
+            <i class="fa fa-bars"></i>
+
+            <p>Menu</p>
+        </button>
+
+        <nav class="icon-bar" id="icon-bar">
+            <span class="close-button" id="close-button" onclick="closeDropdown()">
+                &times;
+            </span>
+
+            <ul>
+                <li><a href="#" class="current-page"><i class="fa fa-home"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa fa-globe"></i></a></li>
+                <li><a href="#"><i class="fa fa-trash"></i></a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <script>
+        const iconBar = document.getElementById("icon-bar");
+        const menuButton = document.getElementById("menu-button");
+        const closeButton = document.getElementById("close-button");
+
+        function dropdown() {
+            iconBar.style.display = "flex";
+            menuButton.style.display = "none";
+            closeButton.style.display = "block"
+        }
+
+        function closeDropdown() {
+            iconBar.style.display = "none";
+            menuButton.style.display = "flex";
+            closeButton.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

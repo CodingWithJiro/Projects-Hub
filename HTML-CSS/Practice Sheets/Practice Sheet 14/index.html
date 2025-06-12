@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Practice Sheet 14 - CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This site contains the CSS projects of the author while early in his learning career as a frontend developer." />
+    <link rel="icon" href="./images/css-3.svg" type="image/svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta property="og:title" content="Practice Sheet 14 - CSS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://practicesheet14.com/css" />
+    <meta property="og:image" content="./images/css-3.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Joan&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Width vs Max-Width</h1>
+        <p>Use width for the div element if you want horizontal scrollbars when browswer window gets smaller.</p>
+        <p>Use max-width for the div element to always show its content by adjusting to the smaller browswer window
+            without utilizing scrollbars.</p>
+    </header>
+    <main>
+        <section>
+            <h2>CSS Width</h2>
+            <div id="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur molestias cupiditate
+                temporibus esse
+                laboriosam cum veritatis suscipit beatae, distinctio enim alias explicabo fuga quisquam impedit ipsam
+                quos laborum illo eos?</div>
+            <br>
+            <div id="button" onclick="changeFunction()">Change to Max Width</div>
+        </section>
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer>
+        <p>&copy;<strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+    <script>
+        function changeFunction() {
+            var declaration = document.styleSheets[0].rules[0].style;
+            var removedValue = declaration.removeProperty("width");
+            document.getElementById("paragraph").style.setProperty("max-width", "800px");
+            document.getElementById("button").innerHTML = "Refresh Page"
+        }
+    </script>
+</body>
+
+</html>

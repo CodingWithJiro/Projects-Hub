@@ -1,0 +1,219 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Fugaz+One&family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Open Sans", sans-serif;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BGCOLOR: #fff;
+  --BGCOLOR-READ: #57c785;
+  --BGCOLOR-READ-FADE: #f2ecbd;
+  --BGIMAGE-READ: linear-gradient(
+    var(--BGCOLOR-READ),
+    var(--BGCOLOR-READ-FADE)
+  );
+  --BGCOLOR-IN-PROGRESS: #ffc04c;
+  --BGCOLOR-IN-PROGRESS-FADE: #ffedcc;
+  --BGIMAGE-IN-PROGRESS: linear-gradient(
+    var(--BGCOLOR-IN-PROGRESS),
+    var(--BGCOLOR-IN-PROGRESS-FADE)
+  );
+  --BGCOLOR-TO-READ: #9a9a9a;
+  --BGCOLOR-TO-READ-FADE: #d4d4d4;
+  --BGIMAGE-TO-READ: linear-gradient(
+    var(--BGCOLOR-TO-READ),
+    var(--BGCOLOR-TO-READ-FADE)
+  );
+  --BGCOLOR-READ-STATUS: #198c19;
+  --BGCOLOR-READ-STATUS-FADE: #b2d8b2;
+  --BGIMAGE-READ-STATUS: linear-gradient(
+    var(--BGCOLOR-READ-STATUS),
+    var(--BGCOLOR-READ-STATUS-FADE)
+  );
+  --BGCOLOR-IN-PROGRESS-STATUS: #ffae19;
+  --BGCOLOR-IN-PROGRESS-STATUS-FADE: #ffdb99;
+  --BGIMAGE-IN-PROGRESS-STATUS: linear-gradient(
+    var(--BGCOLOR-IN-PROGRESS-STATUS),
+    var(--BGCOLOR-IN-PROGRESS-STATUS-FADE)
+  );
+  --BGCOLOR-TO-READ-STATUS: #ff3232;
+  --BGCOLOR-TO-READ-STATUS-FADE: #ffb2b2;
+  --BGIMAGE-TO-READ-STATUS: linear-gradient(
+    var(--BGCOLOR-TO-READ-STATUS),
+    var(--BGCOLOR-TO-READ-STATUS-FADE)
+  );
+  --BGIMAGE-RATE: linear-gradient(goldenrod, gold, yellow);
+  --FONT-COLOR: #000;
+
+  /* BORDERS */
+  --BORDER-READ-STATUS: 2px solid var(--BGCOLOR-READ-STATUS);
+  --BORDER-TO-READ-STATUS: 2px solid var(--BGCOLOR-TO-READ-STATUS);
+  --BORDER-IN-PROGRESS-STATUS: 2px solid var(--BGCOLOR-IN-PROGRESS-STATUS);
+
+  /* STANDARD PADDING */
+  --PADDING-TEXT: 0.25em 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+  padding: 1em;
+}
+
+p {
+  line-height: 1.5;
+}
+
+span {
+  display: inline-block;
+}
+
+/* || MAIN */
+h1 {
+  text-align: center;
+  margin: 0 auto 1.5rem;
+}
+
+table {
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+th {
+  font-size: 1.25em;
+  background-image: linear-gradient(dodgerblue, rgb(181, 218, 255));
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(
+    var(--BGCOLOR-READ),
+    var(--BGCOLOR-READ-FADE)
+  );
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(
+    var(--BGCOLOR-IN-PROGRESS),
+    var(--BGCOLOR-IN-PROGRESS-FADE)
+  );
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(
+    var(--BGCOLOR-TO-READ),
+    var(--BGCOLOR-TO-READ-FADE)
+  );
+}
+
+tr[class="read"] span[class="status"] {
+  border: var(--BORDER-READ-STATUS);
+  background-image: var(--BGIMAGE-READ-STATUS);
+  font-weight: 600;
+  border-radius: 1em;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: var(--BORDER-IN-PROGRESS-STATUS);
+  background-image: var(--BGIMAGE-IN-PROGRESS-STATUS);
+  font-weight: 600;
+  border-radius: 1em;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: var(--BORDER-TO-READ-STATUS);
+  background-image: var(--BGIMAGE-TO-READ-STATUS);
+  font-weight: 600;
+  border-radius: 1em;
+}
+
+span[class="status"],
+span[class^="rate"] {
+  height: 40px;
+  width: 150px;
+  padding: 5px;
+}
+
+span[class^="rate"] > span {
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 0 5px;
+  height: 20px;
+  width: 20px;
+  background-color: #f0f0f0;
+}
+
+span[class~="one"] span:first-child {
+  background-image: linear-gradient(goldenrod, gold, yellow);
+}
+
+span[class~="two"] span:first-child,
+span[class~="two"] span:nth-child(2) {
+  background-image: linear-gradient(goldenrod, gold, yellow);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(goldenrod, gold, yellow);
+}
+
+span[class^="rate"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

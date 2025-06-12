@@ -1,0 +1,177 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Nunito", sans-serif;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BGCOLOR-FADE: #00ff8f;
+  --BGCOLOR: #00afff;
+  --BGIMAGE: linear-gradient(45deg, var(--BGCOLOR), var(--BGCOLOR-FADE));
+  --MAIN-BGCOLOR: rgba(255, 255, 255, 0.5);
+  --LIST-BGCOLOR: rgba(255, 255, 255, 0.75);
+  --FONT-COLOR: #000;
+  --BORDER-COLOR: #006639;
+  --HIGHLIGHT-COLOR: #006639;
+  --LINK-ACTIVE: red;
+  --LINK-COLOR: green;
+  --LINK-HOVER: rgb(0, 175, 0);
+  --LINK-FOCUS: 2px solid var(--BORDER-COLOR);
+  --LINK-VISITED: #ff0070;
+
+  /* BORDERS */
+  --BORDERS: 1px solid #00663a74;
+  --BORDER-RADIUS: 20px;
+
+  /* SHADOWS */
+  --BOX-SHADOWS: 0px 3px 5px rgba(0, 0, 0, 0.5);
+
+  /* STANDARD PADDING */
+  --PADDING-TB: 0.75em;
+  --PADDING-SIDE: 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+  background-image: var(--BGIMAGE);
+}
+
+body {
+  background-color: var(--BODY-BGCOLOR);
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+  padding: 0 0.5em;
+}
+
+a:link {
+  color: var(--LINK-COLOR);
+}
+a:visited {
+  color: var(--LINK-VISITED);
+}
+
+a:hover {
+  color: var(--LINK-HOVER);
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: var(--LINK-FOCUS);
+  color: var(--LINK-HOVER);
+  text-decoration: underline;
+  border-radius: var(--BORDER-RADIUS);
+}
+
+a:active {
+  color: var(--LINK-ACTIVE);
+}
+
+/* || MAIN */
+.main {
+  background-color: var(--MAIN-BGCOLOR);
+  margin: auto;
+  margin-top: 2.5rem;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: var(--BORDER-RADIUS);
+  box-shadow: var(--BOX-SHADOWS);
+}
+
+h1,
+h2 {
+  text-align: center;
+  user-select: none;
+}
+
+h2 {
+  color: var(--HIGHLIGHT-COLOR);
+}
+
+.todo-list {
+  list-style-type: none;
+}
+
+.todo-list > li {
+  margin: var(--MARGIN);
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+  border-radius: var(--BORDER-RADIUS);
+  border: var(--BORDERS);
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.todo-list > li:hover {
+  background-color: var(--LIST-BGCOLOR);
+  outline: 2px solid var(--BORDER-COLOR);
+}
+
+input {
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.2em;
+  user-select: none;
+}
+
+.sub-item {
+  text-indent: 2rem;
+  list-style-position: inside;
+}

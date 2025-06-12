@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Practice Sheet 16 - CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This site contains the CSS projects of the author while early in his learning career as a frontend developer." />
+    <link rel="icon" href="./images/css-3.svg" type="image/svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta property="og:title" content="Practice Sheet 16 - CSS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://practicesheet16.com/css" />
+    <meta property="og:image" content="./images/css-3.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Layout II</h1>
+        <p>This is the continuation for other CSS layout properties.</p>
+        <!-- Create a navigation menu. -->
+        <nav>
+            <ul class="main-nav">
+                <li class="first-menu"><a href="#align">Align</a></li>
+                <li><a href="#pseudo-classes">Pseudo-Classes</a></li>
+                <li><a href="#pseudo-elements">Pseudo-Elements</a></li>
+                <li><a href="#opacity">Opacity</a></li>
+                <li><a href="#navigation-bars">Navigation Bars</a></li>
+                <li><a href="#dropdowns">Dropdowns</a></li>
+                <li><a href="#image-gallery">Image Gallery</a></li>
+                <li><a href="#attribute-selector">Attribute Selector</a></li>
+            </ul>
+            <ul class="main-nav">
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#counters">Counters</a></li>
+                <li><a href="#website-layout">Website Layout</a></li>
+                <li><a href="#math-functions">Math Functions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="align" class="section-container">
+            <h2 class="subheader">CSS Align</h2>
+            <p class="p-container">Align a simple div element using the margin property and setting it to "auto".</p>
+            <div class="div-center div-container">
+                <p>This div element is centered.</p>
+            </div>
+            <p class="p-container">If you want to just center the text without setting the width.</p>
+            <div class="div-container div-text-center">
+                <p>This div element has its text centered.</p>
+            </div>
+            <p class="p-container">The following images are centered by making it a block element and its margin set to
+                auto.</p>
+            <div class="slideshow">
+                <div class="button-container">
+                    <p class="previous-button" id="previous-button">Previous Image</p>
+                    <p class="next-button" id="next-button">Next Image</p>
+                </div>
+                <img src="./images/random1_367x267.jpg" class="random-images" id="random-image" width="367"
+                    height="267">
+            </div>
+            <p class="p-container">The following is a div element inside a parent div element. The parent div element
+                has a relative position while the child div element has an absolute position (relative to its parent div
+                element).</p>
+            <div class="div-container div-parent">
+                <p>I am the div parent!</p>
+                <div class="div-container div-child">
+                    <p>I am the div child!</p>
+                </div>
+            </div>
+            <p class="p-container">You can also use float properties just make sure to use the clearfix hack to include
+                tall images in your div containers! For the two following divs, the first div does not have a clearfix
+                hack but the second one does.
+            </p>
+            <div class="div-container div-without-clearfix">
+                <img src="./images/anthony-mackie-smile_220x177.gif"
+                    alt="Anthony Mackie smiling but knows something sus about you ahh smile." width="220" height="177"
+                    class="img-smile" title="I know your secret ahh smile.">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsa libero quos minus odio
+                    optio itaque ratione tenetur esse quod deserunt id autem totam aliquid iure accusantium neque. Aut,
+                    suscipit.</p>
+            </div>
+
+            <div class="div-container div-with-clearfix" style="clear:right">
+                <img src="./images/anthony-mackie-smile_220x177.gif"
+                    alt="Anthony Mackie smiling but knows something sus about you ahh smile." width="220" height="177"
+                    class="img-smile" title="I know your secret ahh smile.">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsa libero quos minus odio
+                    optio itaque ratione tenetur esse quod deserunt id autem totam aliquid iure accusantium neque. Aut,
+                    suscipit.</p>
+            </div>
+        </section>
+        <section id="pseudo-classes" class="section-container">
+            <h2 class="subheader">CSS Pseudo-Classes</h2>
+            <p class="p-container">Pseudo-classes are used to define the <strong>state</strong> of an element. Examples
+                are the hover state of an element, the visited and unvisited state of anchor links, the focus state of
+                an element, and the valid/invalid/required/optional states for form elements.</p>
+            <p class="p-container">The following is an anchor link styled depending on its state (link, visited, hover,
+                active):</p>
+            <div class="div-container">
+                <a href="https://www.youtube.com/watch?v=DUT5rEU6pqM" target="_blank" class="a-example">Watch: Hips
+                    Don't Lie -
+                    Shakira</a>
+            </div>
+            <p class="p-container">Next example is a div element that is styled when hovered. Move your mouse over to
+                see a gradient background.</p>
+            <div class="div-container div-hover">Hover your mouse inside!</div>
+            <p class="p-container">Next example is a div with a dropdown tooltip when hovered.</p>
+            <div class="div-container div-tooltip">Hover over me to know a secret.
+                <div class="div-background">
+                    <div class="trans-box">
+                        <p class="p-tooltip">
+                            <q cite="http://littleprince.fragomeni.it/lprince.removed.htm">Now
+                                here
+                                is
+                                my secret, very simply: you can only see things clearly with
+                                your heart. What is essential is invisible to the eye.
+                            </q><br><br>from: <cite>The Little
+                                Prince</cite>
+                            <br>
+                            by
+                            <span lang="fr-FR">Antoine de Saint-Exupéry</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="p-container">Next pseudo-class is the first-child. This determines the first child of an element
+                that will be styled by CSS. The span first child of the div element will be styled but not the second,
+                third, ... span.</p>
+            <div class="div-container first-child">I am the parent and this <span>span</span> is the first. This is the
+                second
+                <span>span</span>, third <span>span</span>, and fourth <span>span</span>.
+            </div>
+        </section>
+        <section id="pseudo-elements" class="section-container">
+            <h2 class="subheader">CSS Pseudo-Elements</h2>
+            <p class="p-container">Pseudo-elements are used style <strong>specific parts</strong> of an element. It can
+                be
+                used to style the first letter of a paragraph, insert content and more.
+                <br><br>
+                The following div is an example of using pseudo-elements in styling its first line of text:
+            </p>
+            <div class="div-container div-first-line">The first line of this div will be different and styled. Lorem
+                ipsum dolor sit
+                amet consectetur adipisicing elit. Tenetur odio illum ea adipisci? Dignissimos nam fugit sapiente quia
+                et architecto eum repellat quibusdam autem rem, labore officia, asperiores, doloremque ea. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Natus quibusdam harum velit similique tenetur asperiores
+                iste corrupti inventore, quidem a quas saepe incidunt? Eveniet necessitatibus facilis quae aliquid,
+                voluptatibus adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, hic deleniti.
+                <br>
+                <br>
+                Laudantium facilis dolores tempora quos soluta molestias quibusdam delectus voluptates atque, a quaerat
+                voluptate, eos provident quo, commodi dolorum! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nisi asperiores a eaque iste iure rem voluptatem nobis veniam excepturi harum corrupti ex facere ipsam
+                omnis odit, assumenda officia perspiciatis cumque! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                <br>
+                <br>
+                Hic quae nulla optio nobis dolores, dolorem molestias quaerat maxime repudiandae officiis saepe
+                corrupti, aut neque corporis, earum nostrum eveniet sint tempora!
+            </div>
+            <p class="p-container">The next pseudo-element is first-letter. This is showcased below:</p>
+            <div class="div-container first-letter">
+                <p>Fuck you Ezekiel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, corrupti
+                    dolore? Sunt, fugiat quae. Sequi dolore exercitationem molestias doloremque assumenda fuga
+                    molestiae. Eveniet, excepturi fugit officia ratione beatae eligendi fuga.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, quisquam. Qui repudiandae maiores
+                    ut nihil. Eum consequuntur exercitationem sunt, deserunt earum optio fugit aspernatur, ut
+                    necessitatibus asperiores, delectus sequi iure.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, quisquam. Qui repudiandae maiores
+                    ut nihil. Eum consequuntur exercitationem sunt, deserunt earum optio fugit aspernatur, ut
+                    necessitatibus asperiores, delectus sequi iure.</p>
+
+            </div>
+            <p class="p-container">The next pseudo-element is the before and after pseudo-element. These adds content
+                before and after the element selected.
+                <br>
+                <br>
+                The following is an example of a p element that have before and after pseudo-elements (Anthony Mackie
+                ahh face):
+            </p>
+            <div class="div-container">
+                <p class="p-before-after">This paragraph has the face of the man, the myth, the legend.</p>
+            </div>
+            <p class="p-container">If your webpage has lists, you can add the marker pseudo-element to style the list
+                style type such as buttons, disks, numbers, etc.
+                <br>
+                <br>
+                The following list is an example of how to utilize marker:
+            </p>
+            <div class="div-container div-marker">
+                <h3>Games I Would Love to Play in 2026:</h3>
+                <ul class="games">
+                    <li>GTA 6</li>
+                    <li>The Elder Scrolls 6</li>
+                    <li>Lords of the Fallen 2</li>
+                    <li>Onimusha: Way of the Sword</li>
+                    <li>Kusan: City of Wolves</li>
+                </ul>
+            </div>
+            <p class="p-container">The next pseudo-element is the selection. It defines what happens to elements
+                selected by users of your website such as it changes the background color and text color, etc.</p>
+            <div class="div-container">
+                Highlight the text here or any other text in this website. It is coded so that text will have black
+                background and color white text.
+            </div>
+        </section>
+        <section id="opacity" class="section-container">
+            <h2 class="subheader">CSS Opacity</h2>
+            <p class="p-container">Opacity specifies the transparency of an element.
+                <br>
+                <br>
+                The following images are the same but have different opacity values:
+            </p>
+            <div class="div-container div-with-clearfix">
+                <img src="./images/thanos_2158x1136.jpg"
+                    alt="Thanos getting dusted after Iron-Man snapped the Infinity Gauntlet." width="33.33%"
+                    class="thanos1">
+                <img src="./images/thanos_2158x1136.jpg"
+                    alt="Thanos getting dusted after Iron-Man snapped the Infinity Gauntlet." width="33.33%"
+                    class="thanos2">
+                <img src="./images/thanos_2158x1136.jpg"
+                    alt="Thanos getting dusted after Iron-Man snapped the Infinity Gauntlet." width="33.33%"
+                    class="thanos3">
+            </div>
+            <p class="p-container">Opacity is often use to <strong>highlight</strong> transparent images such as in a
+                slideshow. <br> <br>
+                See and hover over the images below (surprise for last pic!):</p>
+            <div class="div-container div-with-clearfix demon">
+                <img src="./images/rengoku_5120x2880.jpg" alt="Rengoku Flame Hashira." width="90%" class="rengoku">
+                <img src="./images/zenitsu_5120x2880.jpg" alt="Zenitsu Agatsuma." width="90%" class="zenitsu">
+                <img src="./images/tanjiro_4000x3768.jpg" alt="Tanjiro Kamado." width="90%" class="tanjiro">
+                <img src="./images/dog1_201x251.jpg" alt="Let me know ahh dog." width="50%" class="dog"
+                    onmouseover="playAudio()" onmouseout="pauseAudio()">
+                <audio src="./audio/Tamar Braxton - Let Me Know (Official Video) ft. Future.mp3"
+                    id="let-me-know"></audio>
+            </div>
+        </section>
+        <section id="navigation-bars" class="section-container">
+            <h2 class="subheader">CSS Navigation Bar</h2>
+            <p class="p-container">The following is the most basic navigation bar styled by CSS using the ul element and
+                setting the margin and padding to zero.</p>
+            <div class="div-container nav-basic">
+                <ul>
+                    <li><a href="#exhome">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li><a href="#exabout">About</a></li>
+                    <!-- Not real inner anchor links, just for example here -->
+                </ul>
+            </div>
+            <p class="p-container">Now we create a vertical navigation bar by making the list' display into blocks.</p>
+            <div class="div-container vertical-nav-basic">
+                <ul>
+                    <li><a href="#exhome">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li><a href="#exabout">About</a></li>
+                    <!-- Not real inner anchor links, just for example here -->
+                </ul>
+            </div>
+            <p class="p-container">Now we create a more advanced vertical navigation bar which automatically highlights
+                when hovered.</p>
+            <div class="div-container vertical-nav-adv">
+                <ul>
+                    <li><a href="#exhome">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li><a href="#exabout">About</a></li>
+                    <!-- Not real inner anchor links, just for example here -->
+                </ul>
+            </div>
+            <p class="p-container">Next, we will make the home link an active link by distinctively highlighting it over
+                the other tab menus. <br> <br>
+                Also add border on bottom of each link except the last one. The navigation bar will look like this:</p>
+            <div class="div-container vertical-nav-adv1">
+                <ul>
+                    <li><a href="#exhome" class="active">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li><a href="#exabout">About</a></li>
+                    <!-- Not real inner anchor links, just for example here -->
+                </ul>
+            </div>
+            <p class="p-container">Last, we will make this vertical navigation bar stick to the left and cover the
+                entire height of the div. We can also add overflow if the side navigation will have too many tabs for a
+                menu.</p>
+            <div class="div-container side-nav div-with-clearfix">
+                <ul>
+                    <li><a href="#exhome" class="active">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li><a href="#exabout">About</a></li>
+                    <!-- Not real inner anchor links, just for example here -->
+                </ul>
+                <div class="ex-content">
+                    <h3 class="subheader">Example Header</h3>
+                    <p class="p-container">This is an example page content. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Voluptatum aspernatur quod ab sed non accusamus cum id odit magni sapiente ea
+                        praesentium illum, neque, voluptate totam. Eum quos explicabo assumenda.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nisi asperiores corrupti
+                        amet accusantium incidunt nobis vitae totam aspernatur perferendis suscipit sed quasi
+                        praesentium velit quaerat, sint quia veritatis dolorem.
+                    </p>
+                    <h3 class="subheader">Example Header</h3>
+                    <p class="p-container">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore similique ut numquam?
+                        Fugiat iusto unde nostrum dolores a cumque deserunt. Qui libero repellat distinctio
+                        exercitationem placeat minima doloremque necessitatibus?
+                    </p>
+                    <p class="p-container">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quae quos illo odio atque
+                        deserunt cupiditate modi non ut magni possimus maiores esse distinctio, repellendus assumenda
+                        quaerat, corrupti odit accusamus.
+                    </p>
+                    <h3 class="subheader">Example Header</h3>
+                    <p class="p-container">This is an example page content. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Voluptatum aspernatur quod ab sed non accusamus cum id odit magni sapiente ea
+                        praesentium illum, neque, voluptate totam. Eum quos explicabo assumenda.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nisi asperiores corrupti
+                        amet accusantium incidunt nobis vitae totam aspernatur perferendis suscipit sed quasi
+                        praesentium velit quaerat, sint quia veritatis dolorem.
+                    </p>
+                    <h3 class="subheader">Example Header</h3>
+                    <p class="p-container">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore similique ut numquam?
+                        Fugiat iusto unde nostrum dolores a cumque deserunt. Qui libero repellat distinctio
+                        exercitationem placeat minima doloremque necessitatibus?
+                    </p>
+                    <p class="p-container">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quae quos illo odio atque
+                        deserunt cupiditate modi non ut magni possimus maiores esse distinctio, repellendus assumenda
+                        quaerat, corrupti odit accusamus.
+                    </p>
+                    <h3 class="subheader">Example Header</h3>
+                    <p class="p-container">This is an example page content. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Voluptatum aspernatur quod ab sed non accusamus cum id odit magni sapiente ea
+                        praesentium illum, neque, voluptate totam. Eum quos explicabo assumenda.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nisi asperiores corrupti
+                        amet accusantium incidunt nobis vitae totam aspernatur perferendis suscipit sed quasi
+                        praesentium velit quaerat, sint quia veritatis dolorem.
+                    </p>
+                    <h3 class="subheader">Example Header</h3>
+                    <p class="p-container">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore similique ut numquam?
+                        Fugiat iusto unde nostrum dolores a cumque deserunt. Qui libero repellat distinctio
+                        exercitationem placeat minima doloremque necessitatibus?
+                    </p>
+                    <p class="p-container">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quae quos illo odio atque
+                        deserunt cupiditate modi non ut magni possimus maiores esse distinctio, repellendus assumenda
+                        quaerat, corrupti odit accusamus.
+                    </p>
+                </div>
+            </div>
+            <p class="p-container">Navigation bars can also be made horizontal. The following is a horizontal navigation
+                menu using the CSS float.</p>
+            <div class="div-container">
+                <ul class="horizontal-nav1">
+                    <li><a href="#exhome">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li><a href="#exabout">About</a></li>
+                </ul>
+            </div>
+            <p class="p-container">You can also right align the links you want in your navigation menu just like the
+                following.</p>
+            <div class="div-container">
+                <ul class="horizontal-nav2">
+                    <li><a href="#exhome">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li class="exabout"><a href="#exabout">About</a></li>
+                </ul>
+            </div>
+            <p class="p-container">You can also add border dividers by adding the border-right property like so.</p>
+            <div class="div-container">
+                <ul class="horizontal-nav3">
+                    <li><a href="#exhome">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li><a href="#exabout">About</a></li>
+                </ul>
+            </div>
+            <p class="p-container">Next example we will use an iframe to showcase the fix CSS property. This will fix
+                the position of our horizontal navigation in a separate webpage since fix is relative to the entire
+                viewport of the website.</p>
+            <div class="div-container">
+                <iframe src="./pages/fixed-nav-demo.html" frameborder="1" height="500px" width="100%"
+                    class="nav-bars"></iframe>
+            </div>
+            <p class="p-container">Again we will use another iframe to showcase another CSS property:stick. This
+                property will let our horizontal menu nav to scroll but then stick when its viewport condition is met.
+            </p>
+            <div class="div-container">
+                <iframe src="./pages/sticky-nav-demo.html" frameborder="1" height="500px" width="100%"
+                    class="nav-bars"></iframe>
+            </div>
+            <p class="p-container">Next we will attempt to design a responsive navigation menu which changes from
+                horizontal to vertical or vice-versa depending on the size of the web browser or the device used. Try to
+                resize your browser window!</p>
+            <div class="div-container resize">
+                <ul class="horizontal-nav-responsive">
+                    <li><a href="#exhome">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li><a href="#exabout">About</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="dropdowns" class="section-container">
+            <h2 class="subheader">Dropdowns</h2>
+            <p class="p-container">Dropdowns are common in modern websites. When we hover over dropdowns, a list of
+                links will drop down. The following is a simple dropdown menu in a navigation tab.</p>
+            <div class="div-container">
+                <ul class="nav-with-dropdown">
+                    <li><a href="#exhome">Home</a></li>
+                    <li><a href="#exnews">News</a></li>
+                    <li><a href="#excontact">Contact</a></li>
+                    <li><a href="#exabout">About</a></li>
+                    <li class="dropdown">
+                        <a href="#exothers">Others</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#otherlink">Other Link</a></li>
+                            <li><a href="#otherlink">Other Link</a></li>
+                            <li><a href="#otherlink">Other Link</a></li>
+                            <li><a href="#otherlink">Other Link</a></li>
+                            <li><a href="#otherlink">Other Link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <p class="p-container">The previous example is a bit advanced since we are already adding dropdowns to a
+                navigation menu. For
+                the next example, create a simple dropdown using divs.</p>
+            <div class="div-container">
+                <div class="dropdown-example">
+                    Hover over me!
+                    <div class="dropdown-content-example">
+                        <img src="./images/img-quote_1532x854.png"
+                            alt="Madness, as you know, is a lot like gravity. All it takes is a single push."
+                            width="90%" class="joker-quote">
+                    </div>
+                </div>
+            </div>
+            <p class="p-container">Now we will create a simple dropdown menu using buttons, divs, and anchor links. Make
+                sure
+                to encase these elements in one div with relative position for the child's absolute position to work.
+            </p>
+            <div class="div-container">
+                <div class="dropdown-menu">
+                    <button class="dropdown-menu-button">Menu</button>
+                    <div class="dropdown-menu-content">
+                        <a href="#exhome">Home</a>
+                        <a href="#exabout">About</a>
+                        <a href="#exservices">Services</a>
+                        <a href="#exproducts">Products</a>
+                        <a href="#exblog">Blog</a>
+                        <a href="#excontact">Contact</a>
+                        <a href="#exfaq">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <p class="p-container">Next is an image dropdown that will show an enlarge version when hovered.</p>
+            <div class="div-container">
+                <div class="dropdown-image-container">
+                    <img src="./images/sung-jin-woo_1920x1200.jpg" alt="Sung Jin Woo The Shadow Monarch." width="100%">
+                    <div class="dropdown-image">
+                        <img src="./images/sung-jin-woo_1920x1200.jpg" alt="Sung Jin Woo The Shadow Monarch."
+                            width="100%">
+                        <div class="dropdown-image-caption">Sung-Jin Woo: The Shadow Monarch</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="image-gallery" class="section-container">
+            <h2 class="subheader">CSS Image Gallery</h2>
+            <p class="p-container">With CSS, you can create image galleries like the following example. Click on the
+                images to view in a new window.</p>
+            <div class="div-container gallery-container">
+                <div class="gallery">
+                    <a href="./images/naruto-uzamaki_5120x2880.jpg" target="_blank"><img
+                            src="./images/naruto-uzamaki_5120x2880.jpg" alt="Naruto Uzamaki." width="5120"
+                            height="2880"></a>
+                    <div class="gallery-description">Naruto Uzamaki</div>
+                </div>
+                <div class="gallery">
+                    <a href="./images/sasuke-uchiha_7680x4320.jpg" target="_blank"><img
+                            src="./images/sasuke-uchiha_7680x4320.jpg" alt="Sasuke Uchiha." width="7680"
+                            height="4320"></a>
+                    <div class="gallery-description">Sasuke Uchiha</div>
+                </div>
+                <div class="gallery">
+                    <a href="./images/boruto-uzamaki_3840x2160.png" target="_blank"><img
+                            src="./images/boruto-uzamaki_3840x2160.png" alt="Boruto Uzamaki." width="3840"
+                            height="2160"></a>
+                    <div class="gallery-description">Boruto Uzamaki</div>
+                </div>
+                <div class="gallery">
+                    <a href="./images/itachi-uchiha_3840x2160.jpg" target="_blank"><img
+                            src="./images/itachi-uchiha_3840x2160.jpg" alt="Itachi Uchiha." width="3840"
+                            height="2160"></a>
+                    <div class="gallery-description">Itachi Uchiha</div>
+                </div>
+            </div>
+            <p class="p-container">To make this image gallery better, we will make it responsive depending on browser
+                window size.</p>
+            <div class="div-container gallery-container-responsive">
+                <div class="gallery-responsive">
+                    <a href="./images/naruto-uzamaki_5120x2880.jpg" target="_blank"><img
+                            src="./images/naruto-uzamaki_5120x2880.jpg" alt="Naruto Uzamaki." width="5120"
+                            height="2880"></a>
+                    <div class="gallery-description-responsive">Naruto Uzamaki</div>
+                </div>
+                <div class="gallery-responsive">
+                    <a href="./images/sasuke-uchiha_7680x4320.jpg" target="_blank"><img
+                            src="./images/sasuke-uchiha_7680x4320.jpg" alt="Sasuke Uchiha." width="7680"
+                            height="4320"></a>
+                    <div class="gallery-description-responsive">Sasuke Uchiha</div>
+                </div>
+                <div class="gallery-responsive">
+                    <a href="./images/boruto-uzamaki_3840x2160.png" target="_blank"><img
+                            src="./images/boruto-uzamaki_3840x2160.png" alt="Boruto Uzamaki." width="3840"
+                            height="2160"></a>
+                    <div class="gallery-description-responsive">Boruto Uzamaki</div>
+                </div>
+                <div class="gallery-responsive">
+                    <a href="./images/itachi-uchiha_3840x2160.jpg" target="_blank"><img
+                            src="./images/itachi-uchiha_3840x2160.jpg" alt="Itachi Uchiha." width="3840"
+                            height="2160"></a>
+                    <div class="gallery-description-responsive">Itachi Uchiha</div>
+                </div>
+            </div>
+            <p class="p-container">We also have what we call image sprites. This is like a collage of image that is put
+                together to make one image file. Using image sprites will reduce the time for a webpage to load which is
+                especially useful to users with low internet connectivity.</p>
+            <div class="div-container">
+                <p>This is an example of an image sprite:</p>
+                <img src="./images/img-sprite_134x44.gif" alt="Go to home." width="134" height="44" class="home-icon">
+            </div>
+        </section>
+        <section id="attribute-selector" class="section-container">
+            <h2 class="subheader">CSS Attribute Selector</h2>
+            <p class="p-container">
+                The attribute selector is used to select elements with a specific attribute such as an anchor link with
+                a target attribute. Below is an example of selecting links with the target attribute using the attribute
+                selector:
+            </p>
+            <div class="div-container div-with-clearfix">
+                <a href="https://google.com/" target="_blank" class="attri"><img src="./images/google-icon_512x512.webp"
+                        alt="Go to Google.com." title="Google.com"></a>
+                <a href="https://youtube.com/" target="_blank" class="attri"><img
+                        src="./images/youtube-icon_512x512.png" alt="Go to YouTube.com." title="YouTube.com"></a>
+                <a href="https://facebook.com/" target="_blank" class="attri"><img
+                        src="./images/facebook-icon_980x980.webp" alt="Go to Facebook.com." title="Facebook.com"></a>
+            </div>
+            <p class="p-container">You can also specify more by adding a value to the attribute. Say for example, the
+                background color is light blue instead of white for links which have a target value of _blank which in
+                this
+                case is
+                facebook.com.</p>
+            <div class="div-container div-with-clearfix">
+                <a href="https://google.com/" target="_self" class="attri2"><img src="./images/google-icon_512x512.webp"
+                        alt="Go to Google.com." title="Google.com"></a>
+                <a href="https://youtube.com/" target="_self" class="attri2"><img
+                        src="./images/youtube-icon_512x512.png" alt="Go to YouTube.com." title="YouTube.com"></a>
+                <a href="https://facebook.com/" target="_blank" class="attri2"><img
+                        src="./images/facebook-icon_980x980.webp" alt="Go to Facebook.com." title="Facebook.com"></a>
+            </div>
+            <p class="p-container">There is also an attribute selector for elements with title attribute. We can add the
+                value of a word from a string of words from the title of the element to select it thru CSS.
+                <br>
+                Example below are images but we will only want to design the images with a "ninja" word in its title
+                attribute using img[title~="ninja"].
+            </p>
+            <div class="div-container div-with-clearfix">
+                <img src="./images/ghost-of-tsushima-2-5120x6831-12068.jpeg" alt="Ghost of Tsushima poster."
+                    width="5120" height="6831" title="The greatest ninja assassin, Jin Sakai, from Ghost of Tsushima">
+                <img src="./images/zed_5966x3358.jpg" alt="Zed wallpaper." width="5966" height="3358"
+                    title="Zed the League of Legends ninja icon">
+                <img src="./images/tmnt_3840x2160.jpeg" alt="Teenage Mutant Ninja Turtles poster." width="3840"
+                    height="2160" title="Teenage mutant ninja turtles in action!">
+                <img src="./images/chika-fujiwara_3840x2160.jpg" alt="Chika Fujiwara." width="3840" height="2160"
+                    title="From Love is a War Anime character, Chika Fujiwara!" onmouseover="playAudio1()"
+                    onmouseout="pauseAudio1()">
+                <audio src="./audio/Kaguya-sama_ Love is War Ending 2 (4k 60FPS)Creditless.mp3" id="chika-song"></audio>
+            </div>
+            <p class="p-container">There are many other ways of attribute selection. We will discuss the following
+                selectors individually in the following:</p>
+            <div class="div-container">
+                <div class="div-container-small pgroup1">
+                    <p style="text-decoration: underline;">The first one is selecting elements with attribute values
+                        equal to
+                        exactly "top"
+                        or "top-" which is
+                        directly followed by a hypen. These elements will be highlighted.
+                    </p>
+                    <p><strong>Use [class|="top"]</strong>.</p>
+                    <p class="top">I have "top" value for class.</p>
+                    <p class="top-p">I have "top-p" value for class.</p>
+                    <p class="topp">I have "topp" value for class.</p>
+                </div>
+                <div class="div-container-small pgroup2">
+                    <p style="text-decoration: underline;">The next one selects element values starting with "top" only.
+                        These elements will be highlighted.
+                    </p>
+                    <p><strong>Use [class^="top"]</strong>.</p>
+                    <p class="top">I have "top" value for class.</p>
+                    <p class="top-p">I have "top-p" value for class.</p>
+                    <p class="topp">I have "topp" value for class.</p>
+                    <p class="topnotcher">I have "topnotcher" value for class.</p>
+                    <p class="right-top">I have "right-top" value for class.</p>
+                    <p class="flattop">I have "flattop" value for class.</p>
+                </div>
+                <div class="div-container-small pgroup3">
+                    <p style="text-decoration: underline;">This one selects element values ending with "top" only.
+                        These elements will be highlighted.
+                    </p>
+                    <p><strong>Use [class$="top"]</strong>.</p>
+                    <p class="top">I have "top" value for class.</p>
+                    <p class="top-p">I have "top-p" value for class.</p>
+                    <p class="topp">I have "topp" value for class.</p>
+                    <p class="topnotcher">I have "topnotcher" value for class.</p>
+                    <p class="right-top">I have "right-top" value for class.</p>
+                    <p class="flattop">I have "flattop" value for class.</p>
+                </div>
+                <div class="div-container-small pgroup4">
+                    <p style="text-decoration: underline;">The last one selects element values with "top" on their
+                        value.
+                        These elements will be highlighted.
+                    </p>
+                    <p><strong>Use [class*="top"]</strong>.</p>
+                    <p class="top">I have "top" value for class.</p>
+                    <p class="top-p">I have "top-p" value for class.</p>
+                    <p class="topp">I have "topp" value for class.</p>
+                    <p class="topnotcher">I have "topnotcher" value for class.</p>
+                    <p class="right-top">I have "right-top" value for class.</p>
+                    <p class="flattop">I have "flattop" value for class.</p>
+                </div>
+            </div>
+        </section>
+        <section id="forms" class="section-container">
+            <h2 class="subheader">CSS Forms</h2>
+            <p class="p-container">The following is an example form styled by CSS using attribute selectors.</p>
+            <div class="div-container">
+                <div class="div-container-small">
+                    <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example">
+                        <label for="fname-example">First Name</label>
+                        <input type="text" id="fname-example" name="fname-example" placeholder="Your first name"
+                            required>
+                        <label for="lname-example">Last Name</label>
+                        <input type="text" id="lname-example" name="lname-example" placeholder="Your last name"
+                            required>
+                        <label for="country-example">Country</label>
+                        <select name="country-example" id="country-example">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <p class="p-container">The example form above is a bit advanced so we need to style form elements for the
+                following one at a time.
+                <br>
+                <br>
+                In this example, we will apply a full width to the text input in the following form:
+            </p>
+            <div class="div-container">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example1">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p class="p-container">For the following form, the inputs are padded and have margins.</p>
+            <div class="div-container">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example2">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p class="p-container">You can also add colored borders to the input text box. These borders can also be
+                rounded thru CSS.</p>
+            <div class="div-container">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example3">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p class="p-container">You can also change the background color of input boxes like so.</p>
+            <div class="div-container">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example4">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="John">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Cena">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p class="p-container">Outlines are automatically available on text inputs when in focus. You can change
+                this by removing outlines and change its CSS style when hovered.</p>
+            <div class="div-container">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example5">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="John">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Cena">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p class="p-container">Next we wil add a search element in our form which is common in modern websites. This
+                element will have a search icon as background-image.</p>
+            <div class="div-container">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example6">
+                    <input type="search" name="search" id="search" placeholder="Search...">
+                </form>
+            </div>
+            <p class="p-container">If you want to upgrade the search bar, we can use transition property.</p>
+            <div class="div-container">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example7">
+                    <input type="search" name="search" id="search" placeholder="Search...">
+                </form>
+            </div>
+            <p class="p-container">We can also style text areas. In addition, text area inputs have a resize function
+                but we can set it to none in CSS properties like the one below.</p>
+            <div class="div-container">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example8">
+                    <textarea name="textarea-content" id="textarea-content">Write your text here...</textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p class="p-container">We can also style select and button elements in forms just like the following.</p>
+            <div class="div-container">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example9">
+                    <label for="country"> Select your country:</label>
+                    <select name="country" id="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p class="p-container">The last exercise for this section is making a responsive form which changes
+                depending on the size of the browser window.</p>
+            <div class="div-container div-with-clearfix">
+                <form action="https://httpbin.org/get" method="get" target="_blank" class="form-example10">
+                    <div class="group">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="John" required>
+                    </div>
+                    <div class="group">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                    </div>
+                    <div class="group">
+                        <label for="country">Country:</label>
+                        <select name="country" id="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <label for="subject">Subject:</label>
+                        <textarea name="subject" id="subject" placeholder="Write your text here..."></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="counters" class="section-container">
+            <h2 class="subheader">CSS Counters</h2>
+            <p class="p-container">
+                Counters are like assigned variables in CSS. You can start a counter with counter-reset property then
+                use counter-increment which adds/increments the counter value. Use content to insert the generated value
+                using counter() or counters().
+                <br>
+                <br>
+                In the example below, we used the variable "test" for our "counter-reset". Then we added content before
+                every "h3" header in this div. We incremented first our variable "test" with "counter-increment" and
+                then we added the resulting counter values with "counter(test)" in our content.
+            </p>
+            <div class="div-container counter-example">
+                <h3>Header</h3>
+                <h3>Header</h3>
+                <h3>Header</h3>
+                <h3>Header</h3>
+                <h3>Header</h3>
+            </div>
+            <p class="p-container">We can also use nested counters just like the following:</p>
+            <div class="div-container counter-example1">
+                <h3>HTML/CSS Tutorials</h3>
+                <h4>HTML</h4>
+                <h4>CSS</h4>
+                <h4>Bootstrap</h4>
+                <h4>W3.CSS</h4>
+                <h3>Scripting Tutorials</h3>
+                <h4>JavaScript</h4>
+                <h4>jQuery</h4>
+                <h4>React</h4>
+                <h3>Programming Tutorials</h3>
+                <h4>Python</h4>
+                <h4>Java</h4>
+                <h4>C++</h4>
+            </div>
+        </section>
+        <section id="website-layout" class="section-container">
+            <h2 class="subheader">CSS Website Layout</h2>
+            <p class="p-container">There are a plethora of website layouts in the internet and one of the most common
+                layouts is the image below:</p>
+            <div class="div-container">
+                <img src="./images/common-website-layout_1210x585.png"
+                    alt="Common website layout consisting of a header, navigation menu, main content, side content, and a footer."
+                    width="1210" height="585" title="Common website layout">
+            </div>
+            <p class="p-container">For this section, we will again utilize iframes to show a separate webpage to fully
+                understand the topic for website layout.
+                <br><br>
+                For the first one, we will design a header which mostly contains the website name and logo commonly
+                found at the top of the webpage.
+            </p>
+            <div class="div-container">
+                <iframe src="./pages/header-website-layout-demo.html" frameborder="1"
+                    class="iframe-website-layout"></iframe>
+            </div>
+            <p class="p-container">Now we create a simple horizontal navigation menu just below the header.</p>
+            <div class="div-container">
+                <iframe src="./pages/nav-website-layout-demo.html" frameborder="1"
+                    class="iframe-website-layout"></iframe>
+            </div>
+            <p class="p-container">Next, we will create a responsive content page for our website that stacks the
+                content on top of each other if the window screen is small like in smartphones.</p>
+            <div class="div-container">
+                <iframe src="./pages/content-website-layout-demo.html" frameborder="1"
+                    class="iframe-website-layout"></iframe>
+            </div>
+            <p class="p-container">We can also create unequal widths for each column in our content. Say we create the
+                main content in the middle and two sides on its left and right. Then we proceed to apply responsive web
+                design like so.</p>
+            <div class="div-container">
+                <iframe src="./pages/unequal-content-website-layout-demo.html" frameborder="1"
+                    class="iframe-website-layout"></iframe>
+            </div>
+            <p class="p-container">The last section for our website layout is the footer. Most often contains the
+                copyright information of our website and some contact info of the author. The following is a simple
+                footer to finish up our demo website.</p>
+            <div class="p-container">
+                <iframe src="./pages/footer-website-layout-demo.html" frameborder="1"
+                    class="iframe-website-layout"></iframe>
+            </div>
+            <p class="p-container">Now we will try to replicate a responsive web design from <a
+                    href="https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog"
+                    target="_blank">W3Schools.com</a></p>
+            <div class="p-container">
+                <iframe src="./pages/responsive-website-layout-replication.html" frameborder="1"
+                    class="iframe-website-layout"></iframe>
+            </div>
+        </section>
+        <section id="math-functions" class="section-container">
+            <h2 class="subheader">CSS Math Functions</h2>
+            <p class="p-container">CSS also allow mathematical functions such as "calc()", "min()", and "max()". These
+                functions are used for specific designs such as the following function "calc()". We will use this
+                function to calculate the width of a div element. Remember, we must at least put one operator for the
+                function to work.
+                <br>
+                <br>
+                Now we will create a div element that has a gap of 50px between the edges of the window, in this case,
+                another div element.
+            </p>
+            <div class="div-container">
+                <div class="div-50px-gap">
+                    <p>This div element has a width of 100% minus 100px (50px for left and right) and then centered thru
+                        margin: auto.</p>
+                </div>
+            </div>
+            <p class="p-container">
+                The next function is the "max()" function. We will attempt to limit the width of the following div by
+                making it follow 50% of the parent element's size or 300px, whichever is higher at the moment.
+            </p>
+            <div class="div-container">
+                <div class="div-50percent-300px-max">
+                    <p>This div element has a width of 50% of its parent div or 300px depending on browser size.</p>
+                </div>
+            </div>
+            <p class="p-container">
+                The last function will be the "min()" function. We will now code the width of the div element below to
+                be the minimum of 50% of its parent element or 300px.
+            </p>
+            <div class="div-container">
+                <div class="div-50percent-300px-min">
+                    <p>This div element has a width of 50% of its parent div or 300px depending on browser size.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy;<strong>Copyright:</strong> Elmar Chavez</p>
+        <a href="#" class="go-to-top"><img src="./images/top-arrow_24x24.svg" alt="Top arrow symbol to go to top."
+                width="50" height="50" title="Go to back to top"></a>
+    </footer>
+    <script>
+        //Script for next and previous buttons. To be studied!
+        const images = ['./images/random1_367x267.jpg', './images/random2_367x267.jpg', './images/random3_367x267.jpg', './images/random4_367x267.jpg', './images/random5_367x267.jpg', './images/random6_367x267.jpg', './images/random7_367x267.jpg'];
+        let currentIndex = 0;
+
+        const previousButton = document.getElementById("previous-button");
+        const nextButton = document.getElementById("next-button");
+        const image = document.getElementById("random-image");
+
+        previousButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            image.src = images[currentIndex];
+        });
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            image.src = images[currentIndex];
+        });
+        //end of script for previous and next buttons
+
+        //script for playing music when hovering over an image
+        function playAudio() {
+            var audio = document.getElementById("let-me-know");
+            audio.play();
+        }
+        function pauseAudio() {
+            var audio = document.getElementById("let-me-know");
+            audio.pause();
+            audio.currentTime = 0;
+        }
+        function playAudio1() {
+            var audio = document.getElementById("chika-song");
+            audio.play();
+        }
+        function pauseAudio1() {
+            var audio = document.getElementById("chika-song");
+            audio.pause();
+            audio.currentTime = 0;
+        }
+        //end for music playing over img script
+    </script>
+</body>
+
+</html>

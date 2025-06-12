@@ -1,0 +1,105 @@
+body {
+    font-size: 100%;
+}
+p.container {
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 60%;
+    background-color: beige;
+    padding: 18px;
+    margin: auto;
+}
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+p.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.monospace {
+    font-family: "Lucida Sans", "Courier New", monospace;
+}
+p.cursive {
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+}
+p.fantasy {
+    font-family: copperplate, papyrus, fantasy;
+}
+p.arial {
+    font-family: arial;
+}
+p.verdana {
+    font-family: verdana;
+}
+p.tahoma {
+    font-family: tahoma;
+}
+p.trebuchet-ms {
+    font-family: "trebuchet ms";
+}
+p.times-new-roman {
+    font-family: "times new roman";
+}
+p.georgia {
+    font-family: "georgia";
+}
+p.garamond {
+    font-family: "garamond";
+}
+p.courier-new {
+    font-family: "Courier New";
+}
+p.brush-script-mt {
+    font-family: "brush script mt";
+}
+p.normal {
+    font-style: normal;
+}
+p.italic {
+    font-style: italic;
+}
+p.oblique {
+    font-style: oblique;
+}
+p.weight-normal {
+    font-weight: normal;
+}
+p.weight-bold {
+    font-weight: bold;
+}
+p.variant-normal {
+    font-variant: normal;
+}
+p.variant-small-caps {
+    font-variant: small-caps;
+}
+p.size-40px {
+    font-size: 40px;
+}
+p.size-30px {
+    font-size: 30px;
+}
+p.size-14px {
+    font-size: 14px;
+}
+p.size-large-em {
+    font-size: 2.5em;
+}
+p.size-medium-em {
+    font-size: 1.875em;
+}
+p.size-small-em {
+    font-size: 0.875em;
+}
+p.vw1 {
+    font-size: 1vw;
+}
+p.vw2 {
+    font-size: 2vw;
+}   
+p.vw3 {
+    font-size: 3vw;
+}
+p.test {
+    font-family: audiowide;
+}
+

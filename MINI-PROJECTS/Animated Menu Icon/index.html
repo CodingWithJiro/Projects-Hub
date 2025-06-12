@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Animated Menu Icon</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This website showcases the author's skills in creating an animated menu icon mini-project during the third month of learning frontend web development." />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta property="og:title" content="Animated Menu Icon" />
+    <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            Animated Menu Icon
+        </h1>
+
+        <button class="menu-icon" onclick="animatedMenu()">
+            <div class="menu-icon__bar menu-icon__bar--top" id="menu-icon__bar--top"></div>
+            <div class="menu-icon__bar menu-icon__bar--middle" id="menu-icon__bar--middle"></div>
+            <div class="menu-icon__bar menu-icon__bar--bottom" id="menu-icon__bar--bottom"></div>
+        </button>
+    </header>
+
+    <script>
+        function animatedMenu() {
+            const top = document.getElementById("menu-icon__bar--top");
+            const middle = document.getElementById("menu-icon__bar--middle");
+            const bottom = document.getElementById("menu-icon__bar--bottom");
+
+            top.classList.toggle("toggle-top");
+            middle.classList.toggle("toggle-middle");
+            bottom.classList.toggle("toggle-bottom");
+        }
+    </script>
+</body>
+
+</html>

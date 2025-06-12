@@ -1,0 +1,249 @@
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: Arial, sans-serif;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BGCOLOR: #170d24;
+  --BGCOLOR-CONTAINER: #ffffff06;
+  --BORDER-COLOR: #3c2d83;
+  --BORDER-COLOR-FOCUS: #4a74dc;
+  --FONT-COLOR: whitesmoke;
+  --BGCOLOR-FADE1: #3c2d83;
+  --BGCOLOR-FADE2: #c33c65;
+  --BGCOLOR-FADE3: #4a74dc;
+  --BGCOLOR-FADE4: #35244f;
+  --BG-IMAGE: radial-gradient(
+      ellipse at 10% 90%,
+      var(--BGCOLOR-FADE1) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 90% 90%,
+      var(--BGCOLOR-FADE2) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 90% 10%,
+      var(--BGCOLOR-FADE3) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 10% 10%,
+      var(--BGCOLOR-FADE4) 0%,
+      transparent 55%
+    );
+
+  /* BORDERS */
+  --BORDER: 3px solid var(--BORDER-COLOR);
+  --BORDER-FOCUS: 3px solid var(--BORDER-COLOR-FOCUS);
+  --BORDER-RADIUS: 2rem;
+  --BORDER-RADIUS-SMALL: 1rem;
+
+  /* SHADOWS */
+  --BOX-SHADOWS: 0px 5px 8px rgba(0, 0, 0, 0.3);
+
+  /* STANDARD PADDING */
+  --PADDING-TB-TEXT: 0.25em;
+  --PADDING-SIDE-TEXT: 1.5%;
+  --PADDING-TB-CONTAINER: 1.5rem;
+  --PADDING-SIDE-CONTAINER: 2rem;
+  --PADDING-TB-RADIO: 0.75em;
+  --PADDING-SIDE-RADIO: 1.5em;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+  --MARGIN-CONTAINER: 1.5rem auto;
+  --MARGIN-HEADER: clamp(0.5em, 1.5vh, 1em) 0;
+  --MARGIN-INPUT-SELECT-TEXTAREA: 0.25em 0 1em;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+  background-image: var(--BG-IMAGE);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+  padding: var(--PADDING-TB-CONTAINER) var(--PADDING-SIDE-CONTAINER);
+}
+
+label {
+  line-height: 1.5;
+}
+
+input:not([type="radio"]) {
+  display: block;
+  width: 100%;
+}
+
+/* || MAIN */
+.container {
+  max-width: 600px;
+  min-height: calc(100vh - 5rem);
+  margin: var(--MARGIN-CONTAINER);
+  padding: var(--PADDING-TB-CONTAINER) var(--PADDING-SIDE-CONTAINER);
+  background-color: var(--BGCOLOR-CONTAINER);
+  border-radius: var(--BORDER-RADIUS);
+  box-shadow: var(--BOX-SHADOWS);
+}
+
+.container h1 {
+  text-align: center;
+  margin: var(--MARGIN-HEADER);
+}
+
+input:not([type="radio"]),
+textarea,
+select {
+  margin: var(--MARGIN-INPUT-SELECT-TEXTAREA);
+  padding: var(--PADDING-TB-TEXT) var(--PADDING-SIDE-TEXT);
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+  overflow: auto;
+  height: 5rem;
+}
+
+select {
+  display: block;
+  width: 100%;
+  height: 2em;
+  font-size: 1em;
+}
+
+label {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.radio-group {
+  margin: var(--MARGIN-INPUT-SELECT-TEXTAREA);
+  padding: var(--PADDING-TB-RADIO) var(--PADDING-SIDE-RADIO);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 4fr;
+  place-content: center;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .radio-group {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: #000;
+  background-color: rebeccapurple;
+  box-shadow: var(--BOX-SHADOWS);
+  accent-color: LimeGreen;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: LimeGreen;
+}
+
+input:first-of-type {
+  border-radius: var(--BORDER-RADIUS-SMALL);
+}
+
+input[type="email"],
+select,
+fieldset,
+textarea {
+  border-radius: var(--BORDER-RADIUS-SMALL);
+}
+
+input,
+textarea,
+select {
+  border: var(--BORDER);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--BORDER-COLOR-FOCUS);
+  outline: none;
+}
+
+select:focus {
+  border-color: var(--BORDER-COLOR-FOCUS);
+  outline: none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+button {
+  width: 100%;
+  text-align: center;
+  padding: var(--PADDING-TB-TEXT) var(--PADDING-SIDE-TEXT);
+  background-color: rebeccapurple;
+  border-radius: var(--BORDER-RADIUS-SMALL);
+  border: none;
+  box-shadow: var(--BOX-SHADOWS);
+  transition: background-color 0.3s ease;
+  color: var(--FONT-COLOR);
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--BGCOLOR-FADE4);
+}

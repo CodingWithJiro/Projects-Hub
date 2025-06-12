@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>CSS Additional Topics - Grid Container</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This is the continuation webpage for CSS advanced topics which showcases the author's skills involving the use of CSS flexbox, CSS grid, and CSS responsive web design." />
+    <link rel="icon" href="../images/css-3_2183x2500.svg" type="image/svg" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <meta property="og:title" content="CSS Additional Advanced Topics" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="practicesheet18.com" />
+    <meta property="og:image" content="../images/css-3.svg-mask-ex1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="title-side-nav">
+            <div class="website-title">
+                <img src="../images/css-3_2183x2500.svg" alt="CSS logo." width="2183" height="2500">
+                <h1>CSS Additional Topics</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="topic-title">CSS Flexbox</li>
+                    <li><a href="../index.html">Flexbox Intro</a></li>
+                    <li><a href="./css-flex-container.html">Flex Container</a></li>
+                    <li><a href="./css-flex-items.html">Flex Items</a></li>
+                    <li><a href="./css-flex-responsive.html">Flex Responsive</a></li>
+                    <li class="topic-title">CSS Grid</li>
+                    <li><a href="./css-grid-intro.html">Grid Intro</a></li>
+                    <li><a href="./css-grid-columns-rows.html">Grid Columns/Rows</a></li>
+                    <li><a href="#" id="active">Grid Container</a></li>
+                    <li><a href="./css-grid-item.html">Grid Item</a></li>
+                    <li class="topic-title">CSS Responsive</li>
+                    <li><a href="./css-rwd-intro.html">RWD Intro</a></li>
+                    <li><a href="./css-rwd-viewport.html">RWD Viewport</a></li>
+                    <li><a href="./css-rwd-grid-view.html">RWD Grid View</a></li>
+                    <li><a href="./css-rwd-media-queries.html">RWD Media Queries</a></li>
+                    <li><a href="./css-rwd-images.html">RWD Images</a></li>
+                    <li><a href="./css-rwd-videos.html">RWD Videos</a></li>
+                    <li><a href="./css-rwd-frameworks.html">RWD Frameworks</a></li>
+                    <li><a href="./css-rwd-templates.html">RWD Templates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <section>
+                <h2>CSS Grid Container</h2>
+                <hr>
+                <p>
+                    Grid containers contains one or more grid items arranged in columns and rows. The direct child
+                    elements are automatically assigned as a grid item. A parent element becomes a grid container when
+                    its display is set to grid or inline-grid.
+                </p>
+                <h3>Grid Tracks</h3>
+                <p>
+                    A grid track is the <strong>space</strong> between two adjacent grid lines. The rows and columns of
+                    a grid are defined by <strong>grid-template-rows</strong> and
+                    <strong>grid-template-columns</strong>. Its shorthand property is the <strong>grid</strong> or
+                    <strong>grid-template</strong> property.
+                </p>
+                <h3>The Grid-Templates-Columns property</h3>
+                <p>
+                    This property defines the <strong>number</strong> of columns in your layout and the width of each
+                    column. The value is a space separated list and each value defines the width of that column.
+                </p>
+                <p class="example">Example 1:</p>
+                <div class="div-container">
+                    <p>
+                        We will build a grid layout with 4 columns each having a width of "auto". With this setting, all
+                        of the columns will have the same width.
+                    </p>
+                    <div class="grid-container-ex1">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        We can also set different sizes for each of the columns but this time we will keep the third
+                        column in auto so as to fill the remaining space.
+                    </p>
+                    <div class="grid-container-ex2">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                </div>
+                <h3>Cell Sizing with fr Unit</h3>
+                <p>
+                    The fr unit means <strong>fraction</strong>. This unit divides the available space and 1fr will
+                    become a reference for all the other column sizes.
+                </p>
+                <p class="example">Example 2:</p>
+                <div class="div-container">
+                    <p>
+                        Here, we will assign all of our column width to <strong>1fr</strong>. This will render all of
+                        our widths equal
+                        similar to the auto value.
+                    </p>
+                    <div class="grid-container-ex3">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        Now, we will assign the second column to be twice the column width of the others by setting its
+                        value equal to <strong>2fr</strong>.
+                    </p>
+                    <div class="grid-container-ex4">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                </div>
+                <h3>The Grid-Template-Rows Property</h3>
+                <p>
+                    This property defines the <strong>height</strong> of each grid row. The value is a space-separated
+                    list just like the grid-tempate-columns properties. Each value also corresponds to the width of the
+                    row.
+                </p>
+                <p class="example">Example 3:</p>
+                <div class="div-container">
+                    <p>
+                        We will make the second row in our grid to have twice the height relative to its other rows by
+                        setting its value equal to <strong>2fr</strong>.
+                    </p>
+                    <div class="grid-container-ex5">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                </div>
+                <h3>The Justify-Content Property</h3>
+                <p>
+                    This property is used to <strong>align</strong> grid items when they do not use all available space
+                    on the main axis
+                    horizontally. This property can have the following values:
+                </p>
+                <ul>
+                    <li>space-evenly</li>
+                    <li>space-around</li>
+                    <li>space-between</li>
+                    <li>center</li>
+                    <li>start</li>
+                    <li>end</li>
+                </ul>
+                <p class="example">Example 4:</p>
+                <div class="div-container">
+                    <p>
+                        For the first one, we will use the <strong>space-evenly</strong> value which displays the grid
+                        items with equal space around them. We will deliberately make the column width smaller to create
+                        the additional space:
+                    </p>
+                    <div class="grid-container-ex6">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        Next is <strong>space-around</strong> value which displays the grid items with space around
+                        them:
+                    </p>
+                    <div class="grid-container-ex7">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        The <strong>space-between</strong> value displays the grid items with space between them:
+                    </p>
+                    <div class="grid-container-ex8">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        The <strong>center</strong> value displays the grid items in the center of the grid container:
+                    </p>
+                    <div class="grid-container-ex9">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        The <strong>start</strong> value displays the grid items at the start of the grid container:
+                    </p>
+                    <div class="grid-container-ex10">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        Last is the <strong>end</strong> value which displays the grid items at the end of the grid
+                        container:
+                    </p>
+                    <div class="grid-container-ex11">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                </div>
+                <h3>The Align-Content Property</h3>
+                <p>
+                    This property is the same as the justify-content property but this time it <strong>aligns</strong>
+                    the grid items vertically. This property can have the following values:
+                </p>
+                <ul>
+                    <li>space-evenly</li>
+                    <li>space-around</li>
+                    <li>space-between</li>
+                    <li>center</li>
+                    <li>start</li>
+                    <li>end</li>
+                </ul>
+                <p class="example">Example 5:</p>
+                <div class="div-container">
+                    <p>
+                        For this example, we will use a grid container height of 600px and deliberately make the grid
+                        items height small so as to have additional space. The first one is
+                        <strong>space-evenly</strong> which evenly distributes the grid items vertically:
+                    </p>
+                    <div class="grid-container-ex12">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        Next is <strong>space-around</strong> which displays grid items with space around them:
+                    </p>
+                    <div class="grid-container-ex13">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        The <strong>space-between</strong> displays grid items with space between them:
+                    </p>
+                    <div class="grid-container-ex14">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        The <strong>center</strong> value displays the grid items at the center of the grid container:
+                    </p>
+                    <div class="grid-container-ex15">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        The <strong>start</strong> value displays the grid items at the start of the container:
+                    </p>
+                    <div class="grid-container-ex16">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        Last is the <strong>end</strong> value which displays the grid items at the end of the
+                        container:
+                    </p>
+                    <div class="grid-container-ex17">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                </div>
+                <h3>The Place-Content Property</h3>
+                <p>
+                    This is the <strong>shorthand</strong> property for both the justify-content and align-content
+                    properties. This property has two values which are space-separated. If there is only one value, then
+                    it is assumed that both the justify-content and align-content will have that value.
+                </p>
+                <p class="example">Example 6:</p>
+                <div class="div-container">
+                    <p>
+                        We will set the value of place-content property to <strong>center</strong> for the grid
+                        container below:
+                    </p>
+                    <div class="grid-container-ex18">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                    <p>
+                        Next, we will try to set two values which are <strong>end</strong> and
+                        <strong>space-between</strong>. The first value is for align-content and the second value is
+                        for justify-content:
+                    </p>
+                    <div class="grid-container-ex19">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="./css-grid-columns-rows.html" target="_self" title="Go to previous lesson"
+                        class="previous-lesson-button">
+                        <img src="../images/arrow-left_50x50.png" alt="Go back to the previous lesson." width="50"
+                            height="50">
+                    </a>
+                    <a href="./css-grid-item.html" target="_self" title="Go to next lesson" class="next-lesson-button">
+                        <img src="../images/arrow-right_50x50.png" alt="Go to next lesson." width="50" height="50">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; <strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+    <script>
+        // SCRIPT FOR SCROLLING AUTOMATICALLY TO THE SELECTED/ACTIVE TAB
+        function scrollToTab() {
+            document.getElementById("active").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+
+</html>

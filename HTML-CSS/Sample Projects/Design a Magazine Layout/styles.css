@@ -1,0 +1,165 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Fugaz+One&family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF-TEXT: "Open Sans", sans-serif;
+  --FF-HEADINGS: "Roboto Slab", serif;
+  --FS: clamp(1.5rem, 3.3vh, 2.5rem);
+
+  /* COLORS */
+  --BGCOLOR: #136912;
+  --BGCOLOR-FADE2: #48817a;
+  --BGCOLOR-FADE1: #34a426;
+  --BGIMAGE: linear-gradient(
+    45deg,
+    var(--BGCOLOR),
+    var(--BGCOLOR-FADE1),
+    var(--BGCOLOR-FADE2)
+  );
+  --BGCOLOR-TITLE: rgba(0, 0, 0, 0.15);
+  --BGCOLOR-SECTIONS: rgba(255, 255, 255, 0.2);
+  --BORDER-COLOR: #000;
+  --SHADOW-COLOR: #0a3509;
+  --FONT-COLOR-HEADERS: #fff;
+  --FONT-COLOR-TEXT: #000;
+
+  /* BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+  --BORDER-RADIUS: 20px;
+
+  /* SHADOWS */
+  --TEXT-SHADOW: 2px 2px 5px var(--SHADOW-COLOR);
+
+  /* STANDARD PADDING */
+  --PADDING-TEXT: 0.25em 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  background-color: var(--BGCOLOR);
+  background-image: var(--BGIMAGE);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  color: var(--FONT-COLOR-TEXT);
+  font-size: var(--FS);
+  padding: 2rem;
+}
+
+p {
+  line-height: 1.5;
+  font-family: var(--FF-TEXT);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--FF-HEADINGS);
+  color: var(--FONT-COLOR-HEADERS);
+  text-shadow: var(--TEXT-SHADOW);
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+/* || MAIN */
+.magazine-cover {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "small-article1 small-article2 cover-image";
+  gap: 10px;
+  width: 100%;
+}
+
+.title {
+  grid-area: title;
+  padding: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  width: 75%;
+  margin: 0 auto 2rem;
+  background-color: var(--BGCOLOR-TITLE);
+  border-radius: var(--BORDER-RADIUS);
+}
+
+.feature-article {
+  grid-area: feature-article;
+  background-color: var(--BGCOLOR-SECTIONS);
+  padding: 1.5rem;
+}
+
+.cover-image {
+  grid-area: cover-image;
+  background-color: var(--BGCOLOR-SECTIONS);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+  background-color: var(--BGCOLOR-SECTIONS);
+  padding: 1.5rem;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+  background-color: var(--BGCOLOR-SECTIONS);
+  padding: 1.5rem;
+}
+
+.cover-image img {
+  object-fit: cover;
+}

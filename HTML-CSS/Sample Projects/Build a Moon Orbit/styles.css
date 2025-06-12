@@ -1,0 +1,135 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Nunito", sans-serif;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BGCOLOR: rgb(27, 24, 31);
+  --BGCOLOR-FADE: rgb(50, 4, 89);
+  --BG-IMAGE: radial-gradient(
+    circle at center,
+    var(--BGCOLOR) 80%,
+    var(--BGCOLOR-FADE)
+  );
+  --BORDER-COLOR: #000;
+  --FONT-COLOR: #000;
+
+  /* BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+
+  /* STANDARD PADDING */
+  --PADDING-TEXT: 0.25em 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+  background-image: var(--BG-IMAGE);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || MAIN */
+.space {
+  width: 200px;
+  height: 200px;
+  background-color: var(--BGCOLOR);
+  position: relative;
+}
+
+.earth {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0000a0;
+  box-shadow: 0px 0px 20px #0000a0;
+  border-radius: 50%;
+}
+
+.orbit {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: orbit 5s linear infinite;
+}
+
+.moon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 50%;
+  background-color: #909090;
+  box-shadow: 0px 0px 20px #909090;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}

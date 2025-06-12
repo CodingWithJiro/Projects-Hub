@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>CSS Additional Topics - Flex Container</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This is the continuation webpage for CSS advanced topics which showcases the author's skills involving the use of CSS flexbox, CSS grid, and CSS responsive web design." />
+    <link rel="icon" href="../images/css-3_2183x2500.svg" type="image/svg" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <meta property="og:title" content="CSS Additional Advanced Topics" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="practicesheet18.com" />
+    <meta property="og:image" content="../images/css-3.svg-mask-ex1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="title-side-nav">
+            <div class="website-title">
+                <img src="../images/css-3_2183x2500.svg" alt="CSS logo." width="2183" height="2500">
+                <h1>CSS Additional Topics</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="topic-title">CSS Flexbox</li>
+                    <li><a href="../index.html">Flexbox Intro</a></li>
+                    <li><a href="#" id="active">Flex Container</a></li>
+                    <li><a href="./css-flex-items.html">Flex Items</a></li>
+                    <li><a href="./css-flex-responsive.html">Flex Responsive</a></li>
+                    <li class="topic-title">CSS Grid</li>
+                    <li><a href="./css-grid-intro.html">Grid Intro</a></li>
+                    <li><a href="./css-grid-columns-rows.html">Grid Columns/Rows</a></li>
+                    <li><a href="./css-grid-container.html">Grid Container</a></li>
+                    <li><a href="./css-grid-item.html">Grid Item</a></li>
+                    <li class="topic-title">CSS Responsive</li>
+                    <li><a href="./css-rwd-intro.html">RWD Intro</a></li>
+                    <li><a href="./css-rwd-viewport.html">RWD Viewport</a></li>
+                    <li><a href="./css-rwd-grid-view.html">RWD Grid View</a></li>
+                    <li><a href="./css-rwd-media-queries.html">RWD Media Queries</a></li>
+                    <li><a href="./css-rwd-images.html">RWD Images</a></li>
+                    <li><a href="./css-rwd-videos.html">RWD Videos</a></li>
+                    <li><a href="./css-rwd-frameworks.html">RWD Frameworks</a></li>
+                    <li><a href="./css-rwd-templates.html">RWD Templates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <section>
+                <h2>CSS Flex Container</h2>
+                <hr>
+                <p>Like the previous example here we have the flex container by making its background to aqua blue. We
+                    have
+                    defined it by setting its display to <strong>flex</strong>.</p>
+                <p class="example">Example 1:</p>
+                <div class="div-container">
+                    <div class="flex-container-ex1">
+                        <div>
+                            <img src="../images/ghost-image_900x776.png" alt="Ghost image." width="900" height="776"
+                                title="Boo!">
+                        </div>
+                        <div>
+                            <img src="../images/ghost-image_900x776.png" alt="Ghost image." width="900" height="776"
+                                title="Boo!">
+                        </div>
+                        <div>
+                            <img src="../images/ghost-image_900x776.png" alt="Ghost image." width="900" height="776"
+                                title="Boo!">
+                        </div>
+                        <div>
+                            <img src="../images/ghost-image_900x776.png" alt="Ghost image." width="900" height="776"
+                                title="Boo!">
+                        </div>
+                        <div>
+                            <img src="../images/ghost-image_900x776.png" alt="Ghost image." width="900" height="776"
+                                title="Boo!">
+                        </div>
+                    </div>
+                </div>
+                <p>Each of the ghost images above is what we call <strong>flex items</strong>.</p>
+                <p>The following are the properties we can use in a flex container:</p>
+                <ul>
+                    <li>flex-direction</li>
+                    <li>flex-wrap</li>
+                    <li>flex-flow</li>
+                    <li>justify-content</li>
+                    <li>align-items</li>
+                    <li>align-content</li>
+                </ul>
+                <h3>CSS Flex-Direction Property</h3>
+                <p>
+                    The flex-direction property specifies the <strong>display-direction</strong> of flex-items in the
+                    flex-container.
+                </p>
+                <p>
+                    This flex-direction property can have values such as <em>row, column, row-reverse,</em> and
+                    <em>column-reverse</em>. Below are the values used in a flex container:
+                </p>
+                <p class="example">Example 2:</p>
+                <div class="div-container">
+                    <p>The first one is <strong>row</strong> which is the default value for flex-direction property:</p>
+                    <div class="flex-container-ex2">
+                        <div><img src="../images/aran_735x1307.jpg" alt="Aran from FIFTY FIFTY K-Pop Girl Group."
+                                width="735" height="1307" title="Aran!"></div>
+                        <div><img src="../images/aran_735x1307.jpg" alt="Aran from FIFTY FIFTY K-Pop Girl Group."
+                                width="735" height="1307" title="Aran!"></div>
+                        <div><img src="../images/aran_735x1307.jpg" alt="Aran from FIFTY FIFTY K-Pop Girl Group."
+                                width="735" height="1307" title="Aran!"></div>
+                        <div><img src="../images/aran_735x1307.jpg" alt="Aran from FIFTY FIFTY K-Pop Girl Group."
+                                width="735" height="1307" title="Aran!"></div>
+                    </div>
+                    <p>
+                        Next is <strong>column</strong> where the flex items are aligned vertically from top to bottom:
+                    </p>
+                    <div class="flex-container-ex3">
+                        <div><img src="../images/dahyun_3840x2160.jpg" alt="Dahyun from TWICE K-Pop Girl Group."
+                                width="3840" height="2160" title="Dahyun"></div>
+                        <div><img src="../images/dahyun_3840x2160.jpg" alt="Dahyun from TWICE K-Pop Girl Group."
+                                width="3840" height="2160" title="Dahyun"></div>
+                        <div><img src="../images/dahyun_3840x2160.jpg" alt="Dahyun from TWICE K-Pop Girl Group."
+                                width="3840" height="2160" title="Dahyun"></div>
+                    </div>
+                    <p>
+                        Third is <strong>row-reverse</strong> which reverses the flex items horizontally. It displays
+                        these items from right to left:
+                    </p>
+                    <div class="flex-container-ex4">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <p>
+                        Last is the <strong>column-reverse</strong> value which displays flex items from bottom to top:
+                    </p>
+                    <div class="flex-container-ex5">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>CSS Flex-Wrap Property</h3>
+                <p>
+                    This property specifies if the flex items should <strong>wrap or not</strong> if there is not enough
+                    room for one
+                    flex line. This property has three values:
+                </p>
+                <ul>
+                    <li>nowrap</li>
+                    <li>wrap</li>
+                    <li>wrap-reverse</li>
+                </ul>
+                <p>
+                    These values are showcased here in our next example:
+                </p>
+                <p class="example">Example 3:</p>
+                <div class="div-container">
+                    <p>
+                        The <strong>nowrap</strong> value is the default flex-wrap property value. Even if the flex
+                        container is resized, the flex items will not wrap and overflow. Try to resize your browser
+                        window:
+                    </p>
+                    <div class="flex-container-ex6">
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                    </div>
+                    <p>
+                        On the other hand, the <strong>wrap</strong> value will force the flex items to wrap if
+                        necessary. As you can see, the cats below already wrapped and will wrap further if you resize
+                        your browser window:
+                    </p>
+                    <div class="flex-container-ex7">
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                        <div><img src="../images/gwenchana-cat_200x200.gif" alt="Gwenchana cat." width="200"
+                                height="200" title="Gwenchana! Ding ding ding ding ding!"></div>
+                    </div>
+                    <p>
+                        The last one called <strong>wrap-reverse</strong> wraps the flex items but in reverse order. Try
+                        to resize your browser window to see the effect on the numbers:
+                    </p>
+                    <div class="flex-container-ex8">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <p>7</p>
+                        </div>
+                        <div>
+                            <p>8</p>
+                        </div>
+                        <div>
+                            <p>9</p>
+                        </div>
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>CSS Flex-Flow Property</h3>
+                <p>
+                    This is a straight-forward property which allows the web designers to specify <strong>both</strong>
+                    the flex-direction
+                    and flex-wrap of a flexbox in a single line.
+                </p>
+                <h3>CSS Justify-Content Property</h3>
+                <p>
+                    This property simply <strong>horizontally aligns</strong> flex items when they do not use all the
+                    available space or width of its flex container. This property have the following values and further
+                    explained in Example 4.
+                </p>
+                <ul>
+                    <li>center</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>space-around</li>
+                    <li>space-between</li>
+                    <li>space-evenly</li>
+                </ul>
+                <p class="example">Example 4:</p>
+                <div class="div-container">
+                    <p>
+                        The <strong>center</strong> value positions the flex items in the center of the container.
+                    </p>
+                    <div class="flex-container-ex9">
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                    </div>
+                    <p>
+                        The <strong>flex-start</strong> value positions the flex items at the beginning of the
+                        container. This is also the default value.
+                    </p>
+                    <div class="flex-container-ex10">
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                    </div>
+                    <p>
+                        The <strong>flex-end</strong> value does the opposite and positions the flex items at the end of
+                        the container. The order is not reversed.
+                    </p>
+                    <div class="flex-container-ex11">
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                    </div>
+                    <p>
+                        Next is <strong>space-around</strong> value which puts space around the flex items.
+                    </p>
+                    <div class="flex-container-ex12">
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                    </div>
+                    <p>
+                        Next is <strong>space-between</strong> value which differs from the one above by putting space
+                        between the flex items.
+                    </p>
+                    <div class="flex-container-ex13">
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                    </div>
+                    <p>
+                        Last is <strong>space-evenly</strong> which puts an equal space around each flex item.
+                    </p>
+                    <div class="flex-container-ex14">
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                        <div><img src="../images/iu_728x728.jpg" alt="IU K-Pop Idol." title="IU!" width="728"
+                                height="728"></div>
+                    </div>
+                </div>
+                <h3>CSS Align-Items Property</h3>
+                <p>
+                    The align-items property is used to <strong>vertically align</strong> the flex items if there is a
+                    remaining vertical space. This property have the following values:
+                </p>
+                <ul>
+                    <li>center</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>stretch</li>
+                    <li>baseline</li>
+                    <li>normal</li>
+                </ul>
+                <p>Example 5 shows us the differences for each of these values:</p>
+                <p class="example">Example 5:</p>
+                <div class="div-container">
+                    <p>The first one is the <strong>center</strong> value which positions the flex items in the middle
+                        of the container.</p>
+                    <audio src="../audio/vine-boom.mp3" id="vine-boom"></audio>
+                    <div class="flex-container-ex15">
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                    </div>
+                    <p>
+                        The <strong>flex-start</strong> value positions the flex items at the top of the container.
+                    </p>
+                    <div class="flex-container-ex16">
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                    </div>
+                    <p>
+                        The <strong>flex-end</strong> value does the opposite of the above and puts the flex items at
+                        the bottom of the container.
+                    </p>
+                    <div class="flex-container-ex17">
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                    </div>
+                    <p>
+                        The <strong>stretch</strong> value stretches the items to fill the container. This is a default
+                        value.
+                    </p>
+                    <div class="flex-container-ex18">
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                        <div><img src="../images/the-rock_220x220.gif" alt="Dwayne 'The Rock' Johnson eyebrow raise."
+                                title="Vine boom!" width="220" height="220" onmouseover="playAudio()"
+                                onmouseout="pauseAudio()"></div>
+                    </div>
+                    <p>
+                        The last one is <strong>baseline</strong> value which positions all of the flex items at the
+                        baseline center of the container no matter if each flex item has different sizes. For this
+                        example, we will use text with different font sizes and will later align them on the text
+                        baseline of the container.
+                    </p>
+                    <div class="flex-container-ex19">
+                        <div onmouseover="playAudio()" onmouseout="pauseAudio()">
+                            <p style="font-size: 30px;">Can you</p>
+                        </div>
+                        <div onmouseover="playAudio()" onmouseout="pauseAudio()">
+                            <p style="font-size: 100px;">smell</p>
+                        </div>
+                        <div onmouseover="playAudio()" onmouseout="pauseAudio()">
+                            <p style="font-size: 20px;">what The
+                                Rock</p>
+                        </div>
+                        <div onmouseover="playAudio()" onmouseout="pauseAudio()">
+                            <p style="font-size: 70px;">is cooking?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h3>CSS Align-Content Property</h3>
+                <p>
+                    This is used to <strong>align flex lines</strong>. This works similar to the align-item property but
+                    differs since align-content property aligns the flex lines and not the flex items. This property
+                    have similar values with the align-item property:
+                </p>
+                <ul>
+                    <li>center</li>
+                    <li>stretch</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>space-around</li>
+                    <li>space-between</li>
+                    <li>space-evenly</li>
+                </ul>
+                <p>
+                    For the following examples, we will be having div elements as flex container with a 600px height and
+                    flex-wrap set to wrap to demonstrate the align-content property values.
+                </p>
+                <p class="example">Example 6:</p>
+                <div class="div-container">
+                    <p>
+                        The first value is <strong>center</strong> which makes all the flex lines grouped towards the
+                        center
+                        of the container.
+                    </p>
+                    <div class="flex-container-ex20">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <p>7</p>
+                        </div>
+                        <div>
+                            <p>8</p>
+                        </div>
+                        <div>
+                            <p>9</p>
+                        </div>
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <p>
+                        Next is <strong>stretch</strong> which makes the flex lines stretch to take up the remaining
+                        space of the container. This is also the default value.
+                    </p>
+                    <div class="flex-container-ex21">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <p>7</p>
+                        </div>
+                        <div>
+                            <p>8</p>
+                        </div>
+                        <div>
+                            <p>9</p>
+                        </div>
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <p>
+                        The <strong>flex-start</strong> value makes the flex lines pack at the start of the container.
+                    </p>
+                    <div class="flex-container-ex22">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <p>7</p>
+                        </div>
+                        <div>
+                            <p>8</p>
+                        </div>
+                        <div>
+                            <p>9</p>
+                        </div>
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <p>
+                        While the <strong>flex-end</strong> value makes the flex lines pack at the end of the container.
+                    </p>
+                    <div class="flex-container-ex23">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <p>7</p>
+                        </div>
+                        <div>
+                            <p>8</p>
+                        </div>
+                        <div>
+                            <p>9</p>
+                        </div>
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <p>
+                        Next is <strong>space-between</strong> value which makes the space between flex lines equal but
+                        the first item is flush with the start edge of the container while the last item is flush with
+                        the end edge of the container.
+                    </p>
+                    <div class="flex-container-ex24">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <p>7</p>
+                        </div>
+                        <div>
+                            <p>8</p>
+                        </div>
+                        <div>
+                            <p>9</p>
+                        </div>
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <p>
+                        Then the <strong>space-around</strong> value makes the space between flex lines equal too but
+                        there is space between the first item and the top edge and the last item and the bottom edge
+                        which equals to half of the space between flex lines.
+                    </p>
+                    <div class="flex-container-ex25">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <p>7</p>
+                        </div>
+                        <div>
+                            <p>8</p>
+                        </div>
+                        <div>
+                            <p>9</p>
+                        </div>
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <p>
+                        Last is <strong>space-evenly</strong> value which distributes the flex lines in the flex
+                        container evenly with equal space on top, bottom and in-between.
+                    </p>
+                    <div class="flex-container-ex26">
+                        <div>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <p>3</p>
+                        </div>
+                        <div>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <p>6</p>
+                        </div>
+                        <div>
+                            <p>7</p>
+                        </div>
+                        <div>
+                            <p>8</p>
+                        </div>
+                        <div>
+                            <p>9</p>
+                        </div>
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>CSS Perfect Centering</h3>
+                <p>
+                    With all the knowledge above, we can now perfectly center an item inside a flex container using only
+                    justify-content and align-items properties both set at center:
+                </p>
+                <p class="example">Example 7:</p>
+                <div class="div-container">
+                    <div class="flex-container-ex27">
+                        <div><img src="../images/nayeon_3840x2160.jpg" alt="Nayeon from K-Pop Girl Group TWICE."
+                                width="3840" height="2160" title="Nayeon!"></div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="../index.html" target="_self" title="Go to previous lesson" class="previous-lesson-button">
+                        <img src="../images/arrow-left_50x50.png" alt="Go back to the previous lesson." width="50"
+                            height="50">
+                    </a>
+                    <a href="./css-flex-items.html" target="_self" title="Go to next lesson" class="next-lesson-button">
+                        <img src="../images/arrow-right_50x50.png" alt="Go to next lesson." width="50" height="50">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; <strong>Copyright:</strong> Elmar Chavez</p>
+    </footer>
+    <script>
+        // SCRIPT FOR SCROLLING AUTOMATICALLY TO THE SELECTED/ACTIVE TAB. CURRENTLY NOT IMPLEMENTED! STUDY MORE!
+        function scrollToTab() {
+            document.getElementById("active").scrollIntoView({ behavior: "smooth" });
+        }
+        // SCRIPT FOR VINE BOOM AUDIO WHEN HOVERING OVER THE ROCK PICTURES
+        function playAudio() {
+            var audio = document.getElementById("vine-boom");
+            audio.play();
+        }
+        function pauseAudio() {
+            var audio = document.getElementById("vine-boom");
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    </script>
+</body>
+
+</html>

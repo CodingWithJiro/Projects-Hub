@@ -1,0 +1,207 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Roboto", sans-serif;
+  --FS: 1rem;
+
+  /* COLORS */
+  --BGCOLOR: #fff;
+  --BGCOLOR-ASIDE: #312614;
+  --FONT-COLOR: #000;
+  --FONT-COLOR-HEADER-SPAN: #b7832f;
+  --FONT-COLOR-SUBHEADER: #707070;
+  --FONT-COLOR-ARTICLE: #8e8e8e;
+  --FONT-COLOR-ASIDE: #ddd;
+  --BORDER-COLOR: #000;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.3);
+
+  /* BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0 0 5px var(--SHADOW-COLOR);
+
+  /* STANDARD PADDING */
+  --PADDING-TEXT: 0.25em 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  font-size: 1.125rem;
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || HEADER */
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+
+h1 span {
+  color: var(--FONT-COLOR-HEADER-SPAN);
+}
+
+img {
+  max-height: 8rem;
+  object-fit: cover;
+  object-position: bottom;
+  margin: auto;
+}
+
+/* || MAIN */
+.container {
+  max-width: 61.25rem;
+  margin: auto;
+  padding: 2em 0.875em;
+}
+
+h2 {
+  color: var(--FONT-COLOR-SUBHEADER);
+  font-size: 1.5rem;
+}
+
+article {
+  color: var(--FONT-COLOR-ARTICLE);
+}
+
+aside {
+  background-color: var(--BGCOLOR-ASIDE);
+  color: var(--FONT-COLOR-ASIDE);
+}
+
+.section1 {
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.section1__article1 {
+  flex: 1;
+}
+
+.section1__article2 {
+  flex: 2;
+}
+
+.section1__aside1 {
+  width: 25%;
+  padding: 1em;
+}
+
+.section1 article {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.section2__article1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section2__aside1 {
+  width: 25%;
+  padding: 1em;
+}
+
+/* || MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+  /* || MAIN */
+  .section1 {
+    margin-bottom: 2em;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .section1__article1 {
+    flex: 1;
+  }
+
+  .section1__article2 {
+    flex: 1;
+  }
+
+  .section1__aside1 {
+    width: 100%;
+  }
+
+  .section2 {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .section2__aside1 {
+    width: 100%;
+  }
+}

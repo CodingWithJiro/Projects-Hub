@@ -1,0 +1,141 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Fugaz+One&family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Open Sans", sans-serif;
+
+  /* COLORS */
+  --BGCOLOR: #f3cea1;
+  --BGCOLOR-MAIN: #f3dfc1;
+  --BORDER-COLOR: #000;
+  --FONT-COLOR: #000;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.3);
+
+  /* BORDERS */
+  --BORDERS: 2px solid var(--BORDER-COLOR);
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0 5px 8px var(--SHADOW-COLOR);
+
+  /* STANDARD PADDING */
+  --PADDING-TB-TEXT: 0.25em;
+  --PADDING-SIDE-TEXT: 2.5%;
+  --PADDING-BODY: 0 2rem;
+  --PADDING-MAIN: 0.75rem 1rem;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: 0.3em 0;
+  --MARGIN-MAIN: 2rem auto;
+  --MARGIN-NAME: 0.5em auto 0;
+  --MARGIN-HEADLINE-SUB-HEADLINE: 0.3em 0;
+  --MARGIN-AUTHOR: 1em 0;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: 24px;
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  padding: var(--PADDING-BODY);
+  min-height: calc(100vh - 4rem);
+}
+
+/* || MAIN */
+.newspaper {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  border: var(--BORDERS);
+  margin: var(--MARGIN-MAIN);
+  padding: var(--PADDING-MAIN);
+  box-shadow: var(--BOX-SHADOW);
+  background-color: var(--BGCOLOR-MAIN);
+  min-height: calc(100vh - 4rem);
+}
+
+.name,
+.author {
+  text-transform: uppercase;
+}
+
+.name {
+  font-size: 2rem;
+  font-family: "Times New Roman", serif;
+  margin: var(--MARGIN-NAME);
+  text-align: center;
+}
+
+.date {
+  text-align: center;
+}
+
+.headline {
+  font-size: 2em;
+  margin: var(--MARGIN-HEADLINE-SUB-HEADLINE);
+  font-weight: bold;
+}
+
+.sub-headline {
+  font-size: 1.5em;
+  margin: var(--MARGIN-HEADLINE-SUB-HEADLINE);
+  font-weight: 100;
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+  margin: var(--MARGIN-AUTHOR);
+}
+
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+  margin: var(--MARGIN-TEXT);
+  text-align: justify;
+}
+
+.text::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}

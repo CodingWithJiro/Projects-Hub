@@ -1,0 +1,158 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jacques+Francois+Shadow&family=Joan&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Nunito", sans-serif;
+  --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --BGCOLOR-BODY: #f4f4f4;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.3);
+
+  /* BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+  --BORDER-RADIUS: 1.5rem;
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0 3px 5px var(--SHADOW-COLOR);
+
+  /* STANDARD PADDING */
+  --PADDING-TB-TEXT: 0.25em;
+  --PADDING-SIDE-TEXT: 2.5%;
+  --PADDING-BODY: 1.5rem;
+  --PADDING-CONTAINER: 1rem;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+  font-family: var(--FF);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+  background-color: var(--BGCOLOR-BODY);
+  padding: var(--PADDING-BODY);
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || MAIN */
+.color-grid {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+  padding: var(--PADDING-CONTAINER);
+}
+
+.color-box {
+  width: 200px;
+  height: 200px;
+  flex: auto;
+  box-shadow: var(--BOX-SHADOW);
+  border-radius: var(--BORDER-RADIUS);
+}
+
+@media only screen and (max-width: 800px) {
+  .color-grid {
+    flex-flow: column nowrap;
+  }
+}
+
+.color1 {
+  background-color: #6d3838;
+  transition: all 0.3s ease;
+}
+
+.color1:hover {
+  box-shadow: 0 6px 10px #6d3838;
+  transform: scale(1.1);
+}
+
+.color2 {
+  background-color: rgb(49, 148, 98);
+  transition: all 0.3s ease;
+}
+
+.color2:hover {
+  box-shadow: 0 6px 10px rgb(49, 148, 98);
+  transform: scale(1.1);
+}
+
+.color3 {
+  background-color: crimson;
+  transition: all 0.3s ease;
+}
+
+.color3:hover {
+  box-shadow: 0 6px 10px crimson;
+  transform: scale(1.1);
+}
+
+.color4 {
+  background-color: hsl(255, 60%, 70%);
+  transition: all 0.3s ease;
+}
+
+.color4:hover {
+  box-shadow: 0 6px 10px hsl(255, 60%, 70%);
+  transform: scale(1.1);
+}
+
+.color5 {
+  background-color: rgb(15, 66, 118);
+  background-color: dodgerblue;
+  transition: all 0.3s ease;
+}
+
+.color5:hover {
+  box-shadow: 0 6px 10px rgb(15, 66, 118);
+  transform: scale(1.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+}

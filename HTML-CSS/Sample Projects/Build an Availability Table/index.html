@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Availability Table</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="This website showcases the authors abilities to build an availability table using HTML and CSS." />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta property="og:title" content="Availability Table" />
+    <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <main>
+        <table>
+            <tr class="sharp">
+                <th>
+                    &nbsp;
+                </th>
+
+                <th>
+                    Monday
+                </th>
+
+                <th>
+                    Tuesday
+                </th>
+
+                <th>
+                    Wednesday
+                </th>
+
+                <th>
+                    Thursday
+                </th>
+
+                <th>
+                    Friday
+                </th>
+            </tr>
+
+            <tr class="half">
+                <th class="time"><time datetime="9:00">9:00 AM</time></th>
+                <td class="available-3"></td>
+                <td class="available-4"></td>
+                <td class="available-5"></td>
+                <td class="available-1"></td>
+                <td class="available-2"></td>
+            </tr>
+
+            <tr class="sharp">
+                <th class="time"><time datetime="10:00">10:00 AM</time></th>
+                <td class="available-2"></td>
+                <td class="available-3"></td>
+                <td class="available-0"></td>
+                <td class="available-5"></td>
+                <td class="available-2"></td>
+            </tr>
+
+            <tr class="half">
+                <th class="time"><time datetime="11:00">11:00 AM</time></th>
+                <td class="available-1"></td>
+                <td class="available-0"></td>
+                <td class="available-4"></td>
+                <td class="available-4"></td>
+                <td class="available-5"></td>
+            </tr>
+
+            <tr class="sharp">
+                <th class="time"><time datetime="12:00">12:00 PM</time></th>
+                <td class="available-5"></td>
+                <td class="available-3"></td>
+                <td class="available-2"></td>
+                <td class="available-0"></td>
+                <td class="available-3"></td>
+            </tr>
+
+            <tr class="half">
+                <th class="time"><time datetime="13:00">1:00 PM</time></th>
+                <td class="available-5"></td>
+                <td class="available-5"></td>
+                <td class="available-2"></td>
+                <td class="available-3"></td>
+                <td class="available-4"></td>
+            </tr>
+
+            <tr class="sharp">
+                <th class="time"><time datetime="14:00">2:00 PM</time></th>
+                <td class="available-4"></td>
+                <td class="available-0"></td>
+                <td class="available-2"></td>
+                <td class="available-1"></td>
+                <td class="available-5"></td>
+            </tr>
+
+            <tr class="half">
+                <th class="time"><time datetime="15:00">3:00 PM</time></th>
+                <td class="available-4"></td>
+                <td class="available-2"></td>
+                <td class="available-5"></td>
+                <td class="available-5"></td>
+                <td class="available-1"></td>
+            </tr>
+
+            <tr class="sharp">
+                <th class="time"><time datetime="16:00">4:00 PM</time></th>
+                <td class="available-2"></td>
+                <td class="available-0"></td>
+                <td class="available-4"></td>
+                <td class="available-5"></td>
+                <td class="available-1"></td>
+            </tr>
+
+            <tr class="half">
+                <th class="time"><time datetime="17:00">5:00 PM</time></th>
+                <td class="available-1"></td>
+                <td class="available-2"></td>
+                <td class="available-4"></td>
+                <td class="available-0"></td>
+                <td class="available-5"></td>
+            </tr>
+        </table>
+
+        <div id="legend">
+            <span>Availability</span>
+            <div id="label">
+                <div id="legend-label-left">0</div>
+                <div id="legend-gradient"></div>
+                <div id="legend-label-right">+5</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
