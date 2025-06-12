@@ -1,5 +1,9 @@
 # 📁 My First Frontend Portfolio
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5981cc85-227a-46fa-aa71-6a539e37636d/deploy-status)](https://beginner-portfolio-website.netlify.app/)
+
 ## ℹ️ A basic HTML portfolio website
 
 ![Screenshot of the project](./screenshot.png)
@@ -10,7 +14,7 @@ A pure HTML website built as part of my earliest lessons in frontend development
 
 ## 🔍 Overview
 
-This project contains three mini-sites built entirely with HTML. At the time, I had no experience with **frontend web development** — I didn’t even know what an _html_ was — but this helped me understand the fundamentals of:
+This project contains three mini-sites built entirely with HTML. At the time, I had no experience with **frontend web development** — I didn't even know what an _html_ was — but this helped me understand the fundamentals of:
 
 - Creating multi-page websites
 - Using semantic HTML tags like `<main>`, `<section>`, `<header>`, and `<footer>`
@@ -54,7 +58,14 @@ This project contains three mini-sites built entirely with HTML. At the time, I 
 ## 🚀 How to Run
 
 1. Clone the repository
-2. Open `index.html` in your browser
+2. Navigate to this folder
+3. Open `index.html` in your browser
+
+---
+
+## 🌐 Live Demo
+
+Or you can check out the 👉 [live website here](https://beginner-portfolio-website.netlify.app/)
 
 ---
 

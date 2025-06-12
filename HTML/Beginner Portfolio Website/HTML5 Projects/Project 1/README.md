@@ -1,5 +1,9 @@
 # 📁 Mac & Cheese Recipe
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5981cc85-227a-46fa-aa71-6a539e37636d/deploy-status)](https://beginner-portfolio-website.netlify.app/html5%20projects/project%201/)
+
 ## ℹ️ a basic recipe website using only HTML
 
 ![Screenshot of the project](./screenshot.png)
@@ -37,8 +41,14 @@ I included navigation links, a featured image with a caption, and organized the 
 ## 🚀 How to Run
 
 1. Clone the repository
-2. Navigate to the project folder
+2. Navigate to this project folder
 3. Open `index.html` in your browser
+
+---
+
+## 🌐 Live Demo
+
+Or you can check out the 👉 [live website here](https://beginner-portfolio-website.netlify.app/html5%20projects/project%201/)
 
 ---
 

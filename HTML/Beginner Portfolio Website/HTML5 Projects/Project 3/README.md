@@ -1,4 +1,8 @@
-# 📁 Table Tennis Leaderboard
+# 📁 HTML5 Forms
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5981cc85-227a-46fa-aa71-6a539e37636d/deploy-status)](https://beginner-portfolio-website.netlify.app/html5%20projects/project%203/)
 
 ## ℹ️ A basic interactive webpage using HTML5 form elements
 
@@ -42,9 +46,15 @@ Each form is wired to a testing endpoint (`https://httpbin.org/get`) to simulate
 ## 🚀 How to Run
 
 1. Clone the repository
-2. Navigate to the project folder
+2. Navigate to this project folder
 3. Open `index.html` in your browser
 4. Submit any form — results will open in a new tab via [httpbin.org](https://httpbin.org)
+
+---
+
+## 🌐 Live Demo
+
+Or you can check out the 👉 [live website here](https://beginner-portfolio-website.netlify.app/html5%20projects/project%203/)
 
 ---
 
