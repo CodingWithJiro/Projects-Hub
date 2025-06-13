@@ -1,0 +1,262 @@
+/* || IMPORT GOOGLE FONT LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Source Sans 3", sans-serif;
+  --FS: clamp(1rem, 1.5vw, 1.25rem);
+
+  /* COLORS */
+  --BGCOLOR: whitesmoke;
+  --BGCOLOR-HERO: #d4411b;
+  --BGCOLOR-PROJECT-TITLE: hsla(0, 0%, 0%, 0.6);
+  --BGCOLOR-PROJECT-TITLE-HOVER: hsla(0, 0%, 0%, 0.8);
+  --FONT-COLOR: #000;
+  --FONT-COLOR-FOOTER: rgba(245, 245, 245, 0.8);
+  --FONT-COLOR-HERO: #f9f9f9;
+  --HIGHLIGHT-COLOR: #fff;
+  --BORDER-COLOR: #000;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.3);
+  --SHADOW-COLOR-HOVER: rgba(212, 64, 28, 0.5);
+
+  /* BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+
+  /* SHADOWS */
+  --BOX-SHADOW: 0 0 3px var(--SHADOW-COLOR);
+  --BOX-SHADOW-HOVER: 0 0 10px var(--SHADOW-COLOR-HOVER);
+
+  /* STANDARD PADDING */
+  --PADDING-TEXT: 0.25em 2.5%;
+
+  /* STANDARD MARGIN */
+  --MARGIN-TEXT: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--HIGHLIGHT-COLOR);
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* || FOOTER */
+.footer {
+  background-color: #000;
+  color: var(--FONT-COLOR-FOOTER);
+  font-size: 0.75rem;
+}
+
+.footer__container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer__p {
+  text-align: center;
+}
+
+.footer__p:nth-child(2) {
+  margin-bottom: 2em;
+}
+
+/* || MAIN */
+.main__container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "p1"
+    "p2"
+    "p3"
+    "p4"
+    "p5"
+    "p6"
+    "p7"
+    "p8";
+  gap: 1rem;
+}
+
+.hero {
+  grid-area: hero;
+  text-align: center;
+  background-color: var(--BGCOLOR-HERO);
+  color: var(--FONT-COLOR-HERO);
+  padding: 2rem;
+}
+
+.hero__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.hero__p {
+  font-size: 0.8rem;
+}
+
+.project {
+  box-shadow: var(--BOX-SHADOW);
+  position: relative;
+  transition: all 0.15s ease-in-out;
+}
+
+.project:hover {
+  box-shadow: var(--BOX-SHADOW-HOVER);
+  transform: scale(1.05);
+}
+
+.project:hover .project__title {
+  background-color: var(--BGCOLOR-PROJECT-TITLE-HOVER);
+}
+
+.project:hover .project__image {
+  opacity: 1;
+}
+
+.project__link:any-link {
+  text-decoration: none;
+}
+
+.project__image {
+  opacity: 0.8;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.project__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: var(--BGCOLOR-PROJECT-TITLE);
+  padding: 0.5em 0;
+  font-size: 0.8rem;
+  color: var(--HIGHLIGHT-COLOR);
+  transition: background-color 0.15s ease-in-out;
+}
+
+.project:nth-of-type(2) {
+  grid-area: p1;
+}
+
+.project:nth-of-type(3) {
+  grid-area: p2;
+}
+
+.project:nth-of-type(4) {
+  grid-area: p3;
+}
+
+.project:nth-of-type(5) {
+  grid-area: p4;
+}
+
+.project:nth-of-type(6) {
+  grid-area: p5;
+}
+
+.project:nth-of-type(7) {
+  grid-area: p6;
+}
+
+.project:nth-of-type(8) {
+  grid-area: p7;
+}
+
+.project:nth-of-type(9) {
+  grid-area: p8;
+}
+
+/* || MEDIA QUERIES */
+@media screen and (min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "p1 p2"
+      "p3 p4"
+      "p5 p6"
+      "p7 p8";
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "hero hero hero"
+      "p1 p2 p3"
+      "p4 p5 p6"
+      "p7 p8 .";
+  }
+}
