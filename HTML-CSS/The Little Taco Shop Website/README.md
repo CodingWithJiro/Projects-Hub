@@ -1,25 +1,94 @@
-# "HTML Project for Beginners"
+# 📁 The Little Taco Shop Website
 
-✅ [Check out my YouTube Channel with all of my tutorials](https://www.youtube.com/DaveGrayTeachesCode).
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen?style=for-the-badge)
+![Multi-Page Site](https://img.shields.io/badge/Multi--Page%20Site-✅-purple?style=for-the-badge)
+![Dark Mode](https://img.shields.io/badge/Dark%20Mode-Supported-black?style=for-the-badge)
+![Clean Code](https://img.shields.io/badge/Clean%20Code-Practiced-success?style=for-the-badge)
+![Animation](https://img.shields.io/badge/Animation-Keyframes-important?style=for-the-badge)
 
-This repository shares the completed code for the [YouTube Tutorial](https://youtu.be/T5PD8ofhiug). 
+![Status](https://img.shields.io/badge/status-complete-brightgreen)
+![Learning Path](https://img.shields.io/badge/learning%20path-month%202-blue)
 
-**Your Challenge:** Utilize the knowledge you have gained from the [HTML for Beginners](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6OlAwitnFUubtE93DO-l0vu) tutorial series to build a website for The Little Taco Shop. 
+## ℹ️ Multi-Page Taco Shop Demo Website
 
-**Directions:**
+![Screenshot of the project](./screenshot.png)
 
-- There are images of the 3 web pages you need to build in the examples folder. Use them as references for what you build.
+A multi-page fictional restaurant website built with semantic HTML5 and custom CSS. This project simulates a real-world business layout with homepage, about, contact, and hours pages, showcasing layout techniques, inter-page navigation, and accessible form handling.
 
-- You should name your files: index.html, hours.html, and contact.html
+---
 
-- There is minimal CSS already available in css/styles.css. You need to link that file to your HTML files. 
+## 🔍 Overview
 
-- All images are provided in the img folder.
+This project contains a 4-page HTML site styled with custom CSS, including a homepage with a dynamic taco menu, an about page with trivia, a contact form, and a store hours section. It demonstrates practical use of tables, forms, responsive design, reusable classes, and minimal JavaScript for dynamic year insertion.
 
-- If you need to find taco emojis, try [Emojipedia](https://emojipedia.org/taco/). 
+---
 
-- A favicon is already included. You'll need to add it in the head section of each page.
+## ✨ Features
 
-### Academic Honesty
+- 🌮 Semantic multi-page layout (Home, Menu, About, Contact, Hours)
+- 📆 Store hours with `<dl>` structure
+- 🧾 Taco menu using `<table>` and custom grid-based layout
+- 📬 Contact form with validation-ready structure
+- 🔁 Reusable sticky header and footer across pages
+- 📱 Responsive design using media queries and clamp units
+- 🎨 Themed UI with CSS variables and dark mode support
+- ✅ Accessible structure using alt, label, and fieldset properly
+- ⏳ Dynamic footer year via minimal JavaScript
+- 💡 Animations with `@keyframes` and transition timing
 
-**DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiargism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
+---
+
+## 📚 Included Pages
+
+- index.html – Homepage with taco menu
+- about.html – About the shop and taco trivia
+- contact.html – Location and contact form
+- hours.html – Business hours
+
+---
+
+## 🧠 What I Learned
+
+- How to create a multi-page static site and link them seamlessly
+- Designing a responsive layout using CSS Grid and Flexbox
+- Implementing a stylized table with complex cell arrangements
+- Using semantic tags for accessibility and readability
+- Creating a basic contact form with clear labels and input structure
+- Applying dark mode styles using `@media (prefers-color-scheme)`
+- Using CSS custom properties for consistent theming
+- Adding animation with keyframes and controlling element flow with position: sticky
+
+---
+
+## 🛠️ Tech Used
+
+- HTML5
+- CSS3
+- JavaScript
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository
+2. Navigate to this project folder
+3. Open `index.html` in your browser
+
+---
+
+## 🌐 Live Demo
+
+Or you can check out the 👉 [live website here](INSERT LINK HERE)
+
+---
+
+## 🧑‍💻 Author
+
+Created by **Elmar Chavez**
+
+🗓️ Month/Year: **April 2025**
+
+📚 Journey: **2nd** month of learning _frontend web development_.
