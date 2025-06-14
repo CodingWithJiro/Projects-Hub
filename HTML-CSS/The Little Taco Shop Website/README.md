@@ -9,6 +9,7 @@
 ![Clean Code](https://img.shields.io/badge/Clean%20Code-Practiced-success?style=for-the-badge)
 ![Animation](https://img.shields.io/badge/Animation-Keyframes-important?style=for-the-badge)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b816ff93-ec7f-4a83-b839-ab4828a551fa/deploy-status)](https://my-little-taco-shop-v2.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%202-blue)
 
@@ -24,6 +25,8 @@ A multi-page fictional restaurant website built with semantic HTML5 and custom C
 
 This project contains a 4-page HTML site styled with custom CSS, including a homepage with a dynamic taco menu, an about page with trivia, a contact form, and a store hours section. It demonstrates practical use of tables, forms, responsive design, reusable classes, and minimal JavaScript for dynamic year insertion.
 
+This project was created as part of a self-directed HTML & CSS learning track, not for commercial use.
+
 ---
 
 ## ✨ Features
@@ -31,7 +34,7 @@ This project contains a 4-page HTML site styled with custom CSS, including a hom
 - 🌮 Semantic multi-page layout (Home, Menu, About, Contact, Hours)
 - 📆 Store hours with `<dl>` structure
 - 🧾 Taco menu using `<table>` and custom grid-based layout
-- 📬 Contact form with validation-ready structure
+- 📬 Contact form using semantic form elements and logical labels, ready for backend or JS validation.
 - 🔁 Reusable sticky header and footer across pages
 - 📱 Responsive design using media queries and clamp units
 - 🎨 Themed UI with CSS variables and dark mode support
@@ -67,7 +70,7 @@ This project contains a 4-page HTML site styled with custom CSS, including a hom
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (for dynamic year in footer only)
 
 ---
 
@@ -81,7 +84,7 @@ This project contains a 4-page HTML site styled with custom CSS, including a hom
 
 ## 🌐 Live Demo
 
-Or you can check out the 👉 [live website here](INSERT LINK HERE)
+Or you can check out the 👉 [live website here](https://my-little-taco-shop-v2.netlify.app/)
 
 ---
 
