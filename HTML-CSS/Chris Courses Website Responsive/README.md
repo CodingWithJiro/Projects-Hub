@@ -8,6 +8,7 @@
 ![Clean Code](https://img.shields.io/badge/Clean%20Code-practiced-success?style=for-the-badge)
 ![No Frameworks](https://img.shields.io/badge/No%20Frameworks-✅-critical?style=for-the-badge)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/89196ca8-5230-4b6f-a0b8-3c2b0dccc993/deploy-status)](https://chris-courses-responsive-website.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%202-blue)
 
@@ -75,7 +76,7 @@ This project served as a hands-on exercise in building complex layouts from scra
 
 ## 🌐 Live Demo
 
-Or you can check out the 👉 [live website here](INSERT LINK HERE)
+Or you can check out the 👉 [live website here](https://chris-courses-responsive-website.netlify.app/)
 
 ---
 
