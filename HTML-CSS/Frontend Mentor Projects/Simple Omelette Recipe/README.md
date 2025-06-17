@@ -9,6 +9,7 @@
 ![Mobile First](https://img.shields.io/badge/Mobile%20First-Design-F57F17?style=for-the-badge)
 ![Beginner Project](https://img.shields.io/badge/Level-Beginner-blueviolet?style=for-the-badge)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8cd04a9e-9ecc-406d-a7b3-9f8db48f1a91/deploy-status)](https://simple-omelette-recipe-fm.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%203-blue)
 
@@ -71,7 +72,7 @@ It is structured with semantic HTML elements and scalable CSS, suitable for lear
 
 ## 🌐 Live Demo
 
-Or you can check out the 👉 [live website here](INSERT LINK HERE)
+Or you can check out the 👉 [live website here](https://simple-omelette-recipe-fm.netlify.app/)
 
 ---
 
