@@ -14,6 +14,7 @@
 ![Accessible](https://img.shields.io/badge/Accessibility-A11Y-0052cc?style=for-the-badge)
 ![Beginner Project](https://img.shields.io/badge/Beginner%20Project-25D366?style=for-the-badge)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/917b2ebb-0afe-4fc5-a477-472dfabb9714/deploy-status)](https://simple-responsive-safari-landing-page.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%203-blue)
 
@@ -75,7 +76,7 @@ The layout adapts to various screen sizes using Flexbox, and is fully functional
 
 ## 🌐 Live Demo
 
-Or you can check out the 👉 [live website here](INSERT LINK HERE)
+Or you can check out the 👉 [live website here](https://simple-responsive-safari-landing-page.netlify.app/)
 
 ---
 
