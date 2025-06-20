@@ -15,14 +15,15 @@
 ![Mobile Friendly](https://img.shields.io/badge/Mobile%20Friendly-✅-brightgreen?style=for-the-badge)
 ![Responsive Layout](https://img.shields.io/badge/Responsive%20Layout-Full%20Support-blue?style=for-the-badge)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/66089390-5b5c-43c6-9f2c-3fb9f23a51ad/deploy-status)](https://qr-code-component-fm-jiro.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%203-blue)
 
 ## ℹ️ QR Code Component Website
 
-![Preview of the project](./img/site-preview.png)
+![Screenshot of the QR Code Component Project](./img/site-preview_1200x630.jpg)
 
-A responsive QR code component website built using HTML and CSS by the author during his third month learning frontend web development. This project was created as part of a [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H), based on a provided Figma design and style guide.
+A responsive QR code component website built using HTML and CSS during my third month of learning frontend development. This challenge was completed via [Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H), based on a provided Figma file and style guide.
 
 ---
 
@@ -72,7 +73,7 @@ It was built during my third month of learning frontend web development and high
 
 ## 🌐 Live Demo
 
-Or you can check out the 👉 [live website here](INSERT LINK HERE)
+Or you can check out the 👉 [live website here](https://qr-code-component-fm-jiro.netlify.app/)
 
 ---
 
