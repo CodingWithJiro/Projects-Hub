@@ -1,4 +1,4 @@
-# 📁 Project Hub - Frontend Web Development
+# 🗂️ Project Hub - Frontend Web Development
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -35,25 +35,25 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 
 ### 📦 HTML Projects
 
-| Project                                                | Preview                   | Live Site                                | Repository               |
-| ------------------------------------------------------ | ------------------------- | ---------------------------------------- | ------------------------ |
-| **Beginner Portfolio Website**                         | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Recipe Page_            | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Table Tennis Page_      | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _HTML Forms_             | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| **FreeCodeCamp Projects**                              | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Book Catalog Table_     | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Checkout Page_          | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Event Hub Page_         | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Movie Review Page_      | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Recipe Page_            | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Survey Form_            | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Travel Agency Page_     | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Video Compilation Page_ | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
-| **The Little Taco Shop Website**                       | ![Preview](LINK_TO_IMAGE) | [Live Site](https://example.netlify.app) | [Repo](INSERT REPO LINK) |
+| Project                                                | Preview                                                                                                                                                        | Live Site                                                          | Repository Link                                                                         |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| **Beginner Portfolio Website**                         | <img src="https://raw.githubusercontent.com/CodingWithJiro/beginner-portfolio-website/main/screenshot.png" width="200" alt="Site preview image.">              | [Go to Site](https://beginner-portfolio-website-jiro.netlify.app/) | [Go to Repo](https://github.com/CodingWithJiro/beginner-portfolio-website)              |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Recipe Page_            | <img src="https://raw.githubusercontent.com/CodingWithJiro/beginner-portfolio-website-recipe/main/screenshot.png" width="200" alt="Site preview image.">       | [Go to Site](https://mac-and-cheese-recipe-jiro.netlify.app/)      | [Go to Repo](https://github.com/CodingWithJiro/beginner-portfolio-website-recipe)       |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Table Tennis Page_      | <img src="https://raw.githubusercontent.com/CodingWithJiro/beginner-portfolio-website-table-tennis/main/screenshot.png" width="200" alt="Site preview image."> | [Go to Site](https://table-tennis-jiro.netlify.app/)               | [Go to Repo](https://github.com/CodingWithJiro/beginner-portfolio-website-table-tennis) |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _HTML Forms_             | <img src="https://raw.githubusercontent.com/CodingWithJiro/beginner-portfolio-website-forms/main/screenshot.png" width="200" alt="Site preview image.">        | [Go to Site](https://html5-forms-jiro.netlify.app/)                | [Go to Repo](https://github.com/CodingWithJiro/beginner-portfolio-website-forms)        |
+| **FreeCodeCamp Projects**                              | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Book Catalog Table_     | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Checkout Page_          | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Event Hub Page_         | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Movie Review Page_      | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Recipe Page_            | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Survey Form_            | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Travel Agency Page_     | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Video Compilation Page_ | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
+| **The Little Taco Shop Website**                       | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                | [Go to Site](LINK)                                                 | [Go to Repo](INSERT_REPO_LINK)                                                          |
 
 <!-- PREVIEWS MUST BE THUMBNAILS OF ABOUT 200-300PX WIDE -->
-<!-- <td><img src="LINK_TO_IMAGE" width="120"></td> -->
+<!-- <img src="LINK_TO_IMAGE" width="200"> -->
 
 ### 🎨 HTML + CSS Projects
 
@@ -103,4 +103,4 @@ Created by **Elmar Chavez**
 
 🎯 Goal: To become an **expert frontend developer** with a strong presence online
 
-“I started this journey barely knowing what HTML is. Now I can build and deploy websites from scratch.”
+_“I started this journey barely knowing what HTML is. Now I can build and deploy websites from scratch.”_
