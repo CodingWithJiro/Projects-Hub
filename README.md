@@ -1,4 +1,4 @@
-# 🗂️ Project Hub - Frontend Web Development
+# 🗂️ Frontend Project Hub – Elmar Chavez
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -8,6 +8,8 @@
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
 [![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.netlify.com/)
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/)
+
 [![Roadmap.sh](https://img.shields.io/badge/Roadmap.sh-333333?style=for-the-badge&logoColor=white)](https://roadmap.sh)
 [![W3Schools](https://img.shields.io/badge/W3Schools-3a9c42?style=for-the-badge&logo=w3schools&logoColor=white)](https://www.w3schools.com/)
 [![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
@@ -35,7 +37,7 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 
 ### 📦 HTML Projects
 
-| Project                                                | Preview                                                                                                                                                         | Live Site                                                          | Repository Link                                                                         |
+| Project                                                | Preview                                                                                                                                                         | Live Site                                                          | Source Code                                                                             |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
 | **Beginner Portfolio Website**                         | <img src="https://raw.githubusercontent.com/CodingWithJiro/beginner-portfolio-website/main/screenshot.png" width="200" alt="Site preview image.">               | [Visit Site](https://beginner-portfolio-website-jiro.netlify.app/) | [View Code](https://github.com/CodingWithJiro/beginner-portfolio-website)               |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Recipe Page_            | <img src="https://raw.githubusercontent.com/CodingWithJiro/beginner-portfolio-website-recipe/main/screenshot.png" width="200" alt="Site preview image.">        | [Visit Site](https://mac-and-cheese-recipe-jiro.netlify.app/)      | [View Code](https://github.com/CodingWithJiro/beginner-portfolio-website-recipe)        |
@@ -66,22 +68,23 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 
 Here's what I'm working towards:
 
-- Land my first job in frontend web development
-- Do freelancing to further strengthen my frontend skills.
+- Land my first frontend developer role
+- Explore open-source and freelancing opportunities
 - Learn more by building web applications that solve real-world problems
-- Strengthen my accessibility and performance skills along the way
-- Study latest trends on programming languages
+- Improve performance, accessibility, and responsiveness
+- Stay updated on latest frontend tech trends and best practices
 - Contribute to open source or freelance projects
-- Possibly branch out and continue learning to becoming a full stack web developer, or even becoming an AI engineer
+- Grow toward full-stack or AI-related paths
 
 ---
 
 ## 🧠 What This Hub Taught Me
 
-- Project structure matters, especially when using Git, GitHub, and Netlify
-- Managing multiple repos teaches me how teams work in real environments
-- Version control, commits, and pushing to remotes became second nature
-- Deployment pipelines and visual preview tags are essential for showcasing work professionally
+- Repository management and separation of concerns
+- Netlify deployment strategies
+- Markdown and documentation standards
+- Live previews with consistent styling
+- Confidence with Git, GitHub, and CLI workflows
 
 ---
 
@@ -89,19 +92,19 @@ Here's what I'm working towards:
 
 - **HTML5**, **CSS3**, **JavaScript**
 - **Visual Studio Code**
-- **Git** & **GitHub** (via CLI & GitHub Desktop)
-- **Netlify** for live deployments
-- **Figma** or design images to code translation
-- **Markdown** for documentation
+- **Git** & **GitHub** (CLI + Desktop)
+- **Netlify**
+- **Markdown**
+- **Figma** (design-to-code)
 
 ---
 
 ## 🧑‍💻 Author
 
-Created by **Elmar Chavez**
+**Elmar Chavez** — _Frontend Developer in Progress_
 
 🗓️ Year: **2025**
 
 🎯 Goal: To become an **expert frontend developer** with a strong presence online
 
-_“I started this journey barely knowing what HTML is. Now I can build and deploy websites from scratch.”_
+_“I started this journey barely knowing what HTML even was. Now, I build and deploy full websites with confidence.”_
