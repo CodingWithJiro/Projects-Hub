@@ -50,14 +50,15 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Survey Form_            | <img src="https://raw.githubusercontent.com/CodingWithJiro/freecodecamp-html-survey-form/main/screenshot.png" width="200" alt="Site preview image.">            | [Visit Site](https://survey-form-fcc-jiro.netlify.app/)            | [View Code](https://github.com/CodingWithJiro/freecodecamp-html-survey-form)            |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Travel Agency Page_     | <img src="https://raw.githubusercontent.com/CodingWithJiro/freecodecamp-html-travel-agency-page/main/screenshot.png" width="200" alt="Site preview image.">     | [Visit Site](https://travel-agency-page-fcc-jiro.netlify.app/)     | [View Code](https://github.com/CodingWithJiro/freecodecamp-html-travel-agency-page)     |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Video Compilation Page_ | <img src="https://raw.githubusercontent.com/CodingWithJiro/freecodecamp-html-video-compilation-page/main/screenshot.png" width="200" alt="Site preview image."> | [Visit Site](https://video-compilation-page-fcc-jiro.netlify.app/) | [View Code](https://github.com/CodingWithJiro/freecodecamp-html-video-compilation-page) |
-| **The Little Taco Shop Website**                       | <img src="LINK_TO_IMAGE" width="200" alt="Site preview image.">                                                                                                 | [Visit Site](LINK)                                                 | [View Code](INSERT_REPO_LINK)                                                           |
-
-<!-- PREVIEWS MUST BE THUMBNAILS OF ABOUT 200-300PX WIDE -->
-<!-- <img src="LINK_TO_IMAGE" width="200"> -->
+| **The Little Taco Shop Website**                       | <img src="https://raw.githubusercontent.com/CodingWithJiro/the-little-taco-shop-website-v1/main/screenshot1.png" width="200" alt="Site preview image.">         | [Visit Site](https://the-little-taco-shop-v1-jiro.netlify.app/)    | [View Code](https://github.com/CodingWithJiro/the-little-taco-shop-website-v1)          |
 
 ### 🎨 HTML + CSS Projects
 
+<!-- ADD TABLE FOR HTML + CSS PROJECTS -->
+
 ### 💻 HTML + CSS + JavaScript Projects
+
+<!-- ADD TABLE FOR HTML + CSS + JS PROJECTS -->
 
 ---
 
