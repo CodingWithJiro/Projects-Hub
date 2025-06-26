@@ -146,6 +146,7 @@ Here's what I'm working towards:
 - **Netlify**
 - **Markdown**
 - **Figma** (design-to-code)
+- **PerfectPixel** (image-to-code)
 
 ---
 
