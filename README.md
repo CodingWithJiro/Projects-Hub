@@ -91,6 +91,12 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Social Links Profile_         | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-social-links-profile/main/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image.">   | [Visit Site](https://social-links-profile-fm-jiro.netlify.app/)     | [View Code](https://github.com/CodingWithJiro/frontend-mentor-social-links-profile)     |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Product Preview Card_         | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-product-preview-card/main/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image.">   | [Visit Site](https://product-preview-card-fm-jiro.netlify.app/)     | [View Code](https://github.com/CodingWithJiro/frontend-mentor-product-preview-card)     |
 
+### HTML + CSS + JavaScript Projects
+
+| Project                              | Preview                                                                                                                                                                    | Live Site                                                            | Source Code                                                                 |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **1. Conquering Responsive Layouts** | <img src="https://raw.githubusercontent.com/CodingWithJiro/conquering-responsive-layout/main/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image."> | [Visit Site](https://conquering-responsive-layout-jiro.netlify.app/) | [View Code](https://github.com/CodingWithJiro/conquering-responsive-layout) |
+
 <!--
 | **COMPILATION_PROJECTS_TITLE**                         | <img src="IMAGE_LINK" width="200" alt="Site preview image.">                                                                                                            | [Visit Site](LINK)                                                | [View Code](REPO_LINK)                                                                 |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _NAME_                   | <img src="IMAGE_LINK" width="200" alt="Site preview image.">                                                                                                            | [Visit Site](LINK)                                                | [View Code](REPO_LINK)                                                                 |
@@ -107,10 +113,6 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _NAME_                   | <img src="IMAGE_LINK" width="200" alt="Site preview image.">                                                                                                            | [Visit Site](LINK)                                                | [View Code](REPO_LINK)                                                                 |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _NAME_                   | <img src="IMAGE_LINK" width="200" alt="Site preview image.">                                                                                                            | [Visit Site](LINK)                                                | [View Code](REPO_LINK)                                                                 |
 -->
-
-### HTML + CSS + JavaScript Projects
-
-<!-- ADD TABLE FOR HTML + CSS + JS PROJECTS -->
 
 ---
 
