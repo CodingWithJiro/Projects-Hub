@@ -150,6 +150,7 @@ Here's what I'm working towards:
 - **Markdown**
 - **Figma** (design-to-code)
 - **PerfectPixel** (image-to-code)
+- **Google Lighthouse** (for accessibility)
 
 ---
 
