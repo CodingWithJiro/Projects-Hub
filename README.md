@@ -18,6 +18,9 @@
 [![freeCodeCamp](https://img.shields.io/badge/freeCodeCamp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)](https://www.freecodecamp.org/)
 [![The Odin Project](https://img.shields.io/badge/The%20Odin%20Project-1E293B?style=for-the-badge&logo=theodinproject&logoColor=white)](https://www.theodinproject.com/)
 [![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-000000?style=for-the-badge&logo=mdnwebdocs&logoColor=white)](https://developer.mozilla.org/)
+[![Discussions](https://img.shields.io/badge/Join%20the-Discussion-blueviolet?style=for-the-badge&logo=github)](https://github.com/CodingWithJiro/Projects/discussions)
+
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.Projects-Hub)
 
 ## ℹ️ What Is This Hub?
 
