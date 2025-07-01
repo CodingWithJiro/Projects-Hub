@@ -9,6 +9,8 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
 [![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.netlify.com/)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/)
+[![PerfectPixel](https://img.shields.io/badge/PerfectPixel-F56C94?style=for-the-badge)](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonecod/dkaagdgjmgdmbnecmcefdhjekcoceebi)
+[![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](https://developer.chrome.com/docs/lighthouse/overview)
 
 [![Roadmap.sh](https://img.shields.io/badge/Roadmap.sh-333333?style=for-the-badge&logoColor=white)](https://roadmap.sh)
 [![W3Schools](https://img.shields.io/badge/W3Schools-3a9c42?style=for-the-badge&logo=w3schools&logoColor=white)](https://www.w3schools.com/)
@@ -16,6 +18,8 @@
 [![freeCodeCamp](https://img.shields.io/badge/freeCodeCamp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)](https://www.freecodecamp.org/)
 [![The Odin Project](https://img.shields.io/badge/The%20Odin%20Project-1E293B?style=for-the-badge&logo=theodinproject&logoColor=white)](https://www.theodinproject.com/)
 [![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-000000?style=for-the-badge&logo=mdnwebdocs&logoColor=white)](https://developer.mozilla.org/)
+
+![Repo Views](https://komarev.com/ghpvc/?username=CodingWithJiro&repo=Projects-Hub&label=Views&color=blue&style=flat)
 
 ## ℹ️ What Is This Hub?
 
