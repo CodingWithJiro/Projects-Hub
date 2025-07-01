@@ -166,3 +166,5 @@ Here's what I'm working towards:
 🎯 Goal: To become an **expert frontend developer** with a strong presence online
 
 _“I started this journey barely knowing what HTML even was. Now, I build and deploy full websites with confidence.”_
+
+<!-- test comment -->
