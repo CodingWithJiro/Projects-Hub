@@ -19,8 +19,6 @@
 [![The Odin Project](https://img.shields.io/badge/The%20Odin%20Project-1E293B?style=for-the-badge&logo=theodinproject&logoColor=white)](https://www.theodinproject.com/)
 [![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-000000?style=for-the-badge&logo=mdnwebdocs&logoColor=white)](https://developer.mozilla.org/)
 
-![Repo Views](https://komarev.com/ghpvc/?username=CodingWithJiro&repo=Projects-Hub&label=Views&color=blue&style=flat)
-
 ## ℹ️ What Is This Hub?
 
 This repository serves as my **Frontend Project Hub** — a centralized place where I showcase all of my web development projects. Each project now lives in its **own dedicated repository** to make deployment, collaboration, and documentation easier.
