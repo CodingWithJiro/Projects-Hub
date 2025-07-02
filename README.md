@@ -46,6 +46,8 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 
 <summary><strong> 📄 HTML PROJECTS </strong></summary>
 
+<br>
+
 **Legend:** 🌐 _Live Site_ | 💻 _Source Code_
 
 | Project                                                                                                                                                                                               | Preview                                                                                                                                                         |
@@ -72,6 +74,8 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 <details>
 
 <summary><strong>🎨 HTML + CSS PROJECTS </strong></summary>
+
+<br>
 
 **Legend:** 🌐 _Live Site_ | 💻 _Source Code_
 
@@ -122,6 +126,8 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 <details>
 
 <summary><strong>🚀 HTML + CSS + JavaScript Projects</strong></summary>
+
+<br>
 
 **Legend:** 🌐 _Live Site_ | 💻 _Source Code_
 
