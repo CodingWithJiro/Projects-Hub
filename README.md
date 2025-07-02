@@ -1,4 +1,4 @@
-# 🗂️ Frontend Project Hub – Elmar Chavez
+# 🗂️ Projects Hub – Elmar Chavez
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -24,23 +24,15 @@
 
 ## ℹ️ What Is This Hub?
 
-This repository serves as my **Frontend Project Hub** — a centralized place where I showcase all of my web development projects. Each project now lives in its **own dedicated repository** to make deployment, collaboration, and documentation easier.
+This **Projects Hub** reflects my journey as a **self-taught frontend developer**. It serves as a centralized place where I showcase all of my [web development projects](#📚-projects-directory) in its **own dedicated repository**.
 
-Every project you see here represents a piece of my learning journey — from basic HTML structures to responsive layouts, dynamic JavaScript, and accessible interfaces.
+Each project I build represents a piece of my learning journey and is treated as a real-world deliverable with its own **README documentation and live site deployment**.
 
----
-
-## 🔍 Overview
-
-This hub reflects my journey as a **self-taught frontend developer**. Each project I built is treated as a real-world deliverable — with its own README, live deployment, documentation, and purpose.
-
-I started as someone who barely knew what an `<html>` was, and this hub is a living, evolving testament to the time and effort I've put into learning web development properly.
-
----
+This hub is an **ever evolving repository** that will be regularly updated as soon as a new project is deployed.
 
 ## 📚 Projects Directory
 
-**Directions:** Click to expand a project category
+**Directions:** Click to see my projects
 
 <details>
 
@@ -48,7 +40,7 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 
 <br>
 
-**Legend:** 🌐 _Live Site_ | 💻 _Source Code_
+**Legend:** 🌐 Live Site | 💻 Source Code
 
 | Project                                                                                                                                                                                               | Preview                                                                                                                                                         |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -77,7 +69,7 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 
 <br>
 
-**Legend:** 🌐 _Live Site_ | 💻 _Source Code_
+**Legend:** 🌐 Live Site | 💻 Source Code
 
 | Project                                                                                                                                                                                                              | Preview                                                                                                                                                                                                |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -132,7 +124,7 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 
 <br>
 
-**Legend:** 🌐 _Live Site_ | 💻 _Source Code_
+**Legend:** 🌐 Live Site | 💻 Source Code
 
 | Project                                                                                                                                                                   | Preview                                                                                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -140,44 +132,27 @@ I started as someone who barely knew what an `<html>` was, and this hub is a liv
 
 </details>
 
----
+<br>
 
-## 🎯 Future Goals
+## 📈 Future Goals
 
-Here's what I'm working towards:
+- Land my **first frontend developer role**
+- Explore **open-source** and **freelancing opportunities**
+- Learn more by building **web applications** that solve real-world problems
+- Improve **performance**, **accessibility**, and **responsiveness**
+- Stay updated on **latest frontend tech trends** and **best practices**
+- Grow toward **full-stack** or **AI-related paths**
 
-- Land my first frontend developer role
-- Explore open-source and freelancing opportunities
-- Learn more by building web applications that solve real-world problems
-- Improve performance, accessibility, and responsiveness
-- Stay updated on latest frontend tech trends and best practices
-- Contribute to open source or freelance projects
-- Grow toward full-stack or AI-related paths
-
----
-
-## 🧠 What This Hub Taught Me
-
-- Repository management and separation of concerns
-- Netlify deployment strategies
-- Markdown and documentation standards
-- Live previews with consistent styling
-- Confidence with Git, GitHub, and CLI workflows
-
----
-
-## 🛠️ Tech Used So Far
+## 🛠️ Tech & Tools Used So Far
 
 - **HTML5**, **CSS3**, **JavaScript**
-- **Visual Studio Code**
+- **Visual Studio Code** (IDE)
 - **Git** & **GitHub** (CLI + Desktop)
-- **Netlify**
-- **Markdown**
+- **Netlify** (site deployment)
+- **Markdown** (project documentation)
 - **Figma** (design-to-code)
 - **PerfectPixel** (image-to-code)
-- **Google Lighthouse** (for accessibility)
-
----
+- **Google Lighthouse** (accessibility evaluation)
 
 ## 🧑‍💻 Author
 
@@ -185,6 +160,6 @@ Here's what I'm working towards:
 
 🗓️ Year: **2025**
 
-🎯 Goal: To become an **expert frontend developer** with a strong presence online
+🎯 Goal: To become an **expert frontend developer** with a **strong presence online**
 
-_“I started this journey barely knowing what HTML even was. Now, I build and deploy full websites with confidence.”_
+_“I started this journey barely knowing what an HTML is. Now, I build and deploy full websites with confidence.”_
