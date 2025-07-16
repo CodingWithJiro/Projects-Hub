@@ -128,9 +128,10 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <br>
 
-| Project                              | Preview                                                                                                                                                                    | Links                                                                                                                                |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **1. Conquering Responsive Layouts** | <img src="https://raw.githubusercontent.com/CodingWithJiro/conquering-responsive-layout/main/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image."> | [🌐](https://conquering-responsive-layout-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/conquering-responsive-layout) |
+| Project                                 | Preview                                                                                                                                                                        | Links                                                                                                                                |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **1. Conquering Responsive Layouts**    | <img src="https://raw.githubusercontent.com/CodingWithJiro/conquering-responsive-layout/main/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image.">     | [🌐](https://conquering-responsive-layout-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/conquering-responsive-layout) |
+| **2. W3Schools JS Tutorial Clone Site** | <img src="https://raw.githubusercontent.com/CodingWithJiro/w3schools-js-tutorial-clone-site/main/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image."> | [🌐](https://javascript-fundamentals-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/w3schools-js-tutorial-clone-site)  |
 
 </details>
 
