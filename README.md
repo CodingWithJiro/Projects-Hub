@@ -125,7 +125,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <details>
 
-<summary><strong>🚀 HTML + CSS + JavaScript Projects</strong></summary>
+<summary><strong>🚀 HTML + CSS + JAVASCRIPT PROJECTS</strong></summary>
 
 <br>
 
