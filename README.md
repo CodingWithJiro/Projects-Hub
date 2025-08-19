@@ -164,7 +164,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 - **Markdown** (project documentation)
 - **Figma** (design-to-code)
 - **PerfectPixel** (image-to-code)
-- **Google Lighthouse** (accessibility evaluation)
+- **Google Lighthouse** (performance and accessibility evaluation)
 
 ## 🧑‍💻 Author
 
