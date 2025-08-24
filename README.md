@@ -169,7 +169,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 ## 🧑‍💻 Author
 
-**Elmar Chavez** — _Frontend Developer in Progress_
+**Elmar Chavez** - _Frontend Developer in Progress_
 
 🗓️ Year: **2025**
 
