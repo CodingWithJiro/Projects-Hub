@@ -25,9 +25,9 @@
 
 ## What Is This Hub?
 
-This **Projects Hub** reflects my journey as a **self-taught frontend developer**. It serves as a centralized place where I showcase all of my [web development projects](#-projects-directory) in its **own dedicated repository**.
+This **Projects Hub** reflects my journey as a **self-taught frontend developer**. It serves as a centralized place where I showcase all of my **[web development projects](#projects-directory)** in its **own dedicated repository**.
 
-Each project I build represents a piece of my learning journey and is treated as a real-world deliverable with its own **README documentation and live site deployment**.
+Each project I build represents a piece of my learning journey and is treated as a real-world deliverable with its own **README.md documentation and live site deployment**.
 
 This hub is an **ever evolving repository** that will be regularly updated as soon as a new project is deployed.
 
