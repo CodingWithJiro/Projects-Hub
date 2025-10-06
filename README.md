@@ -1,4 +1,4 @@
-# 🗂️ Projects Hub – Elmar Chavez
+# Projects Hub – Elmar Chavez
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -23,7 +23,7 @@
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.Projects-Hub)
 
-## ℹ️ What Is This Hub?
+## What Is This Hub?
 
 This **Projects Hub** reflects my journey as a **self-taught frontend developer**. It serves as a centralized place where I showcase all of my [web development projects](#-projects-directory) in its **own dedicated repository**.
 
@@ -31,13 +31,13 @@ Each project I build represents a piece of my learning journey and is treated as
 
 This hub is an **ever evolving repository** that will be regularly updated as soon as a new project is deployed.
 
-## 📚 Projects Directory
+## Projects Directory
 
 **Directions:** Click to see my projects
 
 <details>
 
-<summary><strong> 📄 HTML PROJECTS </strong></summary>
+<summary><strong> HTML PROJECTS </strong></summary>
 
 <br>
 
@@ -64,7 +64,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <details>
 
-<summary><strong>🎨 HTML + CSS PROJECTS </strong></summary>
+<summary><strong> HTML + CSS PROJECTS </strong></summary>
 
 <br>
 
@@ -124,7 +124,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <details>
 
-<summary><strong>🚀 HTML + CSS + JAVASCRIPT PROJECTS</strong></summary>
+<summary><strong> HTML + CSS + JAVASCRIPT PROJECTS</strong></summary>
 
 <br>
 
@@ -151,7 +151,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <br>
 
-## 📈 Future Goals
+## Future Goals
 
 - Land my **first frontend developer role**
 - Explore **open-source** and **freelancing opportunities**
@@ -160,7 +160,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 - Stay updated on **latest frontend tech trends** and **best practices**
 - Grow toward **full-stack** or **AI-related paths**
 
-## 🛠️ Tech & Tools Used So Far
+## Tech & Tools Used So Far
 
 - **HTML5**, **CSS3**, **JavaScript**
 - **Visual Studio Code** (IDE)
@@ -171,12 +171,12 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 - **PerfectPixel** (image-to-code)
 - **Google Lighthouse** (performance and accessibility evaluation)
 
-## 🧑‍💻 Author
+## Author
 
 **Elmar Chavez** - _Frontend Developer in Progress_
 
-🗓️ Year: **2025**
+Year: **2025**
 
-🎯 Goal: To become an **expert frontend developer** with a **strong presence online**
+Goal: To become an **expert frontend developer** with a **strong presence online**
 
 _“I started this journey barely knowing what an HTML is. Now, I build and deploy full websites with confidence.”_
