@@ -183,10 +183,8 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 ## Author
 
-**Elmar Chavez** - _Frontend Developer in Progress_
+**Elmar Chavez** - Frontend Web Developer
 
-Year: **2025**
-
-Goal: To become an **expert frontend developer** with a **strong presence online**
+**Goal:** To become an expert frontend engineer with a strong presence online
 
 _“I started this journey barely knowing what an HTML is. Now, I build and deploy full websites with confidence.”_
