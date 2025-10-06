@@ -183,7 +183,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 ## Author
 
-**Elmar Chavez** - Frontend Web Developer
+**Elmar Chavez** (CodingWithJiro) - Frontend Web Developer
 
 **Goal:** To become an expert frontend engineer with a strong presence online
 
