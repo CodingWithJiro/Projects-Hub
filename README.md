@@ -151,14 +151,14 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <br>
 
-## Future Goals
+## Current & Future Goals
 
 - Land my **first frontend developer role**
 - Explore **open-source** and **freelancing opportunities**
 - Learn more by building **web applications** that solve real-world problems
 - Improve **performance**, **accessibility**, and **responsiveness**
 - Stay updated on **latest frontend tech trends** and **best practices**
-- Grow toward **full-stack** or **AI-related paths**
+- Grow toward **full-stack development** and/or **AI-related paths**
 
 ## Tech & Tools Used So Far
 
