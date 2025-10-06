@@ -1,4 +1,4 @@
-# 🗂️ Projects Hub – Elmar Chavez
+# Projects Hub
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -23,21 +23,21 @@
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.Projects-Hub)
 
-## ℹ️ What Is This Hub?
+## What Is This Hub?
 
-This **Projects Hub** reflects my journey as a **self-taught frontend developer**. It serves as a centralized place where I showcase all of my [web development projects](#-projects-directory) in its **own dedicated repository**.
+This **Projects Hub** reflects my journey as a **self-taught frontend developer**. It serves as a centralized place where I showcase all of my **[web development projects](#projects-directory)** in its **own dedicated repository**.
 
-Each project I build represents a piece of my learning journey and is treated as a real-world deliverable with its own **README documentation and live site deployment**.
+Each project I build represents a piece of my learning journey and is treated as a real-world deliverable with its own **README.md documentation and live site deployment**.
 
 This hub is an **ever evolving repository** that will be regularly updated as soon as a new project is deployed.
 
-## 📚 Projects Directory
+## Projects Directory
 
 **Directions:** Click to see my projects
 
 <details>
 
-<summary><strong> 📄 HTML PROJECTS </strong></summary>
+<summary><strong> HTML PROJECTS </strong></summary>
 
 <br>
 
@@ -64,7 +64,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <details>
 
-<summary><strong>🎨 HTML + CSS PROJECTS </strong></summary>
+<summary><strong> HTML + CSS PROJECTS </strong></summary>
 
 <br>
 
@@ -124,7 +124,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <details>
 
-<summary><strong>🚀 HTML + CSS + JAVASCRIPT PROJECTS</strong></summary>
+<summary><strong> HTML + CSS + JAVASCRIPT PROJECTS</strong></summary>
 
 <br>
 
@@ -151,16 +151,26 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <br>
 
-## 📈 Future Goals
+## Current & Future Goals
 
 - Land my **first frontend developer role**
 - Explore **open-source** and **freelancing opportunities**
 - Learn more by building **web applications** that solve real-world problems
 - Improve **performance**, **accessibility**, and **responsiveness**
 - Stay updated on **latest frontend tech trends** and **best practices**
-- Grow toward **full-stack** or **AI-related paths**
+- Grow toward **full-stack development** and/or **AI-related paths**
 
-## 🛠️ Tech & Tools Used So Far
+## Tech & Tools Used So Far
+
+[<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[<img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />](https://git-scm.com/)
+[<img alt="GitHub" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white" />](https://github.com/)
+[<img alt="Netlify" src="https://img.shields.io/badge/-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white" />](https://www.netlify.com/)
+[<img alt="VS Code" src="https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />](https://code.visualstudio.com/)
+[<img alt="Figma" src="https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />](https://www.figma.com/)
+[<img alt="Markdown" src="https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />](https://www.markdownguide.org/)
 
 - **HTML5**, **CSS3**, **JavaScript**
 - **Visual Studio Code** (IDE)
@@ -171,12 +181,10 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 - **PerfectPixel** (image-to-code)
 - **Google Lighthouse** (performance and accessibility evaluation)
 
-## 🧑‍💻 Author
+## Author
 
-**Elmar Chavez** - _Frontend Developer in Progress_
+**Elmar Chavez** (CodingWithJiro) - Frontend Web Developer
 
-🗓️ Year: **2025**
-
-🎯 Goal: To become an **expert frontend developer** with a **strong presence online**
+**Goal:** To become an expert frontend engineer with a strong presence online
 
 _“I started this journey barely knowing what an HTML is. Now, I build and deploy full websites with confidence.”_
