@@ -150,6 +150,21 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Keyboard Warrior_             | <img src="https://raw.githubusercontent.com/CodingWithJiro/wesbos-js-30-drumkit/main/assets/img/site-preview-desktop-dark_1440x960.png" width="200" alt="Site preview image.">                         | [🌐](https://keyboard-warrior-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/wesbos-js-30-drumkit)                                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _TickTock_                     | <img src="https://raw.githubusercontent.com/CodingWithJiro/wesbos-js-30-clock/main/assets/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image.">                                | [🌐](https://ticktock-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/wesbos-js-30-clock)                                                   |
 
+</details>
+
+&nbsp;
+
+<details>
+
+<summary><strong> REACT + TAILWIND PROJECTS</strong></summary>
+
+<br>
+
+| Project                                      | Preview                                                                                                                                                                                       | Links                                                                                                                               |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Frontend Mentor Projects**              |                                                                                                                                                                                               |                                                                                                                                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Base Apparel_ | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon/main/public/img/site-preview-desktop_1440x800.png" width="200" alt="Site preview image."> | [🌐](https://base-apparel-fm-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon) |
+
 <!-- | &nbsp;&nbsp;&nbsp;&nbsp;**»** _NAME_ | <img src="IMAGE_LINK" width="200" alt="Site preview image.">                     | [🌐](SITE) \| [💻](REPO) | -->
 
 </details>
