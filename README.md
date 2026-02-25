@@ -1,43 +1,16 @@
 # Projects Hub
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)
-![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
-![React Testing Library](https://img.shields.io/badge/Testing_Library-E33332?style=for-the-badge&logo=testing-library&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-[![Visual Studio Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.netlify.com/)
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/)
-[![PerfectPixel](https://img.shields.io/badge/PerfectPixel-F56C94?style=for-the-badge)](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonecod/dkaagdgjmgdmbnecmcefdhjekcoceebi)
-[![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](https://developer.chrome.com/docs/lighthouse/overview)
-
-[![Roadmap.sh](https://img.shields.io/badge/Roadmap.sh-333333?style=for-the-badge&logoColor=white)](https://roadmap.sh)
-[![W3Schools](https://img.shields.io/badge/W3Schools-3a9c42?style=for-the-badge&logo=w3schools&logoColor=white)](https://www.w3schools.com/)
-[![freeCodeCamp](https://img.shields.io/badge/freeCodeCamp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)](https://www.freecodecamp.org/)
-[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
-[![Codewars](https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=codewars&logoColor=white)](https://www.codewars.com/users/CodingWithJiro)
-[![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-000000?style=for-the-badge&logo=mdnwebdocs&logoColor=white)](https://developer.mozilla.org/)
-[![Discussions](https://img.shields.io/badge/Join%20the-Discussion-blueviolet?style=for-the-badge&logo=github)](https://github.com/CodingWithJiro/Projects/discussions)
-
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.Projects-Hub)
-
 ## What Is This Hub?
 
-This **Projects Hub** reflects my journey as a **self-taught frontend developer**. It serves as a centralized place where I showcase all of my **[web development projects](#projects-directory)** in its **own dedicated repository**.
+This **Projects Hub** centralizes my **[web applications](#projects-directory)** as a self-taught frontend developer. Each project is **fully documented and deployed live**.
 
-Each project I build represents a piece of my learning journey and is treated as a real-world deliverable with its own **README.md documentation and live site deployment**.
-
-This hub is an **ever evolving repository** that will be regularly updated as soon as a new project is deployed.
+The hub evolves as I continue shipping new work.
 
 ## Projects Directory
 
 **Directions:** Click to see my projects
+
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.Projects-Hub)
 
 <details>
 
@@ -146,6 +119,7 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Interactive Rating Component_ | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-interactive-rating-component/main/assets/img/site-preview-desktop-dark_1440x960.png" width="200" alt="Site preview image."> | [🌐](https://interactive-rating-component-fcc-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-interactive-rating-component) |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Article Preview Component_    | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-article-preview-component/main/assets/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image.">         | [🌐](https://article-preview-component-fcc-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-article-preview-component)       |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Newsletter Sign-Up Form_      | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-newsletter-sign-up-form/main/assets/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image.">           | [🌐](https://newsletter-form-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-newsletter-sign-up-form)                       |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Shortly - URL Shortener_      | <img src="https://raw.githubusercontent.com/JuliAlchemDev/FM-url-shortening-api/refs/heads/main/assets/images/meta-preview.png" width="200" alt="Site preview image.">                                 | [🌐](https://julialchemdev.github.io/FM-url-shortening-api/) \| [💻](https://github.com/JuliAlchemDev/FM-url-shortening-api)                             |
 | **5. Wes Bos #JavaScript30 Projects**                        |                                                                                                                                                                                                        |                                                                                                                                                          |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Keyboard Warrior_             | <img src="https://raw.githubusercontent.com/CodingWithJiro/wesbos-js-30-drumkit/main/assets/img/site-preview-desktop-dark_1440x960.png" width="200" alt="Site preview image.">                         | [🌐](https://keyboard-warrior-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/wesbos-js-30-drumkit)                                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _TickTock_                     | <img src="https://raw.githubusercontent.com/CodingWithJiro/wesbos-js-30-clock/main/assets/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image.">                                | [🌐](https://ticktock-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/wesbos-js-30-clock)                                                   |
@@ -160,10 +134,11 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <br>
 
-| Project                                      | Preview                                                                                                                                                                                       | Links                                                                                                                               |
-| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Frontend Mentor Projects**              |                                                                                                                                                                                               |                                                                                                                                     |
-| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Base Apparel_ | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon/main/public/img/site-preview-desktop_1440x800.png" width="200" alt="Site preview image."> | [🌐](https://base-apparel-fm-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon) |
+| Project                                                   | Preview                                                                                                                                                                                             | Links                                                                                                                                     |
+| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Frontend Mentor Projects**                           |                                                                                                                                                                                                     |                                                                                                                                           |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Base Apparel_              | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon/main/public/img/site-preview-desktop_1440x800.png" width="200" alt="Site preview image.">       | [🌐](https://base-apparel-fm-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon)       |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Browser Extension Manager_ | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-browser-extension-manager/main/public/img/site-preview-desktop-dark_1440x960.png" width="200" alt="Site preview image."> | [🌐](https://browser-extension-fm-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-browser-extension-manager) |
 
 <!-- | &nbsp;&nbsp;&nbsp;&nbsp;**»** _NAME_ | <img src="IMAGE_LINK" width="200" alt="Site preview image.">                     | [🌐](SITE) \| [💻](REPO) | -->
 
@@ -171,63 +146,34 @@ This hub is an **ever evolving repository** that will be regularly updated as so
 
 <br>
 
-## Current & Future Goals
-
-- Land my **first frontend developer role**
-- Explore **open-source** and **freelancing opportunities**
-- Learn more by building **web applications** that solve real-world problems
-- Improve **performance**, **accessibility**, and **responsiveness**
-- Stay updated on **latest frontend tech trends** and **best practices**
-- Grow toward **full-stack development** and/or **AI-related paths**
-
 ## Tech & Tools Used So Far
 
-### Core Web Technologies
-
-[<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[<img alt="Markdown" src="https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />](https://www.markdownguide.org/)
-
-- **HTML5**, **CSS3**, **JavaScript**
-- **Markdown** (project documentation)
-
-### Frameworks & Styling
-
-[<img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black" />](https://react.dev/)
+**Libraries & Frameworks:** [<img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black" />](https://react.dev/)
 [<img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind%20CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />](https://tailwindcss.com/)
 
-- **React** (component-based UI)
-- **Tailwind CSS** (utility-first styling)
+**Core Technologies:** [<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[<img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />](https://www.typescriptlang.org/)
+[<img alt="Markdown" src="https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />](https://www.markdownguide.org/)
 
-### Tooling & Testing
-
-[<img alt="Vite" src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=FFD62E" />](https://vitejs.dev/)
+**Tooling & Testing:** [<img alt="Vite" src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=FFD62E" />](https://vitejs.dev/)
 [<img alt="Vitest" src="https://img.shields.io/badge/-Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" />](https://vitest.dev/)
 [<img alt="React Testing Library" src="https://img.shields.io/badge/-React%20Testing%20Library-E33332?style=flat-square&logo=testing-library&logoColor=white" />](https://testing-library.com/docs/react-testing-library/intro/)
 
-- **Vite** (modern build tooling)
-- **Vitest** & **React Testing Library** (component testing)
-
-### Development & Deployment Tools
-
-[<img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />](https://git-scm.com/)
+**Platforms & Deployment:** [<img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />](https://git-scm.com/)
 [<img alt="GitHub" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white" />](https://github.com/)
 [<img alt="Netlify" src="https://img.shields.io/badge/-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white" />](https://www.netlify.com/)
+[<img alt="Vercel" src="https://img.shields.io/badge/-Vercel-111111?style=flat-square&logo=vercel&logoColor=white" />](https://vercel.com/)
 [<img alt="VS Code" src="https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />](https://code.visualstudio.com/)
 [<img alt="Figma" src="https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />](https://www.figma.com/)
 
-- **Visual Studio Code** (IDE)
-- **Git & GitHub** (version control)
-- **Netlify** (deployment)
-- **Figma** (design-to-code)
-- **PerfectPixel** (image-to-code)
-- **Google Lighthouse** (performance & accessibility audits)
-
 ## Author
 
-**Elmar Chavez** (CodingWithJiro) - Frontend Developer
+**Elmar Chavez** (CodingWithJiro) - _Frontend Developer_
 
-**Goal:** To grow into a strong frontend engineer and build a meaningful online presence
-
-_“I started this journey barely knowing what an HTML is. Today, I build and deploy real web projects while continuously learning and improving.”_
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elmar-chavez/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chavezelmar03@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CodingWithJiro)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3F54A3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/profile/CodingWithJiro)
+[![daily.dev](https://img.shields.io/badge/daily.dev-171717?style=for-the-badge&logo=daily.dev&logoColor=38BDF8)](https://app.daily.dev/elmarchavez)
