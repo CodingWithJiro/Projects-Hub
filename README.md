@@ -174,47 +174,25 @@ The hub evolves as I continue shipping new work.
 
 ## Tech & Tools Used So Far
 
-### Core Web Technologies
-
-[<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[<img alt="Markdown" src="https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />](https://www.markdownguide.org/)
-
-- **HTML5**, **CSS3**, **JavaScript**
-- **Markdown** (project documentation)
-
-### Frameworks & Styling
-
-[<img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black" />](https://react.dev/)
+**Libraries & Frameworks:** [<img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black" />](https://react.dev/)
 [<img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind%20CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />](https://tailwindcss.com/)
 
-- **React** (component-based UI)
-- **Tailwind CSS** (utility-first styling)
+**Core Technologies:** [<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[<img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />](https://www.typescriptlang.org/)
+[<img alt="Markdown" src="https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white" />](https://www.markdownguide.org/)
 
-### Tooling & Testing
-
-[<img alt="Vite" src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=FFD62E" />](https://vitejs.dev/)
+**Tooling & Testing:** [<img alt="Vite" src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=FFD62E" />](https://vitejs.dev/)
 [<img alt="Vitest" src="https://img.shields.io/badge/-Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" />](https://vitest.dev/)
 [<img alt="React Testing Library" src="https://img.shields.io/badge/-React%20Testing%20Library-E33332?style=flat-square&logo=testing-library&logoColor=white" />](https://testing-library.com/docs/react-testing-library/intro/)
 
-- **Vite** (modern build tooling)
-- **Vitest** & **React Testing Library** (component testing)
-
-### Development & Deployment Tools
-
-[<img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />](https://git-scm.com/)
+**Platforms & Deployment:** [<img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />](https://git-scm.com/)
 [<img alt="GitHub" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white" />](https://github.com/)
 [<img alt="Netlify" src="https://img.shields.io/badge/-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white" />](https://www.netlify.com/)
+[<img alt="Vercel" src="https://img.shields.io/badge/-Vercel-111111?style=flat-square&logo=vercel&logoColor=white" />](https://vercel.com/)
 [<img alt="VS Code" src="https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />](https://code.visualstudio.com/)
 [<img alt="Figma" src="https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />](https://www.figma.com/)
-
-- **Visual Studio Code** (IDE)
-- **Git & GitHub** (version control)
-- **Netlify** (deployment)
-- **Figma** (design-to-code)
-- **PerfectPixel** (image-to-code)
-- **Google Lighthouse** (performance & accessibility audits)
 
 ## Author
 
