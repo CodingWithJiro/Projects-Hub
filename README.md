@@ -170,8 +170,10 @@ The hub evolves as I continue shipping new work.
 
 ## Author
 
-**Elmar Chavez** (CodingWithJiro) - Frontend Developer
+**Elmar Chavez** (CodingWithJiro) - _Frontend Developer_
 
-**Goal:** To grow into a strong frontend engineer and build a meaningful online presence
-
-_“I started this journey barely knowing what an HTML is. Today, I build and deploy real web projects while continuously learning and improving.”_
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elmar-chavez/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chavezelmar03@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CodingWithJiro)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3F54A3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/profile/CodingWithJiro)
+[![daily.dev](https://img.shields.io/badge/daily.dev-171717?style=for-the-badge&logo=daily.dev&logoColor=38BDF8)](https://app.daily.dev/elmarchavez)
