@@ -2,7 +2,7 @@
 
 ## What Is This Hub?
 
-This **Projects Hub** centralizes my **[web applications](#projects-directory)** as a self-taught frontend developer. Each project is **fully documented and deployed live**.
+This **Projects Hub** centralizes my **[web applications](#projects-directory)** as a self-taught full stack developer. Each project is **fully documented and deployed live**.
 
 The hub evolves as I continue shipping new work.
 
