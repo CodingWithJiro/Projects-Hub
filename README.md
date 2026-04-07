@@ -130,7 +130,7 @@ The hub evolves as I continue shipping new work.
 
 <details>
 
-<summary><strong> REACT + TAILWIND PROJECTS</strong></summary>
+<summary><strong> REACT + TAILWIND + TYPESCRIPT PROJECTS</strong></summary>
 
 <br>
 
@@ -139,6 +139,7 @@ The hub evolves as I continue shipping new work.
 | **1. Frontend Mentor Projects**                           |                                                                                                                                                                                                     |                                                                                                                                           |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Base Apparel_              | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon/main/public/img/site-preview-desktop_1440x800.png" width="200" alt="Site preview image.">       | [🌐](https://base-apparel-fm-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon)       |
 | &nbsp;&nbsp;&nbsp;&nbsp;**»** _Browser Extension Manager_ | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-browser-extension-manager/main/public/img/site-preview-desktop-dark_1440x960.png" width="200" alt="Site preview image."> | [🌐](https://browser-extension-fm-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-browser-extension-manager) |
+| &nbsp;&nbsp;&nbsp;&nbsp;**»** _Where in the World_        | <img src="https://raw.githubusercontent.com/CodingWithJiro/frontend-mentor-where-in-the-world/main/public/img/site-preview-desktop_1440x960.png" width="200" alt="Site preview image.">             | [🌐](https://where-in-the-world-fm-jiro.netlify.app/) \| [💻](https://github.com/CodingWithJiro/frontend-mentor-where-in-the-world)       |
 
 <!-- | &nbsp;&nbsp;&nbsp;&nbsp;**»** _NAME_ | <img src="IMAGE_LINK" width="200" alt="Site preview image.">                     | [🌐](SITE) \| [💻](REPO) | -->
 
