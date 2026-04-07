@@ -173,10 +173,11 @@ The hub evolves as I continue shipping new work.
 
 ## Author
 
-**Elmar Chavez** (CodingWithJiro) - _Frontend Developer_
+**Elmar Chavez** (CodingWithJiro) - _Full Stack Developer_
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elmar-chavez/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chavezelmar03@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CodingWithJiro)
 [![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3F54A3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/profile/CodingWithJiro)
 [![daily.dev](https://img.shields.io/badge/daily.dev-171717?style=for-the-badge&logo=daily.dev&logoColor=38BDF8)](https://app.daily.dev/elmarchavez)
+[![dev.to](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=00C7B7)](https://dev.to/codingwithjiro)
