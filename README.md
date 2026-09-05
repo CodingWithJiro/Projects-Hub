@@ -200,3 +200,5 @@ The hub evolves as I continue shipping new work.
 [![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3F54A3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/profile/CodingWithJiro)
 [![daily.dev](https://img.shields.io/badge/daily.dev-171717?style=for-the-badge&logo=daily.dev&logoColor=38BDF8)](https://app.daily.dev/elmarchavez)
 [![dev.to](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=00C7B7)](https://dev.to/codingwithjiro)
+
+**Last updated:** _September 2026_
